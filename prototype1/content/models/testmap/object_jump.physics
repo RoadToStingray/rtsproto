@@ -4,7 +4,7 @@ actors = [
 		enabled = true
 		mass = 0
 		name = "pCube7"
-		node = "StingrayEntityRoot"
+		node = "pCube7"
 		shapes = [
 			{
 				material = "default"
