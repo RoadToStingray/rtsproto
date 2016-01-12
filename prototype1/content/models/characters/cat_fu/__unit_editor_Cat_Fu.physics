@@ -1,0 +1,219 @@
+
+actors = [
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_box_Cat_Fu_Body"
+		node = "Cat_Fu_Body"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_Body"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "keyframed"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_capsule_Cat_Fu_Body"
+		node = "Cat_Fu_Body"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_Body"
+				template = "default"
+				type = "capsule"
+			}
+		]
+		template = "keyframed"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_mesh_Cat_Fu_Body"
+		node = "Cat_Fu_Body"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_Body"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_sphere_Cat_Fu_Body"
+		node = "Cat_Fu_Body"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_Body"
+				template = "default"
+				type = "sphere"
+			}
+		]
+		template = "keyframed"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_box_Cat_Fu_L_Eye"
+		node = "Cat_Fu_L_Eye"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_L_Eye"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "keyframed"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_capsule_Cat_Fu_L_Eye"
+		node = "Cat_Fu_L_Eye"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_L_Eye"
+				template = "default"
+				type = "capsule"
+			}
+		]
+		template = "keyframed"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_mesh_Cat_Fu_L_Eye"
+		node = "Cat_Fu_L_Eye"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_L_Eye"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_sphere_Cat_Fu_L_Eye"
+		node = "Cat_Fu_L_Eye"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_L_Eye"
+				template = "default"
+				type = "sphere"
+			}
+		]
+		template = "keyframed"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_box_Cat_Fu_R_Eye"
+		node = "Cat_Fu_R_Eye"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_R_Eye"
+				template = "default"
+				type = "box"
+			}
+		]
+		template = "keyframed"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_capsule_Cat_Fu_R_Eye"
+		node = "Cat_Fu_R_Eye"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_R_Eye"
+				template = "default"
+				type = "capsule"
+			}
+		]
+		template = "keyframed"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_mesh_Cat_Fu_R_Eye"
+		node = "Cat_Fu_R_Eye"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_R_Eye"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+	{
+		data_compiler = {
+			silence_transform_warnings = true
+		}
+		enabled = false
+		mass = 0
+		name = "__unit_editor_sphere_Cat_Fu_R_Eye"
+		node = "Cat_Fu_R_Eye"
+		shapes = [
+			{
+				material = "default"
+				shape = "Cat_Fu_R_Eye"
+				template = "default"
+				type = "sphere"
+			}
+		]
+		template = "keyframed"
+	}
+]

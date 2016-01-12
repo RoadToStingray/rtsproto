@@ -4,12 +4,12 @@ nodes = [
 		id = "0572e403-f46b-413a-9afe-f74153276516"
 		in_variables = {
 			x = {
-				node = "8b818d2a-11cc-43c3-9ed1-7bc2b84c86ec"
+				node = "5f15f6e3-a713-4cdb-9ae9-a1affb6607d9"
 				type = "float"
 				variable = "value"
 			}
 			y = {
-				node = "c832bbfa-0ea3-4ec0-9cd5-0617313abe82"
+				node = "7ead63e4-252f-4314-a3c8-afff645206c8"
 				type = "float"
 				variable = "value"
 			}
@@ -75,6 +75,30 @@ nodes = [
 		}
 	}
 	{
+		id = "122d58c6-3f15-4dc1-9e52-3d24feb8fd20"
+		in_variables = {
+			a = {
+				node = "8094c2c6-d963-4c8f-9b80-762ff7cdc20d"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "numeric_greater_than_numeric"
+		variable_values = {
+			a = null
+			b = 0.9
+			value = null
+		}
+	}
+	{
 		id = "1b67b9c4-21b7-4895-8c2d-a97ca12bbb8e"
 		in_variables = {
 			numeric = {
@@ -130,6 +154,24 @@ nodes = [
 		}
 		variables = [
 		]
+	}
+	{
+		id = "1cfd4778-637e-4d6c-bb20-fd42ca1f42ef"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "df18bcda-0152-44a6-a96c-29c4a8316f0a:0"
+					node = "df18bcda-0152-44a6-a96c-29c4a8316f0a"
+				}
+				{
+					event = 0
+					id = "a8b9bad6-a7a5-4cc1-a6a7-e313ddf35f20:0"
+					node = "a8b9bad6-a7a5-4cc1-a6a7-e313ddf35f20"
+				}
+			]
+		}
+		type = "level_update"
 	}
 	{
 		id = "20962c37-2ad0-493c-be60-dbec18d6a725"
@@ -260,8 +302,8 @@ nodes = [
 			true = [
 				{
 					event = 0
-					id = "81186b8e-2f12-42e4-8ff8-2b0d6b3172f6:0"
-					node = "81186b8e-2f12-42e4-8ff8-2b0d6b3172f6"
+					id = "9774912f-2bce-4899-bb51-e98d966e82b1:0"
+					node = "9774912f-2bce-4899-bb51-e98d966e82b1"
 				}
 				{
 					event = 0
@@ -273,6 +315,32 @@ nodes = [
 		type = "branch"
 		variable_values = {
 			condition = null
+		}
+	}
+	{
+		id = "5f15f6e3-a713-4cdb-9ae9-a1affb6607d9"
+		in_variables = {
+			a = {
+				node = "8b818d2a-11cc-43c3-9ed1-7bc2b84c86ec"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "93e09daf-641c-42af-a0ca-2935aec971ba"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
 		}
 	}
 	{
@@ -296,6 +364,26 @@ nodes = [
 		variable_values = {
 			a = null
 			b = -1
+			value = null
+		}
+	}
+	{
+		id = "6e91bbe6-1de3-499f-ba73-dbf7bc57cb82"
+		in_variables = {
+			numeric = {
+				node = "ef81a7f2-cf46-4614-a348-c497c82153ee"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "numeric_to_string"
+		variable_values = {
+			numeric = null
 			value = null
 		}
 	}
@@ -332,6 +420,11 @@ nodes = [
 					id = "58c8d487-09eb-47a3-9742-2c9bbd14b3d4:0"
 					node = "58c8d487-09eb-47a3-9742-2c9bbd14b3d4"
 				}
+				{
+					event = 0
+					id = "78235245-0863-457d-a180-598fbc8fb227:0"
+					node = "78235245-0863-457d-a180-598fbc8fb227"
+				}
 			]
 		}
 		type = "level_update"
@@ -358,6 +451,54 @@ nodes = [
 			mover = null
 			position = null
 			unit = null
+		}
+	}
+	{
+		id = "78235245-0863-457d-a180-598fbc8fb227"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "8094c2c6-d963-4c8f-9b80-762ff7cdc20d"
+				type = "float"
+				variable = "value"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "speed"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "7ead63e4-252f-4314-a3c8-afff645206c8"
+		in_variables = {
+			a = {
+				node = "c832bbfa-0ea3-4ec0-9cd5-0617313abe82"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "93e09daf-641c-42af-a0ca-2935aec971ba"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
 		}
 	}
 	{
@@ -399,6 +540,26 @@ nodes = [
 		}
 	}
 	{
+		id = "8545b3c3-2202-415f-9747-fb4dcfdb6717"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				type = "float"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "move_speed"
+			numeric = 0.5
+			scope = "local"
+		}
+	}
+	{
 		id = "8b818d2a-11cc-43c3-9ed1-7bc2b84c86ec"
 		in_variables = {
 			a = {
@@ -425,6 +586,58 @@ nodes = [
 		}
 	}
 	{
+		id = "93e09daf-641c-42af-a0ca-2935aec971ba"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "move_speed"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "9774912f-2bce-4899-bb51-e98d966e82b1"
+		in_variables = {
+			condition = {
+				node = "122d58c6-3f15-4dc1-9e52-3d24feb8fd20"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			false = [
+				{
+					event = 0
+					id = "ee33e0d2-7c63-4d7d-b113-a6d46caf6bcc:0"
+					node = "ee33e0d2-7c63-4d7d-b113-a6d46caf6bcc"
+				}
+			]
+			true = [
+				{
+					event = 0
+					id = "81186b8e-2f12-42e4-8ff8-2b0d6b3172f6:0"
+					node = "81186b8e-2f12-42e4-8ff8-2b0d6b3172f6"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
 		id = "9d5b5acb-49c1-4bdd-a25c-6af8b2a3e469"
 		in_variables = {
 			rotation = {
@@ -445,6 +658,71 @@ nodes = [
 			rotation = null
 			up = null
 		}
+	}
+	{
+		id = "a8536183-d051-4cd0-924c-ded696cae77e"
+		in_variables = {
+			a = {
+				node = "e0d690ff-7fd5-49a4-8d1e-c0c252077bfe"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "numeric_greater_than_numeric"
+		variable_values = {
+			a = null
+			b = 0
+			value = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/appkit/appkit"
+		id = "a8b9bad6-a7a5-4cc1-a6a7-e313ddf35f20"
+		in_variables = {
+			Color = {
+				type = "vector3"
+			}
+			Label = {
+				type = "string"
+			}
+			Text = {
+				node = "6e91bbe6-1de3-499f-ba73-dbf7bc57cb82"
+				type = "string"
+				variable = "value"
+			}
+		}
+		name = "Print To Screen"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Color = null
+			Label = "speed: "
+			Text = null
+		}
+		variables = [
+			{
+				name = "Label"
+				type = "string"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "Text"
+				type = "string"
+			}
+		]
 	}
 	{
 		id = "ae43b303-0f30-46df-a82a-a675630f9cca"
@@ -556,6 +834,19 @@ nodes = [
 		}
 	}
 	{
+		id = "c6af687c-c459-4013-80a8-144c46a63dfc"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "d2f1a377-0759-41b6-bdcc-269a7fb2a7ed:0"
+					node = "d2f1a377-0759-41b6-bdcc-269a7fb2a7ed"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
 		id = "c832bbfa-0ea3-4ec0-9cd5-0617313abe82"
 		in_variables = {
 			a = {
@@ -582,6 +873,28 @@ nodes = [
 		}
 	}
 	{
+		id = "c946ad4f-b99f-44a8-97e4-aaf16004f472"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = null
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
 		id = "c9b1de45-88c4-4f0c-bba6-3a311b0cbe5a"
 		in_variables = {
 			a = {
@@ -603,6 +916,40 @@ nodes = [
 			a = null
 			b = -1
 			value = null
+		}
+	}
+	{
+		id = "d2f1a377-0759-41b6-bdcc-269a7fb2a7ed"
+		in_event_index = [
+			"Move Character In"
+		]
+		in_variables = {
+			character_in = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+			character_rotation_in = {
+				node = "f0fb0e16-33c0-4d4d-a5c1-5dbaaf1f77bc"
+				type = "quaternion"
+				variable = "rotation"
+			}
+			move_speed_in = {
+				node = "c946ad4f-b99f-44a8-97e4-aaf16004f472"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		out_event_index = [
+			"Move Character Out"
+		]
+		type = "flow_subroutine"
+		variable_values = {
+			character_in = null
+			character_rotation_in = null
+			flow = "script/Move_Character"
+			move_speed_in = null
+			position_out = null
 		}
 	}
 	{
@@ -634,6 +981,36 @@ nodes = [
 		}
 	}
 	{
+		id = "df18bcda-0152-44a6-a96c-29c4a8316f0a"
+		in_variables = {
+			condition = {
+				node = "a8536183-d051-4cd0-924c-ded696cae77e"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			false = [
+				{
+					event = 0
+					id = "ed5581b3-8fca-4a4d-bc43-088fba014a34:0"
+					node = "ed5581b3-8fca-4a4d-bc43-088fba014a34"
+				}
+			]
+			true = [
+				{
+					event = 0
+					id = "8545b3c3-2202-415f-9747-fb4dcfdb6717:0"
+					node = "8545b3c3-2202-415f-9747-fb4dcfdb6717"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
 		id = "df9119ef-0c9b-482d-9121-bdaa8b4ef965"
 		in_variables = {
 			a = {
@@ -654,6 +1031,32 @@ nodes = [
 		variable_values = {
 			a = null
 			b = -0.2
+			value = null
+		}
+	}
+	{
+		id = "e0d690ff-7fd5-49a4-8d1e-c0c252077bfe"
+		in_variables = {
+			button_name = {
+				type = "string"
+			}
+			device = {
+				type = "string"
+			}
+			device_number = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "keyboard_button"
+		variable_values = {
+			button_name = "left shift"
+			device = "keyboard"
+			device_number = 0
 			value = null
 		}
 	}
@@ -684,6 +1087,44 @@ nodes = [
 		}
 	}
 	{
+		id = "ed5581b3-8fca-4a4d-bc43-088fba014a34"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				type = "float"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "move_speed"
+			numeric = 1
+			scope = "local"
+		}
+	}
+	{
+		id = "ee33e0d2-7c63-4d7d-b113-a6d46caf6bcc"
+		in_variables = {
+			event = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		type = "animation_event"
+		variable_values = {
+			event = "Walk_Event"
+			unit = null
+		}
+	}
+	{
 		id = "ee8ce4de-6990-47ba-8b7a-689b10280a06"
 		in_variables = {
 			button_name = {
@@ -707,6 +1148,50 @@ nodes = [
 			device = "keyboard"
 			device_number = 0
 			value = null
+		}
+	}
+	{
+		id = "ef81a7f2-cf46-4614-a348-c497c82153ee"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "speed"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "f0fb0e16-33c0-4d4d-a5c1-5dbaaf1f77bc"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			rotation = {
+				type = "quaternion"
+			}
+		}
+		type = "get_rotation_variable"
+		variable_values = {
+			name = null
+			rotation = null
+			scope = "local"
 		}
 	}
 	{
