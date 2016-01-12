@@ -836,7 +836,7 @@ Nodes = [
 	}
 	{
 		ButtonName = {
-			Value = "right"
+			Value = "d"
 		}
 		Class = "Stingray.Flow.KeyboardButton"
 		Device = {
@@ -1104,7 +1104,7 @@ Nodes = [
 			Y = 800
 		}
 		Numeric = {
-			Value = 0.5
+			Value = 0.3
 		}
 		Scope = {
 			Value = "local"
@@ -1489,7 +1489,7 @@ Nodes = [
 	}
 	{
 		ButtonName = {
-			Value = "down"
+			Value = "s"
 		}
 		Class = "Stingray.Flow.KeyboardButton"
 		Device = {
@@ -1554,7 +1554,7 @@ Nodes = [
 	}
 	{
 		ButtonName = {
-			Value = "up"
+			Value = "w"
 		}
 		Class = "Stingray.Flow.KeyboardButton"
 		Device = {
@@ -1613,7 +1613,7 @@ Nodes = [
 	}
 	{
 		ButtonName = {
-			Value = "left"
+			Value = "a"
 		}
 		Class = "Stingray.Flow.KeyboardButton"
 		Device = {

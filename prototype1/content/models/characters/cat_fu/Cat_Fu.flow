@@ -193,7 +193,7 @@ nodes = [
 		}
 		type = "keyboard_button"
 		variable_values = {
-			button_name = "right"
+			button_name = "d"
 			device = "keyboard"
 			device_number = 0
 			value = null
@@ -555,7 +555,7 @@ nodes = [
 		type = "set_numeric_variable"
 		variable_values = {
 			name = "move_speed"
-			numeric = 0.5
+			numeric = 0.3
 			scope = "local"
 		}
 	}
@@ -1080,7 +1080,7 @@ nodes = [
 		}
 		type = "keyboard_button"
 		variable_values = {
-			button_name = "down"
+			button_name = "s"
 			device = "keyboard"
 			device_number = 0
 			value = null
@@ -1144,7 +1144,7 @@ nodes = [
 		}
 		type = "keyboard_button"
 		variable_values = {
-			button_name = "up"
+			button_name = "w"
 			device = "keyboard"
 			device_number = 0
 			value = null
@@ -1214,7 +1214,7 @@ nodes = [
 		}
 		type = "keyboard_button"
 		variable_values = {
-			button_name = "left"
+			button_name = "a"
 			device = "keyboard"
 			device_number = 0
 			value = null
