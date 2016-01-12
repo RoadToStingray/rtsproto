@@ -53,14 +53,6 @@ editor_metadata = {
 				ToItem = "In"
 				ToNode = "10ad9003-6107-46d4-bb09-54c142334211"
 			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "dace9721-f45e-4029-93d1-b8b282d0684d"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "608df64a-f385-400e-8cb1-968ab9bf0dc5"
-			}
 		]
 		Groups = [
 		]
@@ -227,24 +219,6 @@ editor_metadata = {
 				Out = {
 				}
 				Title = "Level Loaded"
-				Width = 160
-			}
-			{
-				Brief = "Sets the global value for world gravity in the engine."
-				Class = "Stingray.Foundation.Flow.SetWorldGravity"
-				Gravity = {
-					Value = "0 0 1"
-				}
-				Id = "608df64a-f385-400e-8cb1-968ab9bf0dc5"
-				In = {
-				}
-				NodeLocation = {
-					X = -20
-					Y = -360
-				}
-				Out = {
-				}
-				Title = "Set World Gravity"
 				Width = 160
 			}
 		]
@@ -1119,30 +1093,9 @@ flow = {
 						id = "10ad9003-6107-46d4-bb09-54c142334211:0"
 						node = "10ad9003-6107-46d4-bb09-54c142334211"
 					}
-					{
-						event = 0
-						id = "608df64a-f385-400e-8cb1-968ab9bf0dc5:0"
-						node = "608df64a-f385-400e-8cb1-968ab9bf0dc5"
-					}
 				]
 			}
 			type = "level_loaded"
-		}
-		{
-			id = "608df64a-f385-400e-8cb1-968ab9bf0dc5"
-			in_variables = {
-				gravity = {
-					type = "vector3"
-				}
-			}
-			type = "set_world_gravity"
-			variable_values = {
-				gravity = [
-					0
-					0
-					1
-				]
-			}
 		}
 	]
 }
