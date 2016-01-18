@@ -732,15 +732,6 @@ Connections = [
 	{
 		Class = "Stingray.Flow.VariableConnection"
 		FromItem = "Value"
-		FromNode = "ee8ce4de-6990-47ba-8b7a-689b10280a06"
-		Id = "140f6cc2-1773-4a9b-a91f-d0982101f11c"
-		ToItem = "A"
-		ToNode = "c9b1de45-88c4-4f0c-bba6-3a311b0cbe5a"
-		Type = "Float"
-	}
-	{
-		Class = "Stingray.Flow.VariableConnection"
-		FromItem = "Value"
 		FromNode = "c9b1de45-88c4-4f0c-bba6-3a311b0cbe5a"
 		Id = "c2c3c392-4c7c-431b-ab58-29e107238ee3"
 		ToItem = "A"
@@ -1032,6 +1023,7 @@ Nodes = [
 	}
 	{
 		A = {
+			Value = 1
 		}
 		B = {
 			Value = -1
@@ -1283,7 +1275,6 @@ Nodes = [
 		OutEvents = [
 			"idle_event"
 			"jump_event"
-			"Move Character Out"
 			"run_event"
 			"two_jump_event"
 			"walk_event"

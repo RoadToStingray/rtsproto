@@ -302,9 +302,7 @@ nodes = [
 		id = "c9b1de45-88c4-4f0c-bba6-3a311b0cbe5a"
 		in_variables = {
 			a = {
-				node = "ee8ce4de-6990-47ba-8b7a-689b10280a06"
 				type = "float"
-				variable = "value"
 			}
 			b = {
 				type = "float"
@@ -317,7 +315,7 @@ nodes = [
 		}
 		type = "numeric_times_numeric"
 		variable_values = {
-			a = null
+			a = 1
 			b = -1
 			value = null
 		}
@@ -434,11 +432,6 @@ nodes = [
 				type = "string"
 			}
 			device_number = {
-				type = "float"
-			}
-		}
-		out_variables = {
-			value = {
 				type = "float"
 			}
 		}
@@ -562,7 +555,6 @@ nodes = [
 		out_event_index = [
 			"idle_event"
 			"jump_event"
-			"Move Character Out"
 			"run_event"
 			"two_jump_event"
 			"walk_event"
