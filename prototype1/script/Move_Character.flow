@@ -69,6 +69,28 @@ nodes = [
 		}
 	}
 	{
+		id = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "get_unit_variable"
+		variable_values = {
+			name = "Unit"
+			scope = "local"
+			unit = null
+		}
+	}
+	{
 		id = "04a5b0c2-b900-44c3-a8d5-925429b8942d"
 		in_variables = {
 			vector = {
@@ -127,6 +149,60 @@ nodes = [
 				name = "Text"
 				type = "string"
 			}
+		]
+	}
+	{
+		id = "057c63fd-4539-42c9-90ff-36cbfa6208cb"
+		in_variables = {
+			x = {
+				type = "float"
+			}
+			y = {
+				type = "float"
+			}
+			z = {
+				node = "617082cf-a204-4726-a5f6-029751e01ea5"
+				type = "float"
+				variable = "value"
+			}
+		}
+		type = "rotation_from_components"
+		variable_values = {
+			rotation = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/appkit/appkit"
+		id = "0703c08e-2aed-4bb2-8f74-c75711a0907d"
+		name = "Get Active Camera"
+		out_variables = {
+			Camera = {
+				type = "camera"
+			}
+			Unit = {
+				type = "unit"
+			}
+		}
+		query = true
+		return_values = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Camera"
+				type = "camera"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Camera = null
+			Unit = null
+		}
+		variables = [
 		]
 	}
 	{
@@ -304,6 +380,30 @@ nodes = [
 		}
 	}
 	{
+		id = "137cd1d4-7868-4520-9fc1-75962ae85e23"
+		in_variables = {
+			a = {
+				node = "bbca596f-a62e-465a-b28e-1541e80197d1"
+				type = "float"
+				variable = "z"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = 10
+			value = null
+		}
+	}
+	{
 		id = "160779ad-9d2d-4b56-8d1b-7b6f28c20b9f"
 		out_variables = {
 			unit = {
@@ -336,6 +436,19 @@ nodes = [
 			right = null
 			rotation = null
 			up = null
+		}
+	}
+	{
+		id = "1d56b630-fe87-452f-bc6b-dbe61e49a179"
+		out_variables = {
+			vector3 = {
+				type = "vector3"
+			}
+		}
+		type = "external_input_vector3"
+		variable_values = {
+			name = "input_vector"
+			vector3 = null
 		}
 	}
 	{
@@ -519,6 +632,34 @@ nodes = [
 			bool = null
 			name = "Is_Jumped"
 			scope = "local"
+		}
+	}
+	{
+		id = "2da735f3-4958-450f-92df-8c8fb83a112b"
+		in_variables = {
+			x = {
+				type = "float"
+			}
+			y = {
+				type = "float"
+			}
+			z = {
+				node = "137cd1d4-7868-4520-9fc1-75962ae85e23"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			rotation = {
+				type = "quaternion"
+			}
+		}
+		type = "rotation_from_components"
+		variable_values = {
+			rotation = null
+			x = null
+			y = null
+			z = null
 		}
 	}
 	{
@@ -865,6 +1006,32 @@ nodes = [
 		}
 	}
 	{
+		id = "57838653-5e76-4aaa-adda-580390db4e48"
+		in_variables = {
+			a = {
+				node = "eec5b743-2440-4d76-9e32-fc704740ea07"
+				type = "quaternion"
+				variable = "rotation"
+			}
+			b = {
+				node = "2da735f3-4958-450f-92df-8c8fb83a112b"
+				type = "quaternion"
+				variable = "rotation"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "quaternion"
+			}
+		}
+		type = "rotation_plus_rotation"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
 		id = "5b4b846b-3ff6-4192-95e3-74476e097e01"
 		in_variables = {
 			vector = {
@@ -978,6 +1145,32 @@ nodes = [
 			name = "Move_Speed"
 			numeric = null
 			scope = "local"
+		}
+	}
+	{
+		id = "617082cf-a204-4726-a5f6-029751e01ea5"
+		in_variables = {
+			a = {
+				node = "6be19d31-71e3-42d6-b732-6fd5948dee50"
+				type = "float"
+				variable = "z"
+			}
+			b = {
+				node = "0dbf2340-5988-4809-bc75-3eb5a14fe991"
+				type = "float"
+				variable = "z"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_plus_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
 		}
 	}
 	{
@@ -1262,6 +1455,43 @@ nodes = [
 			name = "speed"
 			numeric = null
 			scope = "local"
+		}
+	}
+	{
+		id = "85a31bcb-90fd-4263-89cb-4314d7c7b193"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			rotation = {
+				node = "57838653-5e76-4aaa-adda-580390db4e48"
+				type = "quaternion"
+				variable = "value"
+			}
+			teleport = {
+				type = "bool"
+			}
+			unit = {
+				node = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "0d396e33-4e35-4fe2-a2eb-bf9200c9eba4:0"
+					node = "0d396e33-4e35-4fe2-a2eb-bf9200c9eba4"
+				}
+			]
+		}
+		type = "set_unit_local_rotation"
+		variable_values = {
+			object = null
+			rotation = null
+			teleport = null
+			unit = null
 		}
 	}
 	{
@@ -1711,6 +1941,28 @@ nodes = [
 		}
 	}
 	{
+		id = "bbca596f-a62e-465a-b28e-1541e80197d1"
+		in_variables = {
+			vector = {
+				node = "1d56b630-fe87-452f-bc6b-dbe61e49a179"
+				type = "vector3"
+				variable = "vector3"
+			}
+		}
+		out_variables = {
+			z = {
+				type = "float"
+			}
+		}
+		type = "vector_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
 		id = "bd1701bc-6884-404e-84e2-da5e4ddfceff"
 		type = "level_flow_event"
 		variable_values = {
@@ -2025,6 +2277,34 @@ nodes = [
 		}
 	}
 	{
+		id = "dd85ed91-4e74-4de3-8c0d-9e5d949e458f"
+		in_variables = {
+			forward = {
+				node = "1d56b630-fe87-452f-bc6b-dbe61e49a179"
+				type = "vector3"
+				variable = "vector3"
+			}
+			up = {
+				type = "vector3"
+			}
+		}
+		out_variables = {
+			rotation = {
+				type = "quaternion"
+			}
+		}
+		type = "rotation_from_vectors"
+		variable_values = {
+			forward = null
+			rotation = null
+			up = [
+				0
+				0
+				1
+			]
+		}
+	}
+	{
 		id = "dfa40bd9-59ee-41a5-acc8-869b339a277d"
 		in_variables = {
 			name = {
@@ -2114,6 +2394,30 @@ nodes = [
 			a = null
 			b = null
 			value = null
+		}
+	}
+	{
+		id = "eec5b743-2440-4d76-9e32-fc704740ea07"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			unit = {
+				node = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			rotation = {
+				type = "quaternion"
+			}
+		}
+		type = "get_unit_local_rotation"
+		variable_values = {
+			object = null
+			rotation = null
+			unit = null
 		}
 	}
 	{
@@ -2271,310 +2575,6 @@ nodes = [
 				type = "string"
 			}
 		]
-	}
-	{
-		flow_nodes_resource = "core/appkit/appkit"
-		id = "0703c08e-2aed-4bb2-8f74-c75711a0907d"
-		name = "Get Active Camera"
-		out_variables = {
-			Camera = {
-				type = "camera"
-			}
-			Unit = {
-				type = "unit"
-			}
-		}
-		query = true
-		return_values = [
-			{
-				name = "Unit"
-				type = "unit"
-			}
-			{
-				name = "Camera"
-				type = "camera"
-			}
-		]
-		type = "custom_script_node"
-		variable_values = {
-			Camera = null
-			Unit = null
-		}
-		variables = [
-		]
-	}
-	{
-		id = "1d56b630-fe87-452f-bc6b-dbe61e49a179"
-		out_variables = {
-			vector3 = {
-				type = "vector3"
-			}
-		}
-		type = "external_input_vector3"
-		variable_values = {
-			name = "input_vector"
-			vector3 = null
-		}
-	}
-	{
-		id = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			unit = {
-				type = "unit"
-			}
-		}
-		type = "get_unit_variable"
-		variable_values = {
-			name = "Unit"
-			scope = "local"
-			unit = null
-		}
-	}
-	{
-		id = "617082cf-a204-4726-a5f6-029751e01ea5"
-		in_variables = {
-			a = {
-				node = "6be19d31-71e3-42d6-b732-6fd5948dee50"
-				type = "float"
-				variable = "z"
-			}
-			b = {
-				node = "0dbf2340-5988-4809-bc75-3eb5a14fe991"
-				type = "float"
-				variable = "z"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "numeric_plus_numeric"
-		variable_values = {
-			a = null
-			b = null
-			value = null
-		}
-	}
-	{
-		id = "dd85ed91-4e74-4de3-8c0d-9e5d949e458f"
-		in_variables = {
-			forward = {
-				node = "1d56b630-fe87-452f-bc6b-dbe61e49a179"
-				type = "vector3"
-				variable = "vector3"
-			}
-			up = {
-				type = "vector3"
-			}
-		}
-		out_variables = {
-			rotation = {
-				type = "quaternion"
-			}
-		}
-		type = "rotation_from_vectors"
-		variable_values = {
-			forward = null
-			rotation = null
-			up = [
-				0
-				0
-				1
-			]
-		}
-	}
-	{
-		id = "bbca596f-a62e-465a-b28e-1541e80197d1"
-		in_variables = {
-			vector = {
-				node = "1d56b630-fe87-452f-bc6b-dbe61e49a179"
-				type = "vector3"
-				variable = "vector3"
-			}
-		}
-		out_variables = {
-			x = {
-				type = "float"
-			}
-		}
-		type = "vector_components"
-		variable_values = {
-			vector = null
-			x = null
-			y = null
-			z = null
-		}
-	}
-	{
-		id = "057c63fd-4539-42c9-90ff-36cbfa6208cb"
-		in_variables = {
-			x = {
-				type = "float"
-			}
-			y = {
-				type = "float"
-			}
-			z = {
-				node = "617082cf-a204-4726-a5f6-029751e01ea5"
-				type = "float"
-				variable = "value"
-			}
-		}
-		type = "rotation_from_components"
-		variable_values = {
-			rotation = null
-			x = null
-			y = null
-			z = null
-		}
-	}
-	{
-		id = "eec5b743-2440-4d76-9e32-fc704740ea07"
-		in_variables = {
-			object = {
-				type = "id"
-			}
-			unit = {
-				node = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		out_variables = {
-			rotation = {
-				type = "quaternion"
-			}
-		}
-		type = "get_unit_local_rotation"
-		variable_values = {
-			object = null
-			rotation = null
-			unit = null
-		}
-	}
-	{
-		id = "85a31bcb-90fd-4263-89cb-4314d7c7b193"
-		in_variables = {
-			object = {
-				type = "id"
-			}
-			rotation = {
-				node = "57838653-5e76-4aaa-adda-580390db4e48"
-				type = "quaternion"
-				variable = "value"
-			}
-			teleport = {
-				type = "bool"
-			}
-			unit = {
-				node = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "0d396e33-4e35-4fe2-a2eb-bf9200c9eba4:0"
-					node = "0d396e33-4e35-4fe2-a2eb-bf9200c9eba4"
-				}
-			]
-		}
-		type = "set_unit_local_rotation"
-		variable_values = {
-			object = null
-			rotation = null
-			teleport = null
-			unit = null
-		}
-	}
-	{
-		id = "137cd1d4-7868-4520-9fc1-75962ae85e23"
-		in_variables = {
-			a = {
-				node = "bbca596f-a62e-465a-b28e-1541e80197d1"
-				type = "float"
-				variable = "x"
-			}
-			b = {
-				type = "float"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "numeric_times_numeric"
-		variable_values = {
-			a = null
-			b = 10
-			value = null
-		}
-	}
-	{
-		id = "57838653-5e76-4aaa-adda-580390db4e48"
-		in_variables = {
-			a = {
-				node = "eec5b743-2440-4d76-9e32-fc704740ea07"
-				type = "quaternion"
-				variable = "rotation"
-			}
-			b = {
-				node = "2da735f3-4958-450f-92df-8c8fb83a112b"
-				type = "quaternion"
-				variable = "rotation"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "quaternion"
-			}
-		}
-		type = "rotation_plus_rotation"
-		variable_values = {
-			a = null
-			b = null
-			value = null
-		}
-	}
-	{
-		id = "2da735f3-4958-450f-92df-8c8fb83a112b"
-		in_variables = {
-			x = {
-				type = "float"
-			}
-			y = {
-				type = "float"
-			}
-			z = {
-				node = "137cd1d4-7868-4520-9fc1-75962ae85e23"
-				type = "float"
-				variable = "value"
-			}
-		}
-		out_variables = {
-			rotation = {
-				type = "quaternion"
-			}
-		}
-		type = "rotation_from_components"
-		variable_values = {
-			rotation = null
-			x = null
-			y = null
-			z = null
-		}
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"
