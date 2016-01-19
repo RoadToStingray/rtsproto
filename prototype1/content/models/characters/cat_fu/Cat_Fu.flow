@@ -1,36 +1,6 @@
 
 nodes = [
 	{
-		id = "0572e403-f46b-413a-9afe-f74153276516"
-		in_variables = {
-			x = {
-				type = "float"
-			}
-			y = {
-				node = "7ead63e4-252f-4314-a3c8-afff645206c8"
-				type = "float"
-				variable = "value"
-			}
-			z = {
-				node = "5f15f6e3-a713-4cdb-9ae9-a1affb6607d9"
-				type = "float"
-				variable = "value"
-			}
-		}
-		out_variables = {
-			vector = {
-				type = "vector3"
-			}
-		}
-		type = "vector_from_components"
-		variable_values = {
-			vector = null
-			x = null
-			y = null
-			z = null
-		}
-	}
-	{
 		id = "0c9ff16f-6057-4e71-9feb-86f554035d9b"
 		out_events = {
 			out1 = [
@@ -38,6 +8,11 @@ nodes = [
 					event = 0
 					id = "df18bcda-0152-44a6-a96c-29c4a8316f0a:0"
 					node = "df18bcda-0152-44a6-a96c-29c4a8316f0a"
+				}
+				{
+					event = 0
+					id = "f9b2ed94-1cb9-4815-92e9-d808f0cc667f:0"
+					node = "f9b2ed94-1cb9-4815-92e9-d808f0cc667f"
 				}
 			]
 			out2 = [
@@ -402,28 +377,6 @@ nodes = [
 		}
 	}
 	{
-		id = "c946ad4f-b99f-44a8-97e4-aaf16004f472"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			numeric = {
-				type = "float"
-			}
-		}
-		type = "get_numeric_variable"
-		variable_values = {
-			name = null
-			numeric = null
-			scope = "local"
-		}
-	}
-	{
 		id = "c9b1de45-88c4-4f0c-bba6-3a311b0cbe5a"
 		in_variables = {
 			a = {
@@ -457,20 +410,10 @@ nodes = [
 				type = "unit"
 				variable = "unit"
 			}
-			character_rotation_in = {
-				node = "f0fb0e16-33c0-4d4d-a5c1-5dbaaf1f77bc"
-				type = "quaternion"
-				variable = "rotation"
-			}
 			input_vector = {
 				node = "0572e403-f46b-413a-9afe-f74153276516"
 				type = "vector3"
 				variable = "vector"
-			}
-			move_speed_in = {
-				node = "c946ad4f-b99f-44a8-97e4-aaf16004f472"
-				type = "float"
-				variable = "numeric"
 			}
 		}
 		out_event_index = [
@@ -528,11 +471,8 @@ nodes = [
 		type = "flow_subroutine"
 		variable_values = {
 			character_in = null
-			character_rotation_in = null
 			flow = "script/Move_Character"
 			input_vector = null
-			move_speed_in = null
-			position_out = null
 		}
 	}
 	{
@@ -654,28 +594,6 @@ nodes = [
 		}
 	}
 	{
-		id = "f0fb0e16-33c0-4d4d-a5c1-5dbaaf1f77bc"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			rotation = {
-				type = "quaternion"
-			}
-		}
-		type = "get_rotation_variable"
-		variable_values = {
-			name = null
-			rotation = null
-			scope = "local"
-		}
-	}
-	{
 		id = "f4f07a60-f11e-4471-b860-7dbec4560689"
 		in_variables = {
 			button_name = {
@@ -700,6 +618,69 @@ nodes = [
 			device_number = 0
 			value = null
 		}
+	}
+	{
+		id = "0572e403-f46b-413a-9afe-f74153276516"
+		in_variables = {
+			x = {
+				type = "float"
+			}
+			y = {
+				node = "7ead63e4-252f-4314-a3c8-afff645206c8"
+				type = "float"
+				variable = "value"
+			}
+			z = {
+				node = "5f15f6e3-a713-4cdb-9ae9-a1affb6607d9"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			vector = {
+				type = "vector3"
+			}
+		}
+		type = "vector_from_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = null
+			z = null
+		}
+	}
+	{
+		id = "1cf0d29b-371d-4153-9cc0-23d198bcfe53"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+			string = {
+				type = "string"
+			}
+		}
+		type = "set_string_variable"
+		variable_values = {
+			name = "test"
+			scope = "local"
+			string = "test"
+		}
+	}
+	{
+		id = "f9b2ed94-1cb9-4815-92e9-d808f0cc667f"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "1cf0d29b-371d-4153-9cc0-23d198bcfe53:0"
+					node = "1cf0d29b-371d-4153-9cc0-23d198bcfe53"
+				}
+			]
+		}
+		type = "once"
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

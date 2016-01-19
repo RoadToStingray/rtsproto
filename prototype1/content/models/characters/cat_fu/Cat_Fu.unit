@@ -1,7 +1,4 @@
 
-data = {
-	vertical_speed = 1
-}
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
@@ -29,9 +26,9 @@ editor_metadata = {
 		translation_speed = 0.05
 	}
 	flow_framing = {
-		scale = 1.15740740740741
-		x = -1211.14034230908
-		y = -273.214509294614
+		scale = 0.465136078722756
+		x = 380.004314152065
+		y = -44.4534392210451
 	}
 }
 materials = {
