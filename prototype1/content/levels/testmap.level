@@ -511,7 +511,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -548,7 +548,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -585,7 +585,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -622,7 +622,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -659,7 +659,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -696,7 +696,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -733,7 +733,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -770,7 +770,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -870,7 +870,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -4.502617
+				X = -7.5
 				Y = 0
 				Z = 2.5
 			}
@@ -881,7 +881,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -907,7 +907,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -4.502617
+				X = -7.5
 				Y = 12.5
 				Z = 2.5
 			}
@@ -918,7 +918,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -944,7 +944,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -4.502617
+				X = -7.5
 				Y = 25
 				Z = 2.5
 			}
@@ -955,7 +955,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -981,7 +981,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -4.502617
+				X = -7.5
 				Y = 50
 				Z = 2.5
 			}
@@ -992,7 +992,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -1018,7 +1018,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = -4.502617
+				X = -7.5
 				Y = 37.5
 				Z = 2.5
 			}
@@ -1029,7 +1029,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Scl = {
-				X = 1
+				X = 3
 				Y = 1
 				Z = 1
 			}
@@ -1368,7 +1368,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1398,7 +1398,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1428,7 +1428,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1458,7 +1458,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1488,7 +1488,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1518,7 +1518,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1548,7 +1548,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1578,7 +1578,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1657,7 +1657,7 @@ units = [
 		}
 		name = "map_flat2"
 		pos = [
-			-4.502617
+			-7.5
 			0
 			2.5
 		]
@@ -1668,7 +1668,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1687,7 +1687,7 @@ units = [
 		}
 		name = "map_down1"
 		pos = [
-			-4.502617
+			-7.5
 			12.5
 			2.5
 		]
@@ -1698,7 +1698,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1717,7 +1717,7 @@ units = [
 		}
 		name = "map_up1"
 		pos = [
-			-4.502617
+			-7.5
 			25
 			2.5
 		]
@@ -1728,7 +1728,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1747,7 +1747,7 @@ units = [
 		}
 		name = "map_hole1"
 		pos = [
-			-4.502617
+			-7.5
 			50
 			2.5
 		]
@@ -1758,7 +1758,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
@@ -1777,7 +1777,7 @@ units = [
 		}
 		name = "map_flat3"
 		pos = [
-			-4.502617
+			-7.5
 			37.5
 			2.5
 		]
@@ -1788,7 +1788,7 @@ units = [
 			-1
 		]
 		scl = [
-			1
+			3
 			1
 			1
 		]
