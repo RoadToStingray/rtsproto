@@ -474,6 +474,7 @@ nodes = [
 			}
 		}
 		out_event_index = [
+			"fall_event"
 			"idle_event"
 			"jump_event"
 			"run_event"
@@ -481,6 +482,13 @@ nodes = [
 			"walk_event"
 		]
 		out_events = {
+			fall_event = [
+				{
+					event = 0
+					id = "0fc8f213-721d-4673-b5b9-12d3c3131900:0"
+					node = "0fc8f213-721d-4673-b5b9-12d3c3131900"
+				}
+			]
 			idle_event = [
 				{
 					event = 0

@@ -774,6 +774,15 @@ Connections = [
 		ToNode = "0572e403-f46b-413a-9afe-f74153276516"
 		Type = "Float"
 	}
+	{
+		Class = "Stingray.Flow.EventConnection"
+		FromItem = "fall_event"
+		FromNode = "d2f1a377-0759-41b6-bdcc-269a7fb2a7ed"
+		Id = "81c36941-52bd-4bf1-ac52-9b50c6fb9c45"
+		Priority = 0
+		ToItem = "In"
+		ToNode = "0fc8f213-721d-4673-b5b9-12d3c3131900"
+	}
 ]
 Groups = [
 	{
@@ -1235,6 +1244,7 @@ Nodes = [
 			Y = 620
 		}
 		OutEvents = [
+			"fall_event"
 			"idle_event"
 			"jump_event"
 			"run_event"
