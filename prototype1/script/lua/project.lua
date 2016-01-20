@@ -8,13 +8,13 @@ Project = Project or {}
 require 'script/lua/flow_callbacks'
 
 Project.level_names = {
-	empty = "content/levels/empty"
+	testmap = "content/levels/testmap"
 }
 
 -- Can provide a config for the basic project, or it will use a default if not.
 local SimpleProject = require 'core/appkit/lua/simple_project'
 SimpleProject.config = {
-	standalone_init_level_name = Project.level_names.empty,
+	standalone_init_level_name = Project.level_names.testmap,
 	camera_unit = "core/appkit/units/camera/camera",
 	camera_index = 1,
 	shading_environment = nil, -- Will override levels that have env set in editor.
