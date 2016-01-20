@@ -25,6 +25,11 @@ editor_metadata = {
 		rotation_speed = 0.003
 		translation_speed = 0.05
 	}
+	flow_framing = {
+		scale = 0.803755144032922
+		x = 8424.68191545265
+		y = 4900.46661663445
+	}
 }
 materials = {
 	sven_armor_mat = "content/models/characters/sven/sven_armor_mat"

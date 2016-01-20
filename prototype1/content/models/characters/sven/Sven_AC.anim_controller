@@ -2,7 +2,7 @@
 _data_root_version = 6
 _id = "167838c6-8807-4323-8286-9ba9e9a6aa3a"
 _name = "content/models/characters/sven/Sven_AC"
-anim_event_root_folder_name = "Events"
+anim_event_root_folder_name = "events"
 anim_skeleton_ref = {
 	_id = "d44cd49b-bd8a-4085-91ba-e611ca8ffd95"
 	ref_filename = "content/models/characters/sven/Sven_SKLTN.anim_skeleton"
@@ -15,17 +15,17 @@ compiler_data = {
 	events = {
 		"Anim End" = {
 		}
-		damage_Event = {
+		damage_event = {
 		}
-		idle_Event = {
+		idle_event = {
 		}
-		jump_Event = {
+		jump_event = {
 		}
-		run_Event = {
+		run_event = {
 		}
-		struggle_Event = {
+		struggle_event = {
 		}
-		walk_Event = {
+		walk_event = {
 		}
 	}
 	layers = [
@@ -45,28 +45,35 @@ compiler_data = {
 					transitions = [
 						{
 							blend_time = 0.2
-							event = "jump_Event"
-							mode = "direct"
-							on_beat = ""
-							to = "jump_State"
-						}
-						{
-							blend_time = 0.2
-							event = "damage_Event"
+							event = "damage_event"
 							mode = "direct"
 							on_beat = ""
 							to = "damage_State"
 						}
 						{
 							blend_time = 0.2
-							event = "walk_Event"
+							event = "struggle_event"
+							mode = "direct"
+							on_beat = ""
+							to = "struggle_State"
+						}
+						{
+							blend_time = 0.2
+							event = "jump_event"
+							mode = "direct"
+							on_beat = ""
+							to = "jump_State"
+						}
+						{
+							blend_time = 0.2
+							event = "walk_event"
 							mode = "direct"
 							on_beat = ""
 							to = "walk_State"
 						}
 						{
 							blend_time = 0.2
-							event = "run_Event"
+							event = "run_event"
 							mode = "direct"
 							on_beat = ""
 							to = "run_State"
@@ -89,35 +96,35 @@ compiler_data = {
 					transitions = [
 						{
 							blend_time = 0.2
-							event = "struggle_Event"
+							event = "struggle_event"
 							mode = "direct"
 							on_beat = ""
 							to = "struggle_State"
 						}
 						{
 							blend_time = 0.2
-							event = "damage_Event"
+							event = "damage_event"
 							mode = "direct"
 							on_beat = ""
 							to = "damage_State"
 						}
 						{
 							blend_time = 0.2
-							event = "walk_Event"
+							event = "walk_event"
 							mode = "direct"
 							on_beat = ""
 							to = "walk_State"
 						}
 						{
 							blend_time = 0.2
-							event = "idle_Event"
+							event = "idle_event"
 							mode = "direct"
 							on_beat = ""
 							to = "idle_State"
 						}
 						{
 							blend_time = 0.2
-							event = "jump_Event"
+							event = "jump_event"
 							mode = "direct"
 							on_beat = ""
 							to = "jump_State"
@@ -131,7 +138,9 @@ compiler_data = {
 					animations = [
 						"content/models/characters/sven/animations/jump"
 					]
-					loop_animation = true
+					exit_event = "idle_event"
+					exit_event_blend = 0
+					loop_animation = false
 					name = "jump_State"
 					randomization_type = "on_entry"
 					root_driving = "ignore"
@@ -140,35 +149,35 @@ compiler_data = {
 					transitions = [
 						{
 							blend_time = 0.2
-							event = "walk_Event"
+							event = "walk_event"
 							mode = "direct"
 							on_beat = ""
 							to = "walk_State"
 						}
 						{
 							blend_time = 0.2
-							event = "damage_Event"
+							event = "damage_event"
 							mode = "direct"
 							on_beat = ""
 							to = "damage_State"
 						}
 						{
 							blend_time = 0.2
-							event = "struggle_Event"
+							event = "struggle_event"
 							mode = "direct"
 							on_beat = ""
 							to = "struggle_State"
 						}
 						{
 							blend_time = 0.2
-							event = "idle_Event"
-							mode = "direct"
+							event = "idle_event"
+							mode = "wait"
 							on_beat = ""
 							to = "idle_State"
 						}
 						{
 							blend_time = 0.2
-							event = "run_Event"
+							event = "run_event"
 							mode = "direct"
 							on_beat = ""
 							to = "run_State"
@@ -191,35 +200,35 @@ compiler_data = {
 					transitions = [
 						{
 							blend_time = 0.2
-							event = "jump_Event"
+							event = "jump_event"
 							mode = "direct"
 							on_beat = ""
 							to = "jump_State"
 						}
 						{
 							blend_time = 0.2
-							event = "damage_Event"
+							event = "damage_event"
 							mode = "direct"
 							on_beat = ""
 							to = "damage_State"
 						}
 						{
 							blend_time = 0.2
-							event = "struggle_Event"
+							event = "struggle_event"
 							mode = "direct"
 							on_beat = ""
 							to = "struggle_State"
 						}
 						{
 							blend_time = 0.2
-							event = "walk_Event"
+							event = "walk_event"
 							mode = "direct"
 							on_beat = ""
 							to = "idle_State"
 						}
 						{
 							blend_time = 0.2
-							event = "run_Event"
+							event = "run_event"
 							mode = "direct"
 							on_beat = ""
 							to = "run_State"
@@ -242,14 +251,14 @@ compiler_data = {
 					transitions = [
 						{
 							blend_time = 0.2
-							event = "struggle_Event"
+							event = "struggle_event"
 							mode = "direct"
 							on_beat = ""
 							to = "struggle_State"
 						}
 						{
 							blend_time = 0.2
-							event = "idle_Event"
+							event = "idle_event"
 							mode = "direct"
 							on_beat = ""
 							to = "idle_State"
@@ -272,28 +281,28 @@ compiler_data = {
 					transitions = [
 						{
 							blend_time = 0.2
-							event = "idle_Event"
+							event = "idle_event"
 							mode = "direct"
 							on_beat = ""
 							to = "idle_State"
 						}
 						{
 							blend_time = 0.2
-							event = "damage_Event"
+							event = "damage_event"
 							mode = "direct"
 							on_beat = ""
 							to = "damage_State"
 						}
 						{
 							blend_time = 0.2
-							event = "walk_Event"
+							event = "walk_event"
 							mode = "direct"
 							on_beat = ""
 							to = "walk_State"
 						}
 						{
 							blend_time = 0.2
-							event = "run_Event"
+							event = "run_event"
 							mode = "direct"
 							on_beat = ""
 							to = "run_State"
@@ -327,7 +336,7 @@ constraints = {
 }
 events = {
 	_id = "45cb0583-9f8f-40a5-9d79-c541ebfc0c47"
-	_name = "Events"
+	_name = "events"
 	data_list = [
 		{
 			_id = "087997e2-558a-416a-b45b-4c0bb751f375"
@@ -335,27 +344,27 @@ events = {
 		}
 		{
 			_id = "a4ae3893-9380-44d4-8649-eea998117736"
-			_name = "idle_Event"
+			_name = "idle_event"
 		}
 		{
 			_id = "de7b6d50-7507-4de1-9387-2a4a6729bfda"
-			_name = "run_Event"
+			_name = "run_event"
 		}
 		{
 			_id = "628000d1-4873-4cc4-9922-959a4bfdc272"
-			_name = "walk_Event"
+			_name = "walk_event"
 		}
 		{
 			_id = "e565d9a9-6a39-4dc4-b94e-287d35aede7b"
-			_name = "jump_Event"
+			_name = "jump_event"
 		}
 		{
 			_id = "09d73312-04ea-4940-a71c-35dca8816f86"
-			_name = "struggle_Event"
+			_name = "struggle_event"
 		}
 		{
 			_id = "77355519-2f52-49d7-b127-2efbfc34d60f"
-			_name = "damage_Event"
+			_name = "damage_event"
 		}
 	]
 	sub_folders = [
@@ -368,7 +377,7 @@ layers = [
 		blend_states = [
 		]
 		default_state_ref = {
-			_id = "dea3f18e-e1b3-4e29-b705-40b6bab1d0c3"
+			_id = "422d3c98-8949-4dfd-b14b-507e6ce0dcaf"
 			ref_filename = null
 			ref_id = "1637bfbb-ba36-4093-9aaf-5b168439da9a"
 		}
@@ -523,6 +532,33 @@ layers = [
 							_id = "89cda91a-c875-446a-848b-bd36d3b5a0b8"
 							ref_filename = null
 							ref_id = "eb980175-7084-4283-9ce2-c76f880d9bcf"
+						}
+					}
+					{
+						_id = "fdbbd582-ef05-4db3-b3c3-30ca79091f2d"
+						actual_target_ref = {
+							_id = "291ccb8d-f5be-40d2-a530-e818de474aeb"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "0b482495-8144-4766-85de-221de3c85fd4"
+							ref_filename = null
+							ref_id = "09d73312-04ea-4940-a71c-35dca8816f86"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "3b0e3d8a-1387-4765-a49c-a8eb5bd6ffdc"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "1c513faa-5873-4b04-bb95-4a2c0103a6d8"
+							ref_filename = null
+							ref_id = "13f1f388-6ac9-434f-80bd-16732ab466ab"
 						}
 					}
 				]
@@ -728,13 +764,13 @@ layers = [
 				constraints = [
 				]
 				exit_event_ref = {
-					_id = "3b7aa05a-8b7f-4437-93c3-50c1643093bf"
+					_id = "0ef56515-02ad-4d81-aea0-d702bcb2dc6d"
 					ref_filename = null
-					ref_id = "087997e2-558a-416a-b45b-4c0bb751f375"
+					ref_id = "a4ae3893-9380-44d4-8649-eea998117736"
 				}
 				group_transitions = [
 				]
-				loop_animation = true
+				loop_animation = false
 				markers = [
 				]
 				muted_layers = [
@@ -758,7 +794,7 @@ layers = [
 							ref_id = "a4ae3893-9380-44d4-8649-eea998117736"
 						}
 						has_nested_from = false
-						mode = "direct"
+						mode = "wait"
 						nested_from_ref = {
 							_id = "312026f3-ac52-40a4-9b05-bca78fc2138b"
 							ref_filename = null

@@ -153,7 +153,7 @@ compiler_data = {
 						{
 							blend_time = 0.2
 							event = "IdleEvent"
-							mode = "direct"
+							mode = "wait"
 							on_beat = ""
 							to = "idle_state"
 						}
@@ -624,7 +624,7 @@ layers = [
 							ref_id = "c0796331-e4c1-491a-b9f1-58a4dd65e3e5"
 						}
 						has_nested_from = false
-						mode = "direct"
+						mode = "wait"
 						nested_from_ref = {
 							_id = "ec8541ed-1b71-462e-b5af-9f94bdaec52f"
 							ref_filename = null

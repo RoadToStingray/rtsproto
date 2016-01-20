@@ -97,10 +97,10 @@ editor_metadata = {
 				OutVariables = [
 				]
 				SetUnit = {
-					Id = "96a32ead-e37d-4c52-8b87-6789c2bded9e"
+					Id = "5bb61eb0-929d-490f-a3c8-85cc2216708f"
 				}
 				Title = "Level Unit"
-				Type = "content/models/characters/cat_fu/Cat_Fu"
+				Type = "content/models/characters/sven/Sven"
 				Unit = {
 				}
 				Width = 160
@@ -144,7 +144,7 @@ editor_metadata = {
 				OutVariables = [
 				]
 				Title = "Flow Subroutine"
-				Width = 160
+				Width = 280
 			}
 			{
 				Brief = "References a unit constant"
@@ -781,43 +781,6 @@ editor_metadata = {
 		{
 			Cameras = {
 			}
-			Id = "96a32ead-e37d-4c52-8b87-6789c2bded9e"
-			Layer = "Default"
-			Lights = {
-			}
-			Materials = {
-			}
-			Name = "Cat_Fu"
-			OverridePoses = {
-			}
-			Pivot = {
-				X = 0
-				Y = 0
-				Z = 0
-			}
-			Pos = {
-				X = 0.124537
-				Y = -1.058075
-				Z = 0
-			}
-			Rot = {
-				W = 8.94896662497055E-10
-				X = 0
-				Y = 0
-				Z = 1
-			}
-			Scl = {
-				X = 1
-				Y = 1
-				Z = 1
-			}
-			ScriptData = {
-			}
-			Type = "content/models/characters/cat_fu/Cat_Fu"
-		}
-		{
-			Cameras = {
-			}
 			Id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
 			Layer = "Default"
 			Lights = {
@@ -1037,6 +1000,43 @@ editor_metadata = {
 			}
 			Type = "content/models/testmap/map_flat"
 		}
+		{
+			Cameras = {
+			}
+			Id = "5bb61eb0-929d-490f-a3c8-85cc2216708f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Sven"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0.100182
+				Y = -0.517097
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/characters/sven/Sven"
+		}
 	]
 	Volumes = [
 	]
@@ -1067,7 +1067,7 @@ flow = {
 			type = "level_unit"
 			variable_values = {
 				set_unit = {
-					id = "96a32ead-e37d-4c52-8b87-6789c2bded9e"
+					id = "5bb61eb0-929d-490f-a3c8-85cc2216708f"
 				}
 				unit = null
 			}
@@ -1589,36 +1589,6 @@ units = [
 		}
 		data = {
 		}
-		id = "96a32ead-e37d-4c52-8b87-6789c2bded9e"
-		lights = {
-		}
-		material = ""
-		materials = {
-		}
-		name = "Cat_Fu"
-		pos = [
-			0.124537
-			-1.058075
-			0
-		]
-		rot = [
-			0
-			0
-			1
-			8.94896662497055E-10
-		]
-		scl = [
-			1
-			1
-			1
-		]
-		type = "content/models/characters/cat_fu/Cat_Fu"
-	}
-	{
-		cameras = {
-		}
-		data = {
-		}
 		id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
 		lights = {
 		}
@@ -1793,6 +1763,36 @@ units = [
 			1
 		]
 		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5bb61eb0-929d-490f-a3c8-85cc2216708f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Sven"
+		pos = [
+			0.100182
+			-0.517097
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/characters/sven/Sven"
 	}
 ]
 volumes = [
