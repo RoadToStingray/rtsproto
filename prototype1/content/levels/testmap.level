@@ -4,6 +4,13 @@ editor_metadata = {
 		{
 			id = "cb452151-b31f-434a-aac8-35e0669cfa53"
 			layer = "Default"
+			modified_components = {
+				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+					data = {
+						motion_blur_enabled = false
+					}
+				}
+			}
 			name = "Default Shading Environment"
 			prefab = {
 				"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
@@ -1044,6 +1051,13 @@ editor_metadata = {
 entities = [
 	{
 		id = "cb452151-b31f-434a-aac8-35e0669cfa53"
+		modified_components = {
+			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+				data = {
+					motion_blur_enabled = false
+				}
+			}
+		}
 		name = "Default Shading Environment"
 		prefab = {
 			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
