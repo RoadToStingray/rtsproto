@@ -41,28 +41,6 @@ nodes = [
 		}
 	}
 	{
-		id = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			unit = {
-				type = "unit"
-			}
-		}
-		type = "get_unit_variable"
-		variable_values = {
-			name = "Unit"
-			scope = "local"
-			unit = null
-		}
-	}
-	{
 		id = "057c63fd-4539-42c9-90ff-36cbfa6208cb"
 		in_variables = {
 			x = {
@@ -519,28 +497,6 @@ nodes = [
 		}
 	}
 	{
-		id = "3c44dd92-70a0-4e45-96c1-28deaf8f1f02"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			numeric = {
-				type = "float"
-			}
-		}
-		type = "get_numeric_variable"
-		variable_values = {
-			name = "Vertical_Speed"
-			numeric = null
-			scope = "local"
-		}
-	}
-	{
 		id = "3ff40192-82ab-44c5-8443-5b781f69cb58"
 		in_variables = {
 			condition = {
@@ -572,6 +528,11 @@ nodes = [
 					event = 0
 					id = "2cc34c2e-25cd-4ee2-88fa-ce5cd1ac954c:0"
 					node = "2cc34c2e-25cd-4ee2-88fa-ce5cd1ac954c"
+				}
+				{
+					event = 0
+					id = "c1110f47-d421-47f6-bf14-da1e1203e7c5:0"
+					node = "c1110f47-d421-47f6-bf14-da1e1203e7c5"
 				}
 			]
 		}
@@ -742,18 +703,8 @@ nodes = [
 			true = [
 				{
 					event = 0
-					id = "b1d93b8d-9c3d-4e49-8d83-dbcc8ae8432e:0"
-					node = "b1d93b8d-9c3d-4e49-8d83-dbcc8ae8432e"
-				}
-				{
-					event = 0
 					id = "a52cd599-3082-4297-86b7-b45d1150b1ae:0"
 					node = "a52cd599-3082-4297-86b7-b45d1150b1ae"
-				}
-				{
-					event = 0
-					id = "6d03f7c0-81e5-4591-949b-33aabd5aec72:0"
-					node = "6d03f7c0-81e5-4591-949b-33aabd5aec72"
 				}
 				{
 					event = 0
@@ -764,6 +715,11 @@ nodes = [
 					event = 0
 					id = "8b4e0720-87fc-4847-8619-fc360b03f18c:0"
 					node = "8b4e0720-87fc-4847-8619-fc360b03f18c"
+				}
+				{
+					event = 0
+					id = "81152367-292a-4803-b065-fbd72cc62240:0"
+					node = "81152367-292a-4803-b065-fbd72cc62240"
 				}
 			]
 		}
@@ -840,28 +796,6 @@ nodes = [
 		]
 	}
 	{
-		id = "62822a5d-ad3f-4ee1-afd8-50d1824d088e"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			numeric = {
-				node = "71cb8385-6717-4bc2-9f83-5d1d762099b5"
-				type = "float"
-				variable = "value"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		type = "set_numeric_variable"
-		variable_values = {
-			name = "Fall_Time"
-			numeric = null
-			scope = "local"
-		}
-	}
-	{
 		id = "6c0a3d9a-1932-4e87-8dbd-9e23d79a9bd5"
 		in_variables = {
 			condition = {
@@ -893,6 +827,11 @@ nodes = [
 					event = 0
 					id = "0001863a-e1d1-44c1-8a58-07049f661836:0"
 					node = "0001863a-e1d1-44c1-8a58-07049f661836"
+				}
+				{
+					event = 0
+					id = "d800d23c-0af4-471c-87f3-ee362de09692:0"
+					node = "d800d23c-0af4-471c-87f3-ee362de09692"
 				}
 			]
 		}
@@ -1063,34 +1002,6 @@ nodes = [
 		]
 	}
 	{
-		id = "85a31bcb-90fd-4263-89cb-4314d7c7b193"
-		in_variables = {
-			object = {
-				type = "id"
-			}
-			rotation = {
-				node = "57838653-5e76-4aaa-adda-580390db4e48"
-				type = "quaternion"
-				variable = "value"
-			}
-			teleport = {
-				type = "bool"
-			}
-			unit = {
-				node = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
-				type = "unit"
-				variable = "unit"
-			}
-		}
-		type = "set_unit_local_rotation"
-		variable_values = {
-			object = null
-			rotation = null
-			teleport = null
-			unit = null
-		}
-	}
-	{
 		id = "8810f7e4-f53d-4715-9085-b1bf80d36ed8"
 		in_variables = {
 			bool = {
@@ -1207,28 +1118,6 @@ nodes = [
 		}
 	}
 	{
-		id = "95c2a3db-c423-4102-837d-e4fc03af6e0f"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			numeric = {
-				type = "float"
-			}
-		}
-		type = "get_numeric_variable"
-		variable_values = {
-			name = "Fall_Time"
-			numeric = null
-			scope = "local"
-		}
-	}
-	{
 		id = "9d5b9c70-3da4-4522-98fc-6c74f6205760"
 		in_variables = {
 			bool = {
@@ -1271,26 +1160,6 @@ nodes = [
 		}
 	}
 	{
-		id = "a52cd599-3082-4297-86b7-b45d1150b1ae"
-		in_variables = {
-			bool = {
-				type = "bool"
-			}
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		type = "set_bool_variable"
-		variable_values = {
-			bool = false
-			name = "Is_Jumped"
-			scope = "local"
-		}
-	}
-	{
 		id = "adb2a422-912c-41fc-8154-30472d33ddfa"
 		in_variables = {
 			delta_position = {
@@ -1321,26 +1190,6 @@ nodes = [
 			delta_position = null
 			mover = null
 			unit = null
-		}
-	}
-	{
-		id = "b1d93b8d-9c3d-4e49-8d83-dbcc8ae8432e"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			numeric = {
-				type = "float"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		type = "set_numeric_variable"
-		variable_values = {
-			name = "Jump_Count"
-			numeric = 0
-			scope = "local"
 		}
 	}
 	{
@@ -2238,7 +2087,7 @@ nodes = [
 		type = "numeric_greater_than_numeric"
 		variable_values = {
 			a = null
-			b = 1
+			b = 0.5
 			value = null
 		}
 	}
@@ -2310,7 +2159,7 @@ nodes = [
 		id = "4a3a001e-ae59-49e2-9fb3-71b406bac1c0"
 		in_variables = {
 			condition = {
-				node = "6ea872c1-3ae1-4c2f-a48d-cf7f5daef999"
+				node = "7ac156ec-df72-416a-b64b-94c4cb7d2ca9"
 				type = "bool"
 				variable = "value"
 			}
@@ -2588,6 +2437,354 @@ nodes = [
 			a = null
 			b = null
 			value = null
+		}
+	}
+	{
+		id = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			unit = {
+				type = "unit"
+			}
+		}
+		type = "get_unit_variable"
+		variable_values = {
+			name = "Unit"
+			scope = "local"
+			unit = null
+		}
+	}
+	{
+		id = "85a31bcb-90fd-4263-89cb-4314d7c7b193"
+		in_variables = {
+			object = {
+				type = "id"
+			}
+			rotation = {
+				node = "57838653-5e76-4aaa-adda-580390db4e48"
+				type = "quaternion"
+				variable = "value"
+			}
+			teleport = {
+				type = "bool"
+			}
+			unit = {
+				node = "03713ff3-b48d-47c6-b5b6-f26f8d67fcbf"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "75a53bf9-8bde-4d00-99e3-c859b5f11921:0"
+					node = "75a53bf9-8bde-4d00-99e3-c859b5f11921"
+				}
+			]
+		}
+		type = "set_unit_local_rotation"
+		variable_values = {
+			object = null
+			rotation = null
+			teleport = null
+			unit = null
+		}
+	}
+	{
+		id = "75a53bf9-8bde-4d00-99e3-c859b5f11921"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			rotation = {
+				node = "eec5b743-2440-4d76-9e32-fc704740ea07"
+				type = "quaternion"
+				variable = "rotation"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_rotation_variable"
+		variable_values = {
+			name = "Unit_Rotation"
+			rotation = null
+			scope = "local"
+		}
+	}
+	{
+		id = "a52cd599-3082-4297-86b7-b45d1150b1ae"
+		in_variables = {
+			bool = {
+				type = "bool"
+			}
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_bool_variable"
+		variable_values = {
+			bool = false
+			name = "Is_Jumped"
+			scope = "local"
+		}
+	}
+	{
+		id = "3c44dd92-70a0-4e45-96c1-28deaf8f1f02"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "Vertical_Speed"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "1ce51e27-915b-4b1e-ab73-eef183a20de3"
+		in_variables = {
+			a = {
+				node = "1a8f97ad-b03d-40f3-8d04-89600b8f624c"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "numeric_less_than_numeric"
+		variable_values = {
+			a = null
+			b = 0
+			value = null
+		}
+	}
+	{
+		id = "1a8f97ad-b03d-40f3-8d04-89600b8f624c"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "Vertical_Speed"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "81152367-292a-4803-b065-fbd72cc62240"
+		in_variables = {
+			condition = {
+				node = "1ce51e27-915b-4b1e-ab73-eef183a20de3"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_events = {
+			true = [
+				{
+					event = 0
+					id = "6d03f7c0-81e5-4591-949b-33aabd5aec72:0"
+					node = "6d03f7c0-81e5-4591-949b-33aabd5aec72"
+				}
+			]
+		}
+		type = "branch"
+		variable_values = {
+			condition = null
+		}
+	}
+	{
+		id = "0023e016-85ba-4b08-8d82-7c120e0bdfda"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "Fall_Time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "7ac156ec-df72-416a-b64b-94c4cb7d2ca9"
+		in_variables = {
+			a = {
+				node = "6ea872c1-3ae1-4c2f-a48d-cf7f5daef999"
+				type = "bool"
+				variable = "value"
+			}
+			b = {
+				node = "dd62eb3e-29af-438c-a8a2-cb562747d645"
+				type = "bool"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "boolean_and"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "dd62eb3e-29af-438c-a8a2-cb562747d645"
+		in_variables = {
+			a = {
+				node = "0023e016-85ba-4b08-8d82-7c120e0bdfda"
+				type = "float"
+				variable = "numeric"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "bool"
+			}
+		}
+		type = "numeric_less_than_numeric"
+		variable_values = {
+			a = null
+			b = 0.3
+			value = null
+		}
+	}
+	{
+		id = "95c2a3db-c423-4102-837d-e4fc03af6e0f"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "Fall_Time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "62822a5d-ad3f-4ee1-afd8-50d1824d088e"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				node = "71cb8385-6717-4bc2-9f83-5d1d762099b5"
+				type = "float"
+				variable = "value"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "Fall_Time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "c1110f47-d421-47f6-bf14-da1e1203e7c5"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				type = "float"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "Fall_Time"
+			numeric = -2
+			scope = "local"
+		}
+	}
+	{
+		id = "d800d23c-0af4-471c-87f3-ee362de09692"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				type = "float"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "Fall_Time"
+			numeric = -4
+			scope = "local"
 		}
 	}
 	{
