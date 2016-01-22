@@ -1272,7 +1272,7 @@ nodes = [
 		type = "set_numeric_variable"
 		variable_values = {
 			name = "Vertical_Speed"
-			numeric = 0.35
+			numeric = 0.2
 			scope = "local"
 		}
 	}
@@ -1560,7 +1560,9 @@ nodes = [
 				type = "string"
 			}
 			numeric = {
+				node = "f20bd6b4-9d09-4360-8a7f-82f9bcd0faf4"
 				type = "float"
+				variable = "numeric"
 			}
 			scope = {
 				type = "string"
@@ -1569,7 +1571,7 @@ nodes = [
 		type = "set_numeric_variable"
 		variable_values = {
 			name = "Vertical_Speed"
-			numeric = 0.35
+			numeric = null
 			scope = "local"
 		}
 	}
@@ -2046,28 +2048,6 @@ nodes = [
 		}
 	}
 	{
-		id = "7090c35e-aa7a-4f03-b573-3008ec70495c"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			bool = {
-				type = "bool"
-			}
-		}
-		type = "get_bool_variable"
-		variable_values = {
-			bool = null
-			name = "Is_Jumped"
-			scope = "local"
-		}
-	}
-	{
 		id = "8fcf2501-9b26-4b8c-8928-758029fff95c"
 		in_variables = {
 			a = {
@@ -2092,28 +2072,6 @@ nodes = [
 		}
 	}
 	{
-		id = "4a4af0de-f944-4f3d-889c-ed94c9807da5"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			numeric = {
-				type = "float"
-			}
-		}
-		type = "get_numeric_variable"
-		variable_values = {
-			name = "Fall_Time"
-			numeric = null
-			scope = "local"
-		}
-	}
-	{
 		id = "04a5b0c2-b900-44c3-a8d5-925429b8942d"
 		in_variables = {
 			vector = {
@@ -2130,28 +2088,6 @@ nodes = [
 		type = "vector_length"
 		variable_values = {
 			value = null
-			vector = null
-		}
-	}
-	{
-		id = "4c7260cf-1643-4997-9a8a-5b0ddc64094e"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			vector = {
-				type = "vector3"
-			}
-		}
-		type = "get_vector_variable"
-		variable_values = {
-			name = "input_key_vector"
-			scope = "local"
 			vector = null
 		}
 	}
@@ -2632,28 +2568,6 @@ nodes = [
 		}
 	}
 	{
-		id = "0023e016-85ba-4b08-8d82-7c120e0bdfda"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			numeric = {
-				type = "float"
-			}
-		}
-		type = "get_numeric_variable"
-		variable_values = {
-			name = "Fall_Time"
-			numeric = null
-			scope = "local"
-		}
-	}
-	{
 		id = "7ac156ec-df72-416a-b64b-94c4cb7d2ca9"
 		in_variables = {
 			a = {
@@ -2763,7 +2677,7 @@ nodes = [
 		type = "set_numeric_variable"
 		variable_values = {
 			name = "Fall_Time"
-			numeric = -2
+			numeric = -1.5
 			scope = "local"
 		}
 	}
@@ -2783,8 +2697,109 @@ nodes = [
 		type = "set_numeric_variable"
 		variable_values = {
 			name = "Fall_Time"
-			numeric = -4
+			numeric = -3
 			scope = "local"
+		}
+	}
+	{
+		id = "4a4af0de-f944-4f3d-889c-ed94c9807da5"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "Fall_Time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "4c7260cf-1643-4997-9a8a-5b0ddc64094e"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			vector = {
+				type = "vector3"
+			}
+		}
+		type = "get_vector_variable"
+		variable_values = {
+			name = "input_key_vector"
+			scope = "local"
+			vector = null
+		}
+	}
+	{
+		id = "0023e016-85ba-4b08-8d82-7c120e0bdfda"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "get_numeric_variable"
+		variable_values = {
+			name = "Fall_Time"
+			numeric = null
+			scope = "local"
+		}
+	}
+	{
+		id = "7090c35e-aa7a-4f03-b573-3008ec70495c"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		out_variables = {
+			bool = {
+				type = "bool"
+			}
+		}
+		type = "get_bool_variable"
+		variable_values = {
+			bool = null
+			name = "Is_Jumped"
+			scope = "local"
+		}
+	}
+	{
+		id = "f20bd6b4-9d09-4360-8a7f-82f9bcd0faf4"
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "external_input_numeric"
+		variable_values = {
+			name = "Height_Jump"
+			numeric = null
 		}
 	}
 	{
