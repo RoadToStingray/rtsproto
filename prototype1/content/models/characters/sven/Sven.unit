@@ -1,4 +1,7 @@
 
+data = {
+	sss = "default"
+}
 editor_metadata = {
 	camera_settings = {
 		far_range = 1000
@@ -27,8 +30,8 @@ editor_metadata = {
 	}
 	flow_framing = {
 		scale = 0.803755144032922
-		x = 8424.68191545265
-		y = 4900.46661663445
+		x = 9246.55109040569
+		y = 4764.69411528135
 	}
 }
 materials = {

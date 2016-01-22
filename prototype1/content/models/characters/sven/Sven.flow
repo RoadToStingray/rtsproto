@@ -1,21 +1,50 @@
 
 nodes = [
 	{
-		id = "d52df657-8d8c-4064-8ce5-dc227059f34a"
+		id = "09cf9ad7-6232-47b1-adb5-2ebd2897423c"
 		in_variables = {
-			event = {
+			button_name = {
 				type = "string"
 			}
-			unit = {
-				node = "11111111-2222-3333-4444-555555555555"
-				type = "unit"
-				variable = "unit"
+			device = {
+				type = "string"
+			}
+			device_number = {
+				type = "float"
 			}
 		}
-		type = "animation_event"
+		type = "keyboard_button"
 		variable_values = {
-			event = "run_event"
-			unit = null
+			button_name = "s"
+			device = "keyboard"
+			device_number = 0
+			value = null
+		}
+	}
+	{
+		id = "17a2d680-3e6b-4a90-9159-f17d5e946d71"
+		in_variables = {
+			button_name = {
+				type = "string"
+			}
+			device = {
+				type = "string"
+			}
+			device_number = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "keyboard_button"
+		variable_values = {
+			button_name = "d"
+			device = "keyboard"
+			device_number = 0
+			value = null
 		}
 	}
 	{
@@ -37,7 +66,146 @@ nodes = [
 		}
 	}
 	{
-		id = "892f1550-1f50-4875-9c05-c891f3cbfc2a"
+		id = "3d29bcb3-eb5b-461b-b2e4-6dfaac8b2d78"
+		in_variables = {
+			button_name = {
+				type = "string"
+			}
+			device = {
+				type = "string"
+			}
+			device_number = {
+				type = "float"
+			}
+		}
+		out_events = {
+			pressed = [
+				{
+					event = 0
+					id = "8512c7ee-816c-40fc-89eb-95bfe647e532:0"
+					node = "8512c7ee-816c-40fc-89eb-95bfe647e532"
+				}
+			]
+		}
+		type = "keyboard_button"
+		variable_values = {
+			button_name = "space"
+			device = "keyboard"
+			device_number = 0
+			value = null
+		}
+	}
+	{
+		id = "4438fe97-d939-4e05-b904-f9224c393cab"
+		in_variables = {
+			button_name = {
+				type = "string"
+			}
+			device = {
+				type = "string"
+			}
+			device_number = {
+				type = "float"
+			}
+		}
+		type = "keyboard_button"
+		variable_values = {
+			button_name = "w"
+			device = "keyboard"
+			device_number = 0
+			value = null
+		}
+	}
+	{
+		id = "46822417-db22-4aa0-b46b-0ad1a36cd2ed"
+		in_variables = {
+			a = {
+				node = "76ce9753-b448-477a-b1f2-8219d3f9e962"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				node = "8871101f-61ca-45a1-bfeb-54ade4827326"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_plus_numeric"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		flow_nodes_resource = "core/appkit/appkit"
+		id = "54a41213-844e-427c-8241-498d21183278"
+		in_variables = {
+			Color = {
+				type = "vector3"
+			}
+			Label = {
+				type = "string"
+			}
+			Text = {
+				node = "7d62bebb-99f3-40d4-a40e-ad880b763e78"
+				type = "string"
+				variable = "value"
+			}
+		}
+		name = "Print To Screen"
+		query = false
+		return_values = [
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Color = null
+			Label = null
+			Text = null
+		}
+		variables = [
+			{
+				name = "Label"
+				type = "string"
+			}
+			{
+				name = "Color"
+				type = "vector3"
+			}
+			{
+				name = "Text"
+				type = "string"
+			}
+		]
+	}
+	{
+		id = "569e6072-b178-479f-85d8-ca6848f715a0"
+		in_variables = {
+			button_name = {
+				type = "string"
+			}
+			device = {
+				type = "string"
+			}
+			device_number = {
+				type = "float"
+			}
+		}
+		type = "keyboard_button"
+		variable_values = {
+			button_name = "left shift"
+			device = "keyboard"
+			device_number = 0
+			value = null
+		}
+	}
+	{
+		id = "60965dec-2c2e-4037-955f-671b3f263510"
 		in_variables = {
 			event = {
 				type = "string"
@@ -50,8 +218,56 @@ nodes = [
 		}
 		type = "animation_event"
 		variable_values = {
-			event = "jump_event"
+			event = "struggle_event"
 			unit = null
+		}
+	}
+	{
+		id = "76ce9753-b448-477a-b1f2-8219d3f9e962"
+		in_variables = {
+			a = {
+				node = "17a2d680-3e6b-4a90-9159-f17d5e946d71"
+				type = "float"
+				variable = "value"
+			}
+			b = {
+				type = "float"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "float"
+			}
+		}
+		type = "numeric_times_numeric"
+		variable_values = {
+			a = null
+			b = -1
+			value = null
+		}
+	}
+	{
+		id = "7d62bebb-99f3-40d4-a40e-ad880b763e78"
+		in_variables = {
+			key = {
+				type = "string"
+			}
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "string"
+			}
+		}
+		type = "get_unit_string_data"
+		variable_values = {
+			key = "test"
+			unit = null
+			value = null
 		}
 	}
 	{
@@ -66,6 +282,9 @@ nodes = [
 				type = "unit"
 				variable = "unit"
 			}
+			height__jump = {
+				type = "float"
+			}
 			input_vector = {
 				node = "c7953dfd-c473-4c49-9d1a-08313ab8fecc"
 				type = "vector3"
@@ -78,7 +297,6 @@ nodes = [
 			"jump_event"
 			"run_event"
 			"two_jump_event"
-			"walk_event"
 		]
 		out_events = {
 			fall_event = [
@@ -116,161 +334,13 @@ nodes = [
 					node = "892f1550-1f50-4875-9c05-c891f3cbfc2a"
 				}
 			]
-			walk_event = [
-				{
-					event = 0
-					id = "2dc1f08c-b0ec-4727-a0f6-43931e4a9f5a:0"
-					node = "2dc1f08c-b0ec-4727-a0f6-43931e4a9f5a"
-				}
-			]
 		}
 		type = "flow_subroutine"
 		variable_values = {
 			character_in = null
 			flow = "script/Move_Character"
+			height__jump = 0.35
 			input_vector = null
-		}
-	}
-	{
-		id = "a343f43c-1416-4343-acfd-39e59e3323a6"
-		in_variables = {
-			a = {
-				type = "float"
-			}
-			b = {
-				type = "float"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "numeric_plus_numeric"
-		variable_values = {
-			a = 0
-			b = null
-			value = null
-		}
-	}
-	{
-		id = "c7953dfd-c473-4c49-9d1a-08313ab8fecc"
-		in_variables = {
-			x = {
-				type = "float"
-			}
-			y = {
-				type = "float"
-			}
-			z = {
-				node = "25fbf6d4-68bc-461a-88fc-9c40ecd0dce6"
-				type = "float"
-				variable = "value"
-			}
-		}
-		out_variables = {
-			vector = {
-				type = "vector3"
-			}
-		}
-		type = "vector_from_components"
-		variable_values = {
-			vector = null
-			x = null
-			y = -1
-			z = null
-		}
-	}
-	{
-		id = "76ce9753-b448-477a-b1f2-8219d3f9e962"
-		in_variables = {
-			a = {
-				node = "17a2d680-3e6b-4a90-9159-f17d5e946d71"
-				type = "float"
-				variable = "value"
-			}
-			b = {
-				type = "float"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "numeric_times_numeric"
-		variable_values = {
-			a = null
-			b = -1
-			value = null
-		}
-	}
-	{
-		id = "4438fe97-d939-4e05-b904-f9224c393cab"
-		in_variables = {
-			button_name = {
-				type = "string"
-			}
-			device = {
-				type = "string"
-			}
-			device_number = {
-				type = "float"
-			}
-		}
-		type = "keyboard_button"
-		variable_values = {
-			button_name = "w"
-			device = "keyboard"
-			device_number = 0
-			value = null
-		}
-	}
-	{
-		id = "17a2d680-3e6b-4a90-9159-f17d5e946d71"
-		in_variables = {
-			button_name = {
-				type = "string"
-			}
-			device = {
-				type = "string"
-			}
-			device_number = {
-				type = "float"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "keyboard_button"
-		variable_values = {
-			button_name = "d"
-			device = "keyboard"
-			device_number = 0
-			value = null
-		}
-	}
-	{
-		id = "09cf9ad7-6232-47b1-adb5-2ebd2897423c"
-		in_variables = {
-			button_name = {
-				type = "string"
-			}
-			device = {
-				type = "string"
-			}
-			device_number = {
-				type = "float"
-			}
-		}
-		type = "keyboard_button"
-		variable_values = {
-			button_name = "s"
-			device = "keyboard"
-			device_number = 0
-			value = null
 		}
 	}
 	{
@@ -300,285 +370,7 @@ nodes = [
 		}
 	}
 	{
-		id = "46822417-db22-4aa0-b46b-0ad1a36cd2ed"
-		in_variables = {
-			a = {
-				node = "76ce9753-b448-477a-b1f2-8219d3f9e962"
-				type = "float"
-				variable = "value"
-			}
-			b = {
-				node = "8871101f-61ca-45a1-bfeb-54ade4827326"
-				type = "float"
-				variable = "value"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "numeric_plus_numeric"
-		variable_values = {
-			a = null
-			b = null
-			value = null
-		}
-	}
-	{
-		id = "569e6072-b178-479f-85d8-ca6848f715a0"
-		in_variables = {
-			button_name = {
-				type = "string"
-			}
-			device = {
-				type = "string"
-			}
-			device_number = {
-				type = "float"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "keyboard_button"
-		variable_values = {
-			button_name = "left shift"
-			device = "keyboard"
-			device_number = 0
-			value = null
-		}
-	}
-	{
-		id = "72ac1047-9f8f-4926-854c-c54bb559a197"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			numeric = {
-				type = "float"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		type = "set_numeric_variable"
-		variable_values = {
-			name = "move_speed"
-			numeric = 0.3
-			scope = "local"
-		}
-	}
-	{
-		id = "5089a694-de9b-4334-b2fe-9886a48a019e"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			numeric = {
-				type = "float"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		type = "set_numeric_variable"
-		variable_values = {
-			name = "move_speed"
-			numeric = 1
-			scope = "local"
-		}
-	}
-	{
-		id = "16e73581-70e1-4085-ace8-1ee7974cfe23"
-		in_variables = {
-			condition = {
-				node = "0dd61d62-2b9c-4449-9c62-9448d714e938"
-				type = "bool"
-				variable = "value"
-			}
-		}
-		out_events = {
-			false = [
-				{
-					event = 0
-					id = "5089a694-de9b-4334-b2fe-9886a48a019e:0"
-					node = "5089a694-de9b-4334-b2fe-9886a48a019e"
-				}
-			]
-			true = [
-				{
-					event = 0
-					id = "72ac1047-9f8f-4926-854c-c54bb559a197:0"
-					node = "72ac1047-9f8f-4926-854c-c54bb559a197"
-				}
-			]
-		}
-		type = "branch"
-		variable_values = {
-			condition = null
-		}
-	}
-	{
-		id = "0dd61d62-2b9c-4449-9c62-9448d714e938"
-		in_variables = {
-			a = {
-				node = "569e6072-b178-479f-85d8-ca6848f715a0"
-				type = "float"
-				variable = "value"
-			}
-			b = {
-				type = "float"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "bool"
-			}
-		}
-		type = "numeric_greater_than_numeric"
-		variable_values = {
-			a = null
-			b = 0
-			value = null
-		}
-	}
-	{
-		id = "30b562ce-0b19-44f6-8998-e6f96eefd1dc"
-		in_variables = {
-			a = {
-				node = "a343f43c-1416-4343-acfd-39e59e3323a6"
-				type = "float"
-				variable = "value"
-			}
-			b = {
-				node = "99acfd93-8840-4e21-9a2c-c1916aee6740"
-				type = "float"
-				variable = "numeric"
-			}
-		}
-		type = "numeric_times_numeric"
-		variable_values = {
-			a = null
-			b = null
-			value = null
-		}
-	}
-	{
-		id = "99acfd93-8840-4e21-9a2c-c1916aee6740"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		out_variables = {
-			numeric = {
-				type = "float"
-			}
-		}
-		type = "get_numeric_variable"
-		variable_values = {
-			name = "move_speed"
-			numeric = null
-			scope = "local"
-		}
-	}
-	{
-		id = "25fbf6d4-68bc-461a-88fc-9c40ecd0dce6"
-		in_variables = {
-			a = {
-				node = "46822417-db22-4aa0-b46b-0ad1a36cd2ed"
-				type = "float"
-				variable = "value"
-			}
-			b = {
-				node = "99acfd93-8840-4e21-9a2c-c1916aee6740"
-				type = "float"
-				variable = "numeric"
-			}
-		}
-		out_variables = {
-			value = {
-				type = "float"
-			}
-		}
-		type = "numeric_times_numeric"
-		variable_values = {
-			a = null
-			b = null
-			value = null
-		}
-	}
-	{
-		id = "3d29bcb3-eb5b-461b-b2e4-6dfaac8b2d78"
-		in_variables = {
-			button_name = {
-				type = "string"
-			}
-			device = {
-				type = "string"
-			}
-			device_number = {
-				type = "float"
-			}
-		}
-		out_events = {
-			pressed = [
-				{
-					event = 0
-					id = "8512c7ee-816c-40fc-89eb-95bfe647e532:0"
-					node = "8512c7ee-816c-40fc-89eb-95bfe647e532"
-				}
-			]
-		}
-		type = "keyboard_button"
-		variable_values = {
-			button_name = "space"
-			device = "keyboard"
-			device_number = 0
-			value = null
-		}
-	}
-	{
-		id = "92e3564a-58ee-4ff3-97ca-35134dea1d70"
-		out_events = {
-			out1 = [
-				{
-					event = 0
-					id = "16e73581-70e1-4085-ace8-1ee7974cfe23:0"
-					node = "16e73581-70e1-4085-ace8-1ee7974cfe23"
-				}
-			]
-			out2 = [
-				{
-					event = 1
-					id = "8512c7ee-816c-40fc-89eb-95bfe647e532:1"
-					node = "8512c7ee-816c-40fc-89eb-95bfe647e532"
-				}
-			]
-		}
-		type = "sequence"
-	}
-	{
-		id = "f11d0fea-d44d-4779-9278-573d2dda865a"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "92e3564a-58ee-4ff3-97ca-35134dea1d70:0"
-					node = "92e3564a-58ee-4ff3-97ca-35134dea1d70"
-				}
-			]
-		}
-		type = "level_update"
-	}
-	{
-		id = "ee15176f-2170-480a-b097-036e4b60befe"
+		id = "892f1550-1f50-4875-9c05-c891f3cbfc2a"
 		in_variables = {
 			event = {
 				type = "string"
@@ -589,20 +381,24 @@ nodes = [
 				variable = "unit"
 			}
 		}
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "6effbc5d-5c55-4e69-9e90-99c301ebf56e:0"
-					node = "6effbc5d-5c55-4e69-9e90-99c301ebf56e"
-				}
-			]
-		}
 		type = "animation_event"
 		variable_values = {
 			event = "jump_event"
 			unit = null
 		}
+	}
+	{
+		id = "92e3564a-58ee-4ff3-97ca-35134dea1d70"
+		out_events = {
+			out1 = [
+				{
+					event = 1
+					id = "8512c7ee-816c-40fc-89eb-95bfe647e532:1"
+					node = "8512c7ee-816c-40fc-89eb-95bfe647e532"
+				}
+			]
+		}
+		type = "sequence"
 	}
 	{
 		id = "bf756dc0-f120-4815-a953-e74edc11162b"
@@ -623,7 +419,7 @@ nodes = [
 		}
 	}
 	{
-		id = "60965dec-2c2e-4037-955f-671b3f263510"
+		id = "d52df657-8d8c-4064-8ce5-dc227059f34a"
 		in_variables = {
 			event = {
 				type = "string"
@@ -636,48 +432,68 @@ nodes = [
 		}
 		type = "animation_event"
 		variable_values = {
-			event = "struggle_event"
+			event = "run_event"
 			unit = null
 		}
 	}
 	{
-		flow_nodes_resource = "core/appkit/appkit"
-		id = "6effbc5d-5c55-4e69-9e90-99c301ebf56e"
+		id = "ee15176f-2170-480a-b097-036e4b60befe"
 		in_variables = {
-			Color = {
-				type = "vector3"
-			}
-			Label = {
+			event = {
 				type = "string"
 			}
-			Text = {
-				type = "string"
+			unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
 			}
 		}
-		name = "Print To Screen"
-		query = false
-		return_values = [
-		]
-		type = "custom_script_node"
+		type = "animation_event"
 		variable_values = {
-			Color = null
-			Label = null
-			Text = "jump"
+			event = "jump_event"
+			unit = null
 		}
-		variables = [
-			{
-				name = "Label"
-				type = "string"
+	}
+	{
+		id = "f11d0fea-d44d-4779-9278-573d2dda865a"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "92e3564a-58ee-4ff3-97ca-35134dea1d70:0"
+					node = "92e3564a-58ee-4ff3-97ca-35134dea1d70"
+				}
+			]
+		}
+		type = "level_update"
+	}
+	{
+		id = "c7953dfd-c473-4c49-9d1a-08313ab8fecc"
+		in_variables = {
+			x = {
+				type = "float"
 			}
-			{
-				name = "Color"
+			y = {
+				type = "float"
+			}
+			z = {
+				node = "46822417-db22-4aa0-b46b-0ad1a36cd2ed"
+				type = "float"
+				variable = "value"
+			}
+		}
+		out_variables = {
+			vector = {
 				type = "vector3"
 			}
-			{
-				name = "Text"
-				type = "string"
-			}
-		]
+		}
+		type = "vector_from_components"
+		variable_values = {
+			vector = null
+			x = null
+			y = -1
+			z = null
+		}
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"
