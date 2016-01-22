@@ -23,6 +23,8 @@ compiler_data = {
 		}
 		run_event = {
 		}
+		sliding_Event = {
+		}
 		struggle_event = {
 		}
 		walk_event = {
@@ -59,10 +61,10 @@ compiler_data = {
 						}
 						{
 							blend_time = 0.2
-							event = "jump_event"
+							event = "sliding_Event"
 							mode = "direct"
 							on_beat = ""
-							to = "jump_State"
+							to = "sliding_State"
 						}
 						{
 							blend_time = 0.2
@@ -77,6 +79,13 @@ compiler_data = {
 							mode = "direct"
 							on_beat = ""
 							to = "run_State"
+						}
+						{
+							blend_time = 0.2
+							event = "jump_event"
+							mode = "direct"
+							on_beat = ""
+							to = "jump_State"
 						}
 					]
 					weights = [
@@ -110,10 +119,10 @@ compiler_data = {
 						}
 						{
 							blend_time = 0.2
-							event = "walk_event"
+							event = "sliding_Event"
 							mode = "direct"
 							on_beat = ""
-							to = "walk_State"
+							to = "sliding_State"
 						}
 						{
 							blend_time = 0.2
@@ -128,6 +137,13 @@ compiler_data = {
 							mode = "direct"
 							on_beat = ""
 							to = "jump_State"
+						}
+						{
+							blend_time = 0.2
+							event = "walk_event"
+							mode = "direct"
+							on_beat = ""
+							to = "walk_State"
 						}
 					]
 					weights = [
@@ -214,10 +230,10 @@ compiler_data = {
 						}
 						{
 							blend_time = 0.2
-							event = "struggle_event"
+							event = "sliding_Event"
 							mode = "direct"
 							on_beat = ""
-							to = "struggle_State"
+							to = "sliding_State"
 						}
 						{
 							blend_time = 0.2
@@ -233,6 +249,13 @@ compiler_data = {
 							on_beat = ""
 							to = "run_State"
 						}
+						{
+							blend_time = 0.2
+							event = "struggle_event"
+							mode = "direct"
+							on_beat = ""
+							to = "struggle_State"
+						}
 					]
 					weights = [
 						"1.0"
@@ -242,7 +265,9 @@ compiler_data = {
 					animations = [
 						"content/models/characters/sven/animations/Hit_Reaction"
 					]
-					loop_animation = true
+					exit_event = "idle_event"
+					exit_event_blend = 0
+					loop_animation = false
 					name = "damage_State"
 					randomization_type = "on_entry"
 					root_driving = "ignore"
@@ -312,6 +337,45 @@ compiler_data = {
 						"1.0"
 					]
 				}
+				{
+					animations = [
+						"content/models/characters/sven/animations/Sliding"
+					]
+					exit_event = "idle_event"
+					exit_event_blend = 0
+					loop_animation = false
+					name = "sliding_State"
+					randomization_type = "on_entry"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "run_event"
+							mode = "direct"
+							on_beat = ""
+							to = "run_State"
+						}
+						{
+							blend_time = 0.2
+							event = "walk_event"
+							mode = "direct"
+							on_beat = ""
+							to = "walk_State"
+						}
+						{
+							blend_time = 0.2
+							event = "idle_event"
+							mode = "direct"
+							on_beat = ""
+							to = "idle_State"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
 			]
 		}
 	]
@@ -365,6 +429,10 @@ events = {
 		{
 			_id = "77355519-2f52-49d7-b127-2efbfc34d60f"
 			_name = "damage_event"
+		}
+		{
+			_id = "6dc17b59-730c-48af-9b87-e1fd5f3cc0d7"
+			_name = "sliding_Event"
 		}
 	]
 	sub_folders = [
@@ -561,6 +629,33 @@ layers = [
 							ref_id = "13f1f388-6ac9-434f-80bd-16732ab466ab"
 						}
 					}
+					{
+						_id = "a0942d96-dbf1-4f26-a344-e6a3ff3c3baa"
+						actual_target_ref = {
+							_id = "98915d74-50f7-4cd9-a21e-f707c729ab5d"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "9d2fb32d-1e32-45ce-b6bc-f170acc021be"
+							ref_filename = null
+							ref_id = "6dc17b59-730c-48af-9b87-e1fd5f3cc0d7"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "9478c032-5d69-43bf-8d61-1253f2dd702c"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "abd50a51-56cd-49ad-88c6-99fc105f92ac"
+							ref_filename = null
+							ref_id = "fe41309f-fb5f-4c36-8b6c-1aae414640dc"
+						}
+					}
 				]
 				weights = [
 					"1.0"
@@ -736,6 +831,33 @@ layers = [
 							_id = "d5b4f75c-0ef7-4b85-a500-010e6d967b2c"
 							ref_filename = null
 							ref_id = "eb980175-7084-4283-9ce2-c76f880d9bcf"
+						}
+					}
+					{
+						_id = "4df3ae04-92d2-438d-984d-13532ff9a6f2"
+						actual_target_ref = {
+							_id = "9bdbc43a-0c19-4ac3-9a4e-597c8a746411"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "cc2c3f52-a724-41dc-a97b-d8b5f459a26b"
+							ref_filename = null
+							ref_id = "6dc17b59-730c-48af-9b87-e1fd5f3cc0d7"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "76301b72-0a52-478e-be56-c58238754865"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "087aa172-2fa1-4076-9a86-e7f61847add4"
+							ref_filename = null
+							ref_id = "fe41309f-fb5f-4c36-8b6c-1aae414640dc"
 						}
 					}
 				]
@@ -1092,6 +1214,33 @@ layers = [
 							ref_id = "eb980175-7084-4283-9ce2-c76f880d9bcf"
 						}
 					}
+					{
+						_id = "815190e4-991c-46ed-8b1c-c7d875546845"
+						actual_target_ref = {
+							_id = "bc53730b-4419-481b-a9f4-7966e4156043"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "e218708b-59fd-48b8-952c-5e9e08d66d37"
+							ref_filename = null
+							ref_id = "6dc17b59-730c-48af-9b87-e1fd5f3cc0d7"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "d2de8f42-96e0-4310-895a-7f28961c612c"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "a1640644-2a56-426d-8626-e40d2e98d738"
+							ref_filename = null
+							ref_id = "fe41309f-fb5f-4c36-8b6c-1aae414640dc"
+						}
+					}
 				]
 				weights = [
 					"1.0"
@@ -1118,13 +1267,13 @@ layers = [
 				constraints = [
 				]
 				exit_event_ref = {
-					_id = "9f92aa18-7de7-486e-ba7e-98e8162a96f2"
+					_id = "aba064e8-8635-4f0c-81ce-2afd24086265"
 					ref_filename = null
-					ref_id = "087997e2-558a-416a-b45b-4c0bb751f375"
+					ref_id = "a4ae3893-9380-44d4-8649-eea998117736"
 				}
 				group_transitions = [
 				]
-				loop_animation = true
+				loop_animation = false
 				markers = [
 				]
 				muted_layers = [
@@ -1345,6 +1494,129 @@ layers = [
 				width = 150
 				x = -20
 				y = 120
+			}
+			{
+				_id = "fe41309f-fb5f-4c36-8b6c-1aae414640dc"
+				_name = "sliding_State"
+				anim_blend_set_ref = {
+					_id = "a703297e-b91b-4e93-8d56-b3bb786c9cc1"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "1b2b3af0-cda8-425a-b792-b2409047b63e"
+						ref_filename = "content/models/characters/sven/animations/Sliding.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "f4a15133-5549-4651-992a-3a3821329a52"
+					ref_filename = null
+					ref_id = "a4ae3893-9380-44d4-8649-eea998117736"
+				}
+				group_transitions = [
+				]
+				loop_animation = false
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "on_entry"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "9c863413-deb6-4030-8f2c-e4a12f2bb9db"
+						actual_target_ref = {
+							_id = "3ba48826-38a2-4d6c-873c-d9bac21621f2"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "8a28da6c-6d93-4f06-a606-11224ca73985"
+							ref_filename = null
+							ref_id = "a4ae3893-9380-44d4-8649-eea998117736"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "5c9a8680-bebb-4ac8-8eac-adea08579379"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "012dd837-9f0c-4771-a138-d765e3858292"
+							ref_filename = null
+							ref_id = "1637bfbb-ba36-4093-9aaf-5b168439da9a"
+						}
+					}
+					{
+						_id = "d04932b9-e8bb-4373-84e3-a140e38b4f4b"
+						actual_target_ref = {
+							_id = "682fe99b-1786-4663-85d4-7a0cca2beded"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "aa1eb800-94b4-469c-b18b-4c8996156f8b"
+							ref_filename = null
+							ref_id = "628000d1-4873-4cc4-9922-959a4bfdc272"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "73f50550-37dd-4aee-8383-db454a5d31a6"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "620b8c6e-85a1-42af-aa9a-daedf977206d"
+							ref_filename = null
+							ref_id = "52d6fe2d-4e1c-44f6-9943-c387082456f1"
+						}
+					}
+					{
+						_id = "5add5475-9a8c-4cfb-ac9c-26df68379f91"
+						actual_target_ref = {
+							_id = "568407cf-85b4-4df2-8889-bb91ff9a6275"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "07ae0f64-8cca-4bb2-b3d1-40e8d9f12b05"
+							ref_filename = null
+							ref_id = "de7b6d50-7507-4de1-9387-2a4a6729bfda"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "f6a52af5-9730-472b-95b0-18eee9a117fb"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "51e3813d-1c0f-4e85-9592-828719bbc673"
+							ref_filename = null
+							ref_id = "5d11ffb0-e712-4aee-a4aa-bd720778757b"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = -840
+				y = -200
 			}
 		]
 		time_states = [
