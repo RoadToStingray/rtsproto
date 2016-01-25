@@ -34,6 +34,10 @@ end
 
 -- Optional function called by SimpleProject after world update (we will probably want to split to pre/post appkit calls)
 function Project.update(dt)
+    if stingray.Window then
+        stingray.Window.set_show_cursor(true)
+        stingray.Window.set_clip_cursor(false)
+    end
 end
 
 -- Optional function called by SimpleProject *before* appkit/world render
