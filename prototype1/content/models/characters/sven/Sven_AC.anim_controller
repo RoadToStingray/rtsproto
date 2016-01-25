@@ -23,7 +23,7 @@ compiler_data = {
 		}
 		run_event = {
 		}
-		sliding_Event = {
+		sliding_event = {
 		}
 		struggle_event = {
 		}
@@ -61,7 +61,7 @@ compiler_data = {
 						}
 						{
 							blend_time = 0.2
-							event = "sliding_Event"
+							event = "sliding_event"
 							mode = "direct"
 							on_beat = ""
 							to = "sliding_State"
@@ -83,7 +83,7 @@ compiler_data = {
 						{
 							blend_time = 0.2
 							event = "jump_event"
-							mode = "direct"
+							mode = "beat-closest"
 							on_beat = ""
 							to = "jump_State"
 						}
@@ -119,7 +119,7 @@ compiler_data = {
 						}
 						{
 							blend_time = 0.2
-							event = "sliding_Event"
+							event = "sliding_event"
 							mode = "direct"
 							on_beat = ""
 							to = "sliding_State"
@@ -230,7 +230,7 @@ compiler_data = {
 						}
 						{
 							blend_time = 0.2
-							event = "sliding_Event"
+							event = "sliding_event"
 							mode = "direct"
 							on_beat = ""
 							to = "sliding_State"
@@ -349,25 +349,18 @@ compiler_data = {
 					root_driving = "ignore"
 					speed = "1"
 					state_type = "regular"
+					timeline = [
+						{
+							name = "ExitFlowEvent"
+							time = 0
+							type = "exit_trigger"
+						}
+					]
 					transitions = [
 						{
 							blend_time = 0.2
-							event = "run_event"
-							mode = "direct"
-							on_beat = ""
-							to = "run_State"
-						}
-						{
-							blend_time = 0.2
-							event = "walk_event"
-							mode = "direct"
-							on_beat = ""
-							to = "walk_State"
-						}
-						{
-							blend_time = 0.2
 							event = "idle_event"
-							mode = "direct"
+							mode = "percent-sync"
 							on_beat = ""
 							to = "idle_State"
 						}
@@ -379,6 +372,9 @@ compiler_data = {
 			]
 		}
 	]
+	variables = {
+		Variable = 0
+	}
 }
 constraint_root_folder_name = "Constraints"
 constraint_target_root_folder_name = "Constraint Targets"
@@ -432,7 +428,7 @@ events = {
 		}
 		{
 			_id = "6dc17b59-730c-48af-9b87-e1fd5f3cc0d7"
-			_name = "sliding_Event"
+			_name = "sliding_event"
 		}
 	]
 	sub_folders = [
@@ -562,7 +558,7 @@ layers = [
 							ref_id = "e565d9a9-6a39-4dc4-b94e-287d35aede7b"
 						}
 						has_nested_from = false
-						mode = "direct"
+						mode = "beat-closest"
 						nested_from_ref = {
 							_id = "770df339-cd36-4288-9e10-2d628469dadf"
 							ref_filename = null
@@ -1521,6 +1517,13 @@ layers = [
 				]
 				loop_animation = false
 				markers = [
+					{
+						_id = "914d581d-0d0f-4c2a-8221-e06e36c11188"
+						_name = "ExitFlowEvent"
+						_time = 0
+						time = 0
+						type = "exit_trigger"
+					}
 				]
 				muted_layers = [
 				]
@@ -1530,84 +1533,30 @@ layers = [
 				speed = "1"
 				transitions = [
 					{
-						_id = "9c863413-deb6-4030-8f2c-e4a12f2bb9db"
+						_id = "a530b009-9a5a-4159-8fd0-cb82661bb787"
 						actual_target_ref = {
-							_id = "3ba48826-38a2-4d6c-873c-d9bac21621f2"
+							_id = "a2b030bc-442b-4bca-9c1f-be8d087dba47"
 							ref_filename = null
 							ref_id = null
 						}
 						blend_time = 0.2
 						event_ref = {
-							_id = "8a28da6c-6d93-4f06-a606-11224ca73985"
+							_id = "20029daf-ae36-46b1-acf1-41d6de93ae11"
 							ref_filename = null
 							ref_id = "a4ae3893-9380-44d4-8649-eea998117736"
 						}
 						has_nested_from = false
-						mode = "direct"
+						mode = "percent-sync"
 						nested_from_ref = {
-							_id = "5c9a8680-bebb-4ac8-8eac-adea08579379"
+							_id = "869adb93-7dbb-4d9c-a03c-62b74e273bdf"
 							ref_filename = null
 							ref_id = null
 						}
 						on_beat = ""
 						to_state_ref = {
-							_id = "012dd837-9f0c-4771-a138-d765e3858292"
+							_id = "f74658ea-a827-44b6-bab3-f150e43728d5"
 							ref_filename = null
 							ref_id = "1637bfbb-ba36-4093-9aaf-5b168439da9a"
-						}
-					}
-					{
-						_id = "d04932b9-e8bb-4373-84e3-a140e38b4f4b"
-						actual_target_ref = {
-							_id = "682fe99b-1786-4663-85d4-7a0cca2beded"
-							ref_filename = null
-							ref_id = null
-						}
-						blend_time = 0.2
-						event_ref = {
-							_id = "aa1eb800-94b4-469c-b18b-4c8996156f8b"
-							ref_filename = null
-							ref_id = "628000d1-4873-4cc4-9922-959a4bfdc272"
-						}
-						has_nested_from = false
-						mode = "direct"
-						nested_from_ref = {
-							_id = "73f50550-37dd-4aee-8383-db454a5d31a6"
-							ref_filename = null
-							ref_id = null
-						}
-						on_beat = ""
-						to_state_ref = {
-							_id = "620b8c6e-85a1-42af-aa9a-daedf977206d"
-							ref_filename = null
-							ref_id = "52d6fe2d-4e1c-44f6-9943-c387082456f1"
-						}
-					}
-					{
-						_id = "5add5475-9a8c-4cfb-ac9c-26df68379f91"
-						actual_target_ref = {
-							_id = "568407cf-85b4-4df2-8889-bb91ff9a6275"
-							ref_filename = null
-							ref_id = null
-						}
-						blend_time = 0.2
-						event_ref = {
-							_id = "07ae0f64-8cca-4bb2-b3d1-40e8d9f12b05"
-							ref_filename = null
-							ref_id = "de7b6d50-7507-4de1-9387-2a4a6729bfda"
-						}
-						has_nested_from = false
-						mode = "direct"
-						nested_from_ref = {
-							_id = "f6a52af5-9730-472b-95b0-18eee9a117fb"
-							ref_filename = null
-							ref_id = null
-						}
-						on_beat = ""
-						to_state_ref = {
-							_id = "51e3813d-1c0f-4e85-9592-828719bbc673"
-							ref_filename = null
-							ref_id = "5d11ffb0-e712-4aee-a4aa-bd720778757b"
 						}
 					}
 				]
@@ -1646,6 +1595,13 @@ variables = {
 	_id = "108477fb-9f9d-4fba-a055-a24ac662a180"
 	_name = "Variables"
 	data_list = [
+		{
+			_id = "4e2666aa-4387-4a54-b03d-f66a93341f22"
+			_name = "Variable"
+			default_value = 0
+			max_value = 1
+			min_value = 0
+		}
 	]
 	sub_folders = [
 	]
