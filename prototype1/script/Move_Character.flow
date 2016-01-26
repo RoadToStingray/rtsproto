@@ -2160,26 +2160,6 @@ nodes = [
 		}
 	}
 	{
-		id = "e218ed94-3ca6-499f-8175-530d50462c56"
-		in_variables = {
-			bool = {
-				type = "bool"
-			}
-			name = {
-				type = "string"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		type = "set_bool_variable"
-		variable_values = {
-			bool = false
-			name = "Is_Jump_Pressed"
-			scope = "local"
-		}
-	}
-	{
 		id = "db11a01d-8933-4c03-af6f-2ea6331ee15b"
 		in_variables = {
 			a = {
@@ -2662,26 +2642,6 @@ nodes = [
 		}
 	}
 	{
-		id = "c1110f47-d421-47f6-bf14-da1e1203e7c5"
-		in_variables = {
-			name = {
-				type = "string"
-			}
-			numeric = {
-				type = "float"
-			}
-			scope = {
-				type = "string"
-			}
-		}
-		type = "set_numeric_variable"
-		variable_values = {
-			name = "Fall_Time"
-			numeric = -1.5
-			scope = "local"
-		}
-	}
-	{
 		id = "d800d23c-0af4-471c-87f3-ee362de09692"
 		in_variables = {
 			name = {
@@ -2697,7 +2657,7 @@ nodes = [
 		type = "set_numeric_variable"
 		variable_values = {
 			name = "Fall_Time"
-			numeric = -3
+			numeric = -1.5
 			scope = "local"
 		}
 	}
@@ -2800,6 +2760,46 @@ nodes = [
 		variable_values = {
 			name = "Height_Jump"
 			numeric = null
+		}
+	}
+	{
+		id = "e218ed94-3ca6-499f-8175-530d50462c56"
+		in_variables = {
+			bool = {
+				type = "bool"
+			}
+			name = {
+				type = "string"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_bool_variable"
+		variable_values = {
+			bool = false
+			name = "Is_Jump_Pressed"
+			scope = "local"
+		}
+	}
+	{
+		id = "c1110f47-d421-47f6-bf14-da1e1203e7c5"
+		in_variables = {
+			name = {
+				type = "string"
+			}
+			numeric = {
+				type = "float"
+			}
+			scope = {
+				type = "string"
+			}
+		}
+		type = "set_numeric_variable"
+		variable_values = {
+			name = "Fall_Time"
+			numeric = -1
+			scope = "local"
 		}
 	}
 	{

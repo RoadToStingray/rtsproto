@@ -9800,7 +9800,7 @@ Nodes = [
 			Value = "Is_Two_Jumped"
 		}
 		NodeLocation = {
-			X = 3960
+			X = 3940
 			Y = 5000
 		}
 		Scope = {
@@ -9816,8 +9816,8 @@ Nodes = [
 		Class = "Stingray.Flow.BoolToString"
 		Id = "016adae2-5de2-4ab5-8ab9-4a5b2affe1c9"
 		NodeLocation = {
-			X = 320
-			Y = 6500
+			X = -200
+			Y = 6460
 		}
 		Value = {
 		}
@@ -9884,7 +9884,7 @@ Nodes = [
 			Value = "Is_Two_Jumped"
 		}
 		NodeLocation = {
-			X = 2900
+			X = 2880
 			Y = 5080
 		}
 		Scope = {
@@ -9916,8 +9916,8 @@ Nodes = [
 			Value = "Jump_Count"
 		}
 		NodeLocation = {
-			X = 880
-			Y = 6740
+			X = 440
+			Y = 6720
 		}
 		Numeric = {
 		}
@@ -9937,7 +9937,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 3660
-			Y = 4580
+			Y = 4540
 		}
 		Scope = {
 			Value = "local"
@@ -10032,8 +10032,8 @@ Nodes = [
 			Value = "Is_Two_Jumped"
 		}
 		NodeLocation = {
-			X = 780
-			Y = 6500
+			X = 340
+			Y = 6480
 		}
 		Scope = {
 			Value = "local"
@@ -10086,8 +10086,8 @@ Nodes = [
 			Value = "Is_Jumped"
 		}
 		NodeLocation = {
-			X = 60
-			Y = 6500
+			X = -460
+			Y = 6460
 		}
 		Scope = {
 			Value = "local"
@@ -10105,7 +10105,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 3280
-			Y = 3960
+			Y = 3920
 		}
 		Scope = {
 			Value = "local"
@@ -10135,8 +10135,8 @@ Nodes = [
 		Class = "Stingray.Flow.GetLastDeltaTime"
 		Id = "3214e3d5-e668-4f0f-bbb0-f454720d5c6d"
 		NodeLocation = {
-			X = 4320
-			Y = 5020
+			X = 4540
+			Y = 4780
 		}
 		Time = {
 		}
@@ -10192,7 +10192,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 3020
-			Y = 4220
+			Y = 4180
 		}
 		True = {
 		}
@@ -10218,8 +10218,8 @@ Nodes = [
 		Mover = {
 		}
 		NodeLocation = {
-			X = 1720
-			Y = 6180
+			X = 1700
+			Y = 6500
 		}
 		Position = {
 		}
@@ -10235,8 +10235,8 @@ Nodes = [
 			Value = "Vertical_Speed"
 		}
 		NodeLocation = {
-			X = 4760
-			Y = 4400
+			X = 4740
+			Y = 4080
 		}
 		Numeric = {
 		}
@@ -10251,8 +10251,8 @@ Nodes = [
 		Class = "Stingray.Flow.GetLastDeltaTime"
 		Id = "49fc1743-9f67-492a-93dd-dae1e680af53"
 		NodeLocation = {
-			X = 3960
-			Y = 4340
+			X = 3940
+			Y = 4020
 		}
 		Time = {
 		}
@@ -10317,7 +10317,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 3300
-			Y = 4400
+			Y = 4360
 		}
 		True = {
 		}
@@ -10373,8 +10373,8 @@ Nodes = [
 		IsQuery = false
 		Name = "Print To Screen"
 		NodeLocation = {
-			X = 1280
-			Y = 6540
+			X = 840
+			Y = 6520
 		}
 		OutEvents = [
 			"Out"
@@ -10393,7 +10393,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3520
+			X = 3500
 			Y = 4860
 		}
 		True = {
@@ -10427,8 +10427,8 @@ Nodes = [
 			Value = "Fall_Time"
 		}
 		NodeLocation = {
-			X = 4840
-			Y = 4780
+			X = 5060
+			Y = 4540
 		}
 		Numeric = {
 			Value = 0
@@ -10465,8 +10465,8 @@ Nodes = [
 		Class = "Stingray.Flow.NumericPlusNumeric"
 		Id = "71cb8385-6717-4bc2-9f83-5d1d762099b5"
 		NodeLocation = {
-			X = 4620
-			Y = 4980
+			X = 4840
+			Y = 4740
 		}
 		Value = {
 		}
@@ -10524,8 +10524,8 @@ Nodes = [
 		IsQuery = false
 		Name = "Print To Screen"
 		NodeLocation = {
-			X = 560
-			Y = 6540
+			X = 40
+			Y = 6500
 		}
 		OutEvents = [
 			"Out"
@@ -10540,7 +10540,7 @@ Nodes = [
 		Class = "Stingray.Flow.BooleanNot"
 		Id = "8810f7e4-f53d-4715-9085-b1bf80d36ed8"
 		NodeLocation = {
-			X = 3160
+			X = 3140
 			Y = 5000
 		}
 		Value = {
@@ -10554,8 +10554,8 @@ Nodes = [
 			Value = "Vertical_Speed"
 		}
 		NodeLocation = {
-			X = 4780
-			Y = 4240
+			X = 4760
+			Y = 3920
 		}
 		Numeric = {
 			Value = -0.1
@@ -10576,8 +10576,8 @@ Nodes = [
 		Class = "Stingray.Flow.NumericTimesNumeric"
 		Id = "8c14767d-def6-46a1-b18a-df56205b7115"
 		NodeLocation = {
-			X = 4200
-			Y = 4380
+			X = 4180
+			Y = 4060
 		}
 		Value = {
 		}
@@ -10593,7 +10593,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 2820
+			X = 2800
 			Y = 6600
 		}
 		True = {
@@ -10610,7 +10610,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 2580
-			Y = 4180
+			Y = 4140
 		}
 		Scope = {
 			Value = "local"
@@ -10627,7 +10627,7 @@ Nodes = [
 			Value = "Is_Two_Jump_Motion"
 		}
 		NodeLocation = {
-			X = 3960
+			X = 3940
 			Y = 5120
 		}
 		Scope = {
@@ -10646,7 +10646,7 @@ Nodes = [
 			Value = "Is_Jump_Pressed"
 		}
 		NodeLocation = {
-			X = 2600
+			X = 2580
 			Y = 4920
 		}
 		Scope = {
@@ -10664,8 +10664,8 @@ Nodes = [
 		Mover = {
 		}
 		NodeLocation = {
-			X = 1700
-			Y = 6320
+			X = 1680
+			Y = 6640
 		}
 		Out = {
 		}
@@ -10681,8 +10681,8 @@ Nodes = [
 			Value = "Unit"
 		}
 		NodeLocation = {
-			X = 1520
-			Y = 6180
+			X = 1500
+			Y = 6500
 		}
 		Scope = {
 			Value = "local"
@@ -10712,8 +10712,8 @@ Nodes = [
 		Class = "Stingray.Flow.NumericToString"
 		Id = "b598dea2-7cd3-4c04-9373-d89f67e1274f"
 		NodeLocation = {
-			X = 1080
-			Y = 6720
+			X = 640
+			Y = 6700
 		}
 		Numeric = {
 		}
@@ -10728,7 +10728,7 @@ Nodes = [
 			Value = "Vertical_Speed"
 		}
 		NodeLocation = {
-			X = 3960
+			X = 3940
 			Y = 4880
 		}
 		Numeric = {
@@ -10764,7 +10764,7 @@ Nodes = [
 		Class = "Stingray.Flow.BooleanAnd"
 		Id = "c43862f5-bd31-4bd9-a891-443629d31aa7"
 		NodeLocation = {
-			X = 3340
+			X = 3320
 			Y = 4960
 		}
 		Value = {
@@ -10780,7 +10780,7 @@ Nodes = [
 		Id = "c57e5f97-c5e5-4db5-8557-67af820e7154"
 		NodeLocation = {
 			X = 2800
-			Y = 4080
+			Y = 4040
 		}
 		Value = {
 		}
@@ -10797,7 +10797,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 3500
-			Y = 4180
+			Y = 4140
 		}
 		Scope = {
 			Value = "local"
@@ -10816,7 +10816,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 2580
-			Y = 4080
+			Y = 4040
 		}
 		Scope = {
 			Value = "local"
@@ -10832,7 +10832,7 @@ Nodes = [
 			Value = "Is_Jumped"
 		}
 		NodeLocation = {
-			X = 2600
+			X = 2580
 			Y = 5020
 		}
 		Scope = {
@@ -10847,8 +10847,8 @@ Nodes = [
 			Value = "Delta_Position"
 		}
 		NodeLocation = {
-			X = 1500
-			Y = 6380
+			X = 1480
+			Y = 6700
 		}
 		Scope = {
 			Value = "local"
@@ -10944,7 +10944,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 3280
-			Y = 4080
+			Y = 4040
 		}
 		Numeric = {
 		}
@@ -10963,7 +10963,7 @@ Nodes = [
 		Class = "Stingray.Flow.BooleanAnd"
 		Id = "e25f6f2f-e797-445b-a142-ad15b4d2e6d8"
 		NodeLocation = {
-			X = 3060
+			X = 3040
 			Y = 4920
 		}
 		Value = {
@@ -10978,8 +10978,8 @@ Nodes = [
 		Class = "Stingray.Flow.NumericPlusNumeric"
 		Id = "e8f66199-c8f0-4200-894b-e0dbffeeaa52"
 		NodeLocation = {
-			X = 4420
-			Y = 4360
+			X = 4400
+			Y = 4040
 		}
 		Value = {
 		}
@@ -10991,8 +10991,8 @@ Nodes = [
 		Class = "Stingray.Flow.BoolToString"
 		Id = "e9f7afd9-80ad-4419-bc2d-1942d088440d"
 		NodeLocation = {
-			X = 1040
-			Y = 6500
+			X = 600
+			Y = 6480
 		}
 		Value = {
 		}
@@ -11039,8 +11039,8 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 1920
-			Y = 6340
+			X = 1900
+			Y = 6660
 		}
 		Object = {
 		}
@@ -11090,8 +11090,8 @@ Nodes = [
 		IsQuery = false
 		Name = "Print To Screen"
 		NodeLocation = {
-			X = 1280
-			Y = 6780
+			X = 840
+			Y = 6760
 		}
 		OutEvents = [
 			"Out"
@@ -11159,7 +11159,7 @@ Nodes = [
 			Value = "Is_Jump_Motion"
 		}
 		NodeLocation = {
-			X = 2600
+			X = 2580
 			Y = 6520
 		}
 		Scope = {
@@ -11173,7 +11173,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3120
+			X = 3100
 			Y = 6580
 		}
 		Out1 = {
@@ -11200,7 +11200,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3560
+			X = 3540
 			Y = 6680
 		}
 		Out1 = {
@@ -11230,7 +11230,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3740
+			X = 3720
 			Y = 6700
 		}
 		Width = 200
@@ -11245,7 +11245,7 @@ Nodes = [
 			Value = "Is_Two_Jump_Motion"
 		}
 		NodeLocation = {
-			X = 3740
+			X = 3720
 			Y = 6820
 		}
 		Scope = {
@@ -11264,7 +11264,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3300
+			X = 3280
 			Y = 6600
 		}
 		Width = 200
@@ -11279,7 +11279,7 @@ Nodes = [
 			Value = "Is_Jump_Motion"
 		}
 		NodeLocation = {
-			X = 3300
+			X = 3280
 			Y = 6720
 		}
 		Scope = {
@@ -11299,7 +11299,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3240
+			X = 3220
 			Y = 6900
 		}
 		True = {
@@ -11315,7 +11315,7 @@ Nodes = [
 			Value = "Is_Two_Jump_Motion"
 		}
 		NodeLocation = {
-			X = 2940
+			X = 2920
 			Y = 6880
 		}
 		Scope = {
@@ -11333,7 +11333,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3480
+			X = 3460
 			Y = 7000
 		}
 		True = {
@@ -11349,7 +11349,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3740
+			X = 3720
 			Y = 6940
 		}
 		Width = 160
@@ -11364,7 +11364,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 3760
+			X = 3740
 			Y = 7200
 		}
 		True = {
@@ -11380,7 +11380,7 @@ Nodes = [
 		Class = "Stingray.Flow.NumericGreaterThanNumeric"
 		Id = "8fcf2501-9b26-4b8c-8928-758029fff95c"
 		NodeLocation = {
-			X = 3260
+			X = 3240
 			Y = 7060
 		}
 		Value = {
@@ -11391,7 +11391,7 @@ Nodes = [
 		Class = "Stingray.Flow.VectorLength"
 		Id = "04a5b0c2-b900-44c3-a8d5-925429b8942d"
 		NodeLocation = {
-			X = 3360
+			X = 3340
 			Y = 7320
 		}
 		Value = {
@@ -11410,7 +11410,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 4000
+			X = 3980
 			Y = 7360
 		}
 		True = {
@@ -11426,7 +11426,7 @@ Nodes = [
 		Class = "Stingray.Flow.NumericGreaterThanNumeric"
 		Id = "6ea872c1-3ae1-4c2f-a48d-cf7f5daef999"
 		NodeLocation = {
-			X = 3580
+			X = 3560
 			Y = 7340
 		}
 		Value = {
@@ -11442,7 +11442,7 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 4220
+			X = 4200
 			Y = 7380
 		}
 		Width = 160
@@ -11456,30 +11456,10 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 4220
+			X = 4200
 			Y = 7480
 		}
 		Width = 160
-	}
-	{
-		Bool = {
-			Value = false
-		}
-		Class = "Stingray.Flow.SetBoolVariable"
-		Id = "e218ed94-3ca6-499f-8175-530d50462c56"
-		Name = {
-			Value = "Is_Jump_Pressed"
-		}
-		NodeLocation = {
-			X = 1240
-			Y = 6200
-		}
-		Scope = {
-			Value = "local"
-		}
-		Set = {
-		}
-		Width = 200
 	}
 	{
 		A = {
@@ -11684,7 +11664,7 @@ Nodes = [
 		}
 		NodeLocation = {
 			X = 3680
-			Y = 4320
+			Y = 4280
 		}
 		Scope = {
 			Value = "local"
@@ -11700,8 +11680,8 @@ Nodes = [
 			Value = "Vertical_Speed"
 		}
 		NodeLocation = {
-			X = 4140
-			Y = 4500
+			X = 4120
+			Y = 4180
 		}
 		Numeric = {
 		}
@@ -11719,8 +11699,8 @@ Nodes = [
 		Class = "Stingray.Flow.NumericLessThanNumeric"
 		Id = "1ce51e27-915b-4b1e-ab73-eef183a20de3"
 		NodeLocation = {
-			X = 4380
-			Y = 4660
+			X = 4600
+			Y = 4420
 		}
 		Value = {
 		}
@@ -11733,8 +11713,8 @@ Nodes = [
 			Value = "Vertical_Speed"
 		}
 		NodeLocation = {
-			X = 4140
-			Y = 4620
+			X = 4360
+			Y = 4380
 		}
 		Numeric = {
 		}
@@ -11753,8 +11733,8 @@ Nodes = [
 		In = {
 		}
 		NodeLocation = {
-			X = 4560
-			Y = 4720
+			X = 4780
+			Y = 4480
 		}
 		True = {
 		}
@@ -11798,8 +11778,8 @@ Nodes = [
 			Value = "Fall_Time"
 		}
 		NodeLocation = {
-			X = 4320
-			Y = 4960
+			X = 4540
+			Y = 4720
 		}
 		Numeric = {
 		}
@@ -11815,30 +11795,10 @@ Nodes = [
 			Value = "Fall_Time"
 		}
 		NodeLocation = {
-			X = 4840
-			Y = 4920
+			X = 5060
+			Y = 4680
 		}
 		Numeric = {
-		}
-		Scope = {
-			Value = "local"
-		}
-		Set = {
-		}
-		Width = 160
-	}
-	{
-		Class = "Stingray.Flow.SetNumericVariable"
-		Id = "c1110f47-d421-47f6-bf14-da1e1203e7c5"
-		Name = {
-			Value = "Fall_Time"
-		}
-		NodeLocation = {
-			X = 3520
-			Y = 4060
-		}
-		Numeric = {
-			Value = -1.5
 		}
 		Scope = {
 			Value = "local"
@@ -11854,11 +11814,11 @@ Nodes = [
 			Value = "Fall_Time"
 		}
 		NodeLocation = {
-			X = 3960
+			X = 3940
 			Y = 4760
 		}
 		Numeric = {
-			Value = -3
+			Value = -1.5
 		}
 		Scope = {
 			Value = "local"
@@ -11874,7 +11834,7 @@ Nodes = [
 			Value = "Fall_Time"
 		}
 		NodeLocation = {
-			X = 2940
+			X = 2920
 			Y = 7040
 		}
 		Numeric = {
@@ -11891,7 +11851,7 @@ Nodes = [
 			Value = "input_key_vector"
 		}
 		NodeLocation = {
-			X = 2940
+			X = 2920
 			Y = 7320
 		}
 		Scope = {
@@ -11927,7 +11887,7 @@ Nodes = [
 			Value = "Is_Jumped"
 		}
 		NodeLocation = {
-			X = 2940
+			X = 2920
 			Y = 7180
 		}
 		Scope = {
@@ -11946,6 +11906,46 @@ Nodes = [
 			Y = 3940
 		}
 		Numeric = {
+		}
+		Width = 160
+	}
+	{
+		Bool = {
+			Value = false
+		}
+		Class = "Stingray.Flow.SetBoolVariable"
+		Id = "e218ed94-3ca6-499f-8175-530d50462c56"
+		Name = {
+			Value = "Is_Jump_Pressed"
+		}
+		NodeLocation = {
+			X = 1460
+			Y = 6220
+		}
+		Scope = {
+			Value = "local"
+		}
+		Set = {
+		}
+		Width = 200
+	}
+	{
+		Class = "Stingray.Flow.SetNumericVariable"
+		Id = "c1110f47-d421-47f6-bf14-da1e1203e7c5"
+		Name = {
+			Value = "Fall_Time"
+		}
+		NodeLocation = {
+			X = 3620
+			Y = 4000
+		}
+		Numeric = {
+			Value = -1
+		}
+		Scope = {
+			Value = "local"
+		}
+		Set = {
 		}
 		Width = 160
 	}
