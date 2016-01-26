@@ -1,4 +1,6 @@
 
 events = [
+	"bgm_ingame"
+	"sfx_jumps"
 	"sfx_spawn_sound"
 ]

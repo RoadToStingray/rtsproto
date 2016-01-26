@@ -1,7 +1,11 @@
 
+aux_buses = [
+]
 banks = {
 	default = {
 		events = [
+			"bgm_ingame"
+			"sfx_jumps"
 			"sfx_spawn_sound"
 		]
 	}
@@ -10,7 +14,28 @@ banks = {
 		]
 	}
 }
+buses = [
+	"Master Audio Bus"
+	"Master Secondary Bus"
+	"MUSIC"
+	"SFX"
+	"VO"
+]
 events = {
+	bgm_ingame = {
+		attenuation_max = 0
+		duration_max = 0
+		duration_min = 0
+		duration_type = "Infinite"
+		positioning = "2D"
+	}
+	sfx_jumps = {
+		attenuation_max = 0
+		duration_max = 0.288526
+		duration_min = 0.248163
+		duration_type = "OneShot"
+		positioning = "2D"
+	}
 	sfx_spawn_sound = {
 		attenuation_max = 0
 		duration_max = 2.767347
@@ -20,4 +45,13 @@ events = {
 	}
 }
 parameters = [
+	"CODE_Volume_Music"
+	"CODE_Volume_SFX"
+	"CODE_Volume_VO"
+]
+state_groups = {
+}
+switch_groups = {
+}
+triggers = [
 ]

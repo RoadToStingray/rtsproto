@@ -135,5 +135,5 @@ IOSData = {
 	]
 	Version = ""
 }
-PackageDestinationFolder = ""
-ProjectName = ""
+PackageDestinationFolder = "E:/prot"
+ProjectName = "pt"

@@ -677,8 +677,8 @@ nodes = [
 			jump_event = [
 				{
 					event = 0
-					id = "ee15176f-2170-480a-b097-036e4b60befe:0"
-					node = "ee15176f-2170-480a-b097-036e4b60befe"
+					id = "041e2ed5-ae77-4644-933b-06c21f383989:0"
+					node = "041e2ed5-ae77-4644-933b-06c21f383989"
 				}
 			]
 			run_event = [
@@ -1332,6 +1332,82 @@ nodes = [
 			scope = "local"
 			string = "none"
 		}
+	}
+	{
+		flow_nodes_resource = "core/wwise/wwise"
+		id = "041e2ed5-ae77-4644-933b-06c21f383989"
+		in_variables = {
+			Existing_Source_Id = {
+				type = "float"
+			}
+			Name = {
+				type = "string"
+			}
+			Position = {
+				type = "vector3"
+			}
+			Unit = {
+				node = "11111111-2222-3333-4444-555555555555"
+				type = "unit"
+				variable = "unit"
+			}
+			Unit_Node = {
+				type = "string"
+			}
+		}
+		name = "Wwise Trigger Event"
+		out_events = {
+			Out = [
+				{
+					event = 0
+					id = "ee15176f-2170-480a-b097-036e4b60befe:0"
+					node = "ee15176f-2170-480a-b097-036e4b60befe"
+				}
+			]
+		}
+		query = false
+		return_values = [
+			{
+				name = "Playing_Id"
+				type = "float"
+			}
+			{
+				name = "Source_Id"
+				type = "float"
+			}
+		]
+		type = "custom_script_node"
+		variable_values = {
+			Existing_Source_Id = null
+			Name = "sfx_jumps"
+			Playing_Id = null
+			Position = null
+			Source_Id = null
+			Unit = null
+			Unit_Node = null
+		}
+		variables = [
+			{
+				name = "Unit"
+				type = "unit"
+			}
+			{
+				name = "Position"
+				type = "vector3"
+			}
+			{
+				name = "Name"
+				type = "string"
+			}
+			{
+				name = "Existing_Source_Id"
+				type = "float"
+			}
+			{
+				name = "Unit_Node"
+				type = "string"
+			}
+		]
 	}
 	{
 		id = "11111111-2222-3333-4444-555555555555"

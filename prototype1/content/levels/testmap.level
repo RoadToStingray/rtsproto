@@ -54,19 +54,27 @@ editor_metadata = {
 			}
 			{
 				Class = "Stingray.Foundation.Flow.EventConnection"
-				FromItem = "Out"
-				FromNode = "dace9721-f45e-4029-93d1-b8b282d0684d"
-				Priority = 0
-				ToItem = "In"
-				ToNode = "10ad9003-6107-46d4-bb09-54c142334211"
-			}
-			{
-				Class = "Stingray.Foundation.Flow.EventConnection"
 				FromItem = "Pressed"
 				FromNode = "1793cfa5-5f89-46e3-ad7b-c483465ed108"
 				Priority = 0
 				ToItem = "In"
 				ToNode = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dace9721-f45e-4029-93d1-b8b282d0684d"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "b446a9e4-9237-4a98-9551-bfbe74c59931"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "b446a9e4-9237-4a98-9551-bfbe74c59931"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "10ad9003-6107-46d4-bb09-54c142334211"
 			}
 		]
 		Groups = [
@@ -224,8 +232,8 @@ editor_metadata = {
 				IsQuery = false
 				Name = "Set Active Camera"
 				NodeLocation = {
-					X = -20
-					Y = -240
+					X = 220
+					Y = -260
 				}
 				OutEvents = [
 					"Out"
@@ -305,6 +313,82 @@ editor_metadata = {
 				Title = "Keyboard Button"
 				Value = {
 				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_event"
+							Value = "bgm_ingame"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						RawName = "Unit_Node"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Existing_Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "b446a9e4-9237-4a98-9551-bfbe74c59931"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Trigger Event"
+				NodeLocation = {
+					X = -20
+					Y = -460
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Playing_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+					{
+						RawName = "Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+				]
 				Width = 160
 			}
 		]
@@ -1184,8 +1268,8 @@ flow = {
 				out = [
 					{
 						event = 0
-						id = "10ad9003-6107-46d4-bb09-54c142334211:0"
-						node = "10ad9003-6107-46d4-bb09-54c142334211"
+						id = "b446a9e4-9237-4a98-9551-bfbe74c59931:0"
+						node = "b446a9e4-9237-4a98-9551-bfbe74c59931"
 					}
 				]
 			}
@@ -1243,6 +1327,80 @@ flow = {
 				device_number = 0
 				value = null
 			}
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "b446a9e4-9237-4a98-9551-bfbe74c59931"
+			in_variables = {
+				Existing_Source_Id = {
+					type = "float"
+				}
+				Name = {
+					type = "string"
+				}
+				Position = {
+					type = "vector3"
+				}
+				Unit = {
+					type = "unit"
+				}
+				Unit_Node = {
+					type = "string"
+				}
+			}
+			name = "Wwise Trigger Event"
+			out_events = {
+				Out = [
+					{
+						event = 0
+						id = "10ad9003-6107-46d4-bb09-54c142334211:0"
+						node = "10ad9003-6107-46d4-bb09-54c142334211"
+					}
+				]
+			}
+			query = false
+			return_values = [
+				{
+					name = "Playing_Id"
+					type = "float"
+				}
+				{
+					name = "Source_Id"
+					type = "float"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Existing_Source_Id = null
+				Name = "bgm_ingame"
+				Playing_Id = null
+				Position = null
+				Source_Id = null
+				Unit = null
+				Unit_Node = null
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+				{
+					name = "Unit_Node"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Existing_Source_Id"
+					type = "float"
+				}
+			]
 		}
 	]
 }
