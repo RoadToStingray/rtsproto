@@ -351,9 +351,14 @@ compiler_data = {
 					state_type = "regular"
 					timeline = [
 						{
-							name = "ExitFlowEvent"
+							name = "Exit_sliding"
 							time = 0
 							type = "exit_trigger"
+						}
+						{
+							name = "Enter_sliding"
+							time = 0
+							type = "enter_trigger"
 						}
 					]
 					transitions = [
@@ -1519,10 +1524,17 @@ layers = [
 				markers = [
 					{
 						_id = "914d581d-0d0f-4c2a-8221-e06e36c11188"
-						_name = "ExitFlowEvent"
+						_name = "Exit_sliding"
 						_time = 0
 						time = 0
 						type = "exit_trigger"
+					}
+					{
+						_id = "6ec328b0-d049-40f4-860a-032f0e5cd7ab"
+						_name = "Enter_sliding"
+						_time = 0
+						time = 0
+						type = "enter_trigger"
 					}
 				]
 				muted_layers = [

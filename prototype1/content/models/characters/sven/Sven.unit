@@ -1,6 +1,6 @@
 
 data = {
-	sss = "default"
+	health = 3
 }
 editor_metadata = {
 	camera_settings = {
@@ -29,9 +29,9 @@ editor_metadata = {
 		translation_speed = 0.05
 	}
 	flow_framing = {
-		scale = 0.669795953360768
-		x = 7066.05001170414
-		y = 3714.1163870177
+		scale = 1.15740740740741
+		x = 13397.15433571
+		y = 6055.51202486758
 	}
 }
 materials = {

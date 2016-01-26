@@ -1041,6 +1041,7 @@ editor_metadata = {
 				Z = 1
 			}
 			ScriptData = {
+				height_jump = "0.35"
 			}
 			Type = "content/models/characters/sven/Sven"
 		}
@@ -1782,6 +1783,7 @@ units = [
 		cameras = {
 		}
 		data = {
+			height_jump = "0.35"
 		}
 		id = "5bb61eb0-929d-490f-a3c8-85cc2216708f"
 		lights = {
