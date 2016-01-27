@@ -9443,15 +9443,6 @@ Connections = [
 	}
 	{
 		Class = "Stingray.Flow.EventConnection"
-		FromItem = "Out7"
-		FromNode = "1e908b88-c392-4fac-8717-c9b5a7d9aaaf"
-		Id = "bfd0fb27-4aa4-4cb9-ae73-e672821006e8"
-		Priority = 0
-		ToItem = "In"
-		ToNode = "c58643c7-5d51-46d1-bf4c-6bce256ce3ff"
-	}
-	{
-		Class = "Stingray.Flow.EventConnection"
 		FromItem = "False"
 		FromNode = "90737682-d9e5-4479-8b97-28bd6117cd3e"
 		Id = "bfdcdc2b-b27d-4868-bd8e-03b825b1a92f"

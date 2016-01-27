@@ -458,13 +458,6 @@ nodes = [
 					node = "adb2a422-912c-41fc-8154-30472d33ddfa"
 				}
 			]
-			out7 = [
-				{
-					event = 0
-					id = "c58643c7-5d51-46d1-bf4c-6bce256ce3ff:0"
-					node = "c58643c7-5d51-46d1-bf4c-6bce256ce3ff"
-				}
-			]
 			out8 = [
 				{
 					event = 0
