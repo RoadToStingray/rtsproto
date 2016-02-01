@@ -16,10 +16,35 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="sfx_jumps" ID="{A32C77B0-54B2-4E0C-A6F7-68EDD25FA66C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7FBC0174-D1A6-4DC8-B5DF-B0CB079B238B}" ShortID="968204286" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{50242499-B505-478E-93FA-214463EAA23F}" Global="false">
+											<ObjectRef Name="cf_jumo_random" ID="{E87A6F7F-3FED-4DCD-AD5C-3ECD49B7E20E}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="VO" ID="{B83884E8-4D1A-4BC6-AA1E-7F006C86ADF8}" ShortID="449022605"/>
-				<Folder Name="MUSIC" ID="{79D39842-2F27-4F5C-9E19-B167662AD176}" ShortID="746143139"/>
+				<Folder Name="MUSIC" ID="{79D39842-2F27-4F5C-9E19-B167662AD176}" ShortID="746143139">
+					<ChildrenList>
+						<Event Name="bgm_ingame" ID="{9CE81082-2996-4F41-8402-5FE543A06C74}">
+							<ChildrenList>
+								<Action Name="Play" ID="{8928EBD8-B978-4AFA-8B9D-6FF0FBB2B52B}" ShortID="651346147" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F46C050B-2F62-4DBE-A682-9E3D8219AD48}" Global="false">
+											<ObjectRef Name="catfu_mu_ingame_loop_01" ID="{55EFD899-382D-41A8-B760-78AAF9DC806B}" WorkUnitID="{3CB48151-3575-45D8-A04F-68FF7418BD06}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

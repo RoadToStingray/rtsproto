@@ -30,6 +30,11 @@ unit = [
 shading_environment = [
 ]
 
+wwise_dep = [
+    "content/audio/*"
+]
+
+
 ADD_PACKAGES = [
 	"core/gwnav/boot.package",
 	"core/animation/boot.package"

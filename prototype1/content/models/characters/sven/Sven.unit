@@ -29,9 +29,9 @@ editor_metadata = {
 		translation_speed = 0.05
 	}
 	flow_framing = {
-		scale = 1.15740740740741
-		x = 13397.15433571
-		y = 6055.51202486758
+		scale = 0.66979595336077
+		x = 7146.95260682805
+		y = 4304.49557060495
 	}
 }
 materials = {
