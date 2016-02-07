@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "1d14f6e7-98f1-4c84-a845-452321d28324"
+_name = "content/models/characters/PPK/PPK_m"
+anim_controller_ref = {
+	_id = "fb999f4b-6e38-4184-879c-fe993f19d7a6"
+	ref_filename = "content/models/characters/PPK/PPK_m.anim_controller"
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "e110539c-b97f-4cb5-a0b8-0df16f05f6d3"
+	ref_filename = "content/models/characters/PPK/PPK_m.anim_skeleton"
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "32af0055-7c56-454c-9f03-9fdea10cf5d6"
+	ref_filename = "content/models/characters/PPK/PPK_m.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/characters/PPK/PPK_m"

@@ -1,0 +1,171 @@
+
+editor_metadata = {
+	camera_settings = {
+		far_range = 1000
+		interest_point_distance = 2.484701
+		orthographic_plane = [
+			0
+			0
+			1
+			0
+		]
+		orthographic_zoom = 10
+		position = [
+			0.811933
+			2.07785
+			1.24545
+		]
+		projection_type = "perspective"
+		rotation = [
+			-0.018604
+			-0.107928
+			0.979538
+			0.168849
+		]
+		rotation_speed = 0.003
+		translation_speed = 0.05
+	}
+}
+materials = {
+	beanie_3 = "content/models/characters/PPK/materials/beanie_3"
+	eye_black = "content/models/characters/PPK/materials/eye_black"
+	gl_jacket = "content/models/characters/PPK/materials/gl_jacket"
+	gl_lambert24 = "content/models/characters/PPK/materials/gl_lambert24"
+	gl_lambert27 = "content/models/characters/PPK/materials/gl_lambert27"
+	gl_lambert29 = "content/models/characters/PPK/materials/gl_lambert29"
+	hair_6 = "content/models/characters/PPK/materials/hair_6"
+	headphone_12 = "content/models/characters/PPK/materials/headphone_12"
+	headphone_black_12 = "content/models/characters/PPK/materials/headphone_black_12"
+	lambert1_1_9 = "content/models/characters/PPK/materials/lambert1_1_9"
+	lambert1_2_9 = "content/models/characters/PPK/materials/lambert1_2_9"
+	lambert31 = "content/models/characters/PPK/materials/lambert31"
+	shoes_6 = "content/models/characters/PPK/materials/shoes_6"
+}
+renderables = {
+	body = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	cap = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	eyeL = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	eyeR = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	hair1 = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	handL = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	handR = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	headphone = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	jacket = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	lash = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	leg = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	shoseBandL = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	shoseBandR = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	teeth = {
+		always_keep = false
+		culling = "bounding_volume"
+		generate_uv_unwrap = false
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+}

@@ -1,0 +1,548 @@
+
+_data_root_version = 6
+_id = "cfc4c940-9ff9-4576-afaf-e333d71a048e"
+_name = "content/models/characters/PPK/PPK_m"
+anim_event_root_folder_name = "events"
+anim_skeleton_ref = {
+	_id = "69d47129-4330-4a20-b86b-4a2d09cd7180"
+	ref_filename = "content/models/characters/PPK/PPK_m.anim_skeleton"
+	ref_id = null
+}
+clip_mappings = [
+]
+compiler_data = {
+	bones = "content/models/characters/PPK/PPK_m"
+	events = {
+		"Anim End" = {
+		}
+		AnimEvent_Jump = {
+		}
+		AnimEvent_PhysX_All_Disable = {
+		}
+		AnimEvent_PhysX_All_Enable = {
+		}
+		AnimEvent_Run = {
+		}
+	}
+	layers = [
+		{
+			default_state = "All_Enable"
+			states = [
+				{
+					name = "All_Enable"
+					ragdoll = "Ragdoll_All_Enable"
+					state_type = "ragdoll"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "AnimEvent_PhysX_All_Disable"
+							mode = "direct"
+							on_beat = ""
+							to = "All_Disable"
+						}
+					]
+				}
+				{
+					name = "All_Disable"
+					ragdoll = "Ragdoll_All_Disable"
+					state_type = "ragdoll"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "AnimEvent_PhysX_All_Enable"
+							mode = "direct"
+							on_beat = ""
+							to = "All_Enable"
+						}
+					]
+				}
+			]
+		}
+		{
+			default_state = "Clip_wait01"
+			states = [
+				{
+					animations = [
+						"content/models/characters/PPK/animations/PPK_a_wait01"
+					]
+					loop_animation = true
+					name = "Clip_wait01"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+						{
+							blend_time = 0.2
+							event = "AnimEvent_Run"
+							mode = "direct"
+							on_beat = ""
+							to = "Clip_run03"
+						}
+					]
+					weights = [
+						"1.0"
+					]
+				}
+				{
+					animations = [
+						"content/models/characters/PPK/animations/PPK_a_run03"
+					]
+					loop_animation = true
+					name = "Clip_run03"
+					randomization_type = "every_loop"
+					root_driving = "ignore"
+					speed = "1"
+					state_type = "regular"
+					transitions = [
+					]
+					weights = [
+						"0.97"
+					]
+				}
+			]
+		}
+	]
+	ragdolls = {
+		Ragdoll_All_Disable = {
+			actors = [
+			]
+			keyframed = [
+				"Head"
+				"LeftHairA1"
+				"RightHairA2"
+				"PonyTail4"
+				"PonyTail2"
+				"PonyTail3"
+				"PonyTail1"
+				"RightHairA1"
+				"LeftHairA2"
+				"PonyTail"
+			]
+		}
+		Ragdoll_All_Enable = {
+			actors = [
+				"LeftHairA2"
+				"PonyTail"
+				"PonyTail1"
+				"PonyTail2"
+				"PonyTail4"
+				"PonyTail3"
+				"RightHairA2"
+			]
+			keyframed = [
+				"Head"
+				"LeftHairA1"
+				"RightHairA1"
+			]
+		}
+	}
+}
+constraint_root_folder_name = "Constraints"
+constraint_target_root_folder_name = "Constraint Targets"
+constraint_targets = {
+	_id = "0712dbf1-993e-496b-ae34-9ffdf6a11438"
+	_name = "Constraint Targets"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+constraints = {
+	_id = "8a1207ab-ead2-4e60-a000-20c1bbafbb31"
+	_name = "Constraints"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
+events = {
+	_id = "b20263a3-d432-4f0c-a222-8143f2f4236d"
+	_name = "events"
+	data_list = [
+		{
+			_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+			_name = "Anim End"
+		}
+		{
+			_id = "dc0cdaf7-62b4-4bf6-9f6e-e41e76a3aa2c"
+			_name = "AnimEvent_PhysX_All_Disable"
+		}
+		{
+			_id = "55098426-396f-43f5-b93b-1336f2f0e7b7"
+			_name = "AnimEvent_PhysX_All_Enable"
+		}
+		{
+			_id = "5b121e59-6d14-40f6-9963-2bf0f129c0ff"
+			_name = "AnimEvent_Jump"
+		}
+		{
+			_id = "10c1a764-c816-46ec-850c-5aeda0034be0"
+			_name = "AnimEvent_Run"
+		}
+	]
+	sub_folders = [
+	]
+}
+layers = [
+	{
+		_id = "ba362619-7576-4ca5-9ebd-e9450bf7d687"
+		_name = "Layer_Ragdoll"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "0a75a9bf-a1b9-41c1-8ffe-6a64acdecd33"
+			ref_filename = null
+			ref_id = "61aa7c08-7922-419b-9f81-f9e9089d8454"
+		}
+		empty_states = [
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+			{
+				_id = "61aa7c08-7922-419b-9f81-f9e9089d8454"
+				_name = "All_Enable"
+				anim_blend_set_ref = {
+					_id = "450904f6-a623-4c25-9788-5307afc66978"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "c84475b8-544c-494e-9777-b8267bd1d777"
+					ref_filename = null
+					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				ragdoll_ref = {
+					_id = "b7bc1f59-5e3a-4f09-b74a-4f450be2559d"
+					ref_filename = null
+					ref_id = "42c1ea8f-2a73-49bc-a3bb-a5f64593d761"
+				}
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "f272f4e6-7af3-4654-a403-653d45bbea9a"
+						actual_target_ref = {
+							_id = "c08f6294-f81e-4f25-acde-2d0446aded6b"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "cb3842e6-d1cd-40ff-855d-9a8cfb5c962a"
+							ref_filename = null
+							ref_id = "dc0cdaf7-62b4-4bf6-9f6e-e41e76a3aa2c"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "db189efa-35aa-4e90-b5fb-54ca2652273c"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "a5b66937-d324-477d-9d77-1ac738882af4"
+							ref_filename = null
+							ref_id = "3606ba1a-de01-444b-bf7f-535fd1f39dad"
+						}
+					}
+				]
+				weights = [
+				]
+				width = 150
+				x = 140
+				y = -80
+			}
+			{
+				_id = "3606ba1a-de01-444b-bf7f-535fd1f39dad"
+				_name = "All_Disable"
+				anim_blend_set_ref = {
+					_id = "e03ebb45-49ff-4e17-bb58-0705029c8a48"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "97817d52-87d5-4ccb-a126-f0d395284d3f"
+					ref_filename = null
+					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				ragdoll_ref = {
+					_id = "3eef3430-d9c0-404e-b057-b028f3bda9ab"
+					ref_filename = null
+					ref_id = "6cdb02b8-dab5-4137-a619-8a4828871c8e"
+				}
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "256430bb-8ffe-4142-8541-863f88ca063d"
+						actual_target_ref = {
+							_id = "b5d58371-dc32-40b8-b06c-3e9833ed7df0"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "b07d555c-c9d1-4640-bc2a-4bd02f322655"
+							ref_filename = null
+							ref_id = "55098426-396f-43f5-b93b-1336f2f0e7b7"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "d2192fea-8e91-42bb-97c9-3eb5f2334b86"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "c1cf05d6-d769-42b3-9bf5-42ffef04def5"
+							ref_filename = null
+							ref_id = "61aa7c08-7922-419b-9f81-f9e9089d8454"
+						}
+					}
+				]
+				weights = [
+				]
+				width = 150
+				x = 140
+				y = 120
+			}
+		]
+		shortcut_states = [
+		]
+		states = [
+		]
+		time_states = [
+		]
+	}
+	{
+		_id = "b2d5c997-6833-46b9-acf8-56589f072f35"
+		_name = "Base"
+		blend_states = [
+		]
+		default_state_ref = {
+			_id = "19563901-7218-4bfc-a874-860e3638fe65"
+			ref_filename = null
+			ref_id = "270fcc7b-edb4-400c-9a56-f6a9bdc44dfc"
+		}
+		empty_states = [
+		]
+		group_states = [
+		]
+		notes = [
+		]
+		ragdoll_states = [
+		]
+		shortcut_states = [
+		]
+		states = [
+			{
+				_id = "270fcc7b-edb4-400c-9a56-f6a9bdc44dfc"
+				_name = "Clip_wait01"
+				anim_blend_set_ref = {
+					_id = "3695ede3-feec-4dcb-ac2a-49bf70afc43d"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "08a389e4-e0cb-4490-81d0-15bd516eba65"
+						ref_filename = "content/models/characters/PPK/animations/PPK_a_wait01.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "c8d62913-f8e2-4e51-9bad-0d8dcab467d3"
+					ref_filename = null
+					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+					{
+						_id = "65444e07-5081-46df-afb4-62a45167a3ed"
+						actual_target_ref = {
+							_id = "7b28e7a0-2acf-4a6b-a4ea-96ea0923618d"
+							ref_filename = null
+							ref_id = null
+						}
+						blend_time = 0.2
+						event_ref = {
+							_id = "1e35f007-3d2c-4ae4-9d95-29fd90fb1177"
+							ref_filename = null
+							ref_id = "10c1a764-c816-46ec-850c-5aeda0034be0"
+						}
+						has_nested_from = false
+						mode = "direct"
+						nested_from_ref = {
+							_id = "4d74d175-ca4f-4992-b69f-72807d1cbe0e"
+							ref_filename = null
+							ref_id = null
+						}
+						on_beat = ""
+						to_state_ref = {
+							_id = "b0cb8c8e-1cb3-477f-adfe-99fe6d31703a"
+							ref_filename = null
+							ref_id = "3b14e0bf-17c7-4c7c-9b92-edf54748531f"
+						}
+					}
+				]
+				weights = [
+					"1.0"
+				]
+				width = 150
+				x = -80
+				y = -60
+			}
+			{
+				_id = "3b14e0bf-17c7-4c7c-9b92-edf54748531f"
+				_name = "Clip_run03"
+				anim_blend_set_ref = {
+					_id = "1c108409-cd4a-494f-931a-7f60141d88c8"
+					ref_filename = null
+					ref_id = null
+				}
+				animations = [
+					{
+						_id = "2e5afe14-b21b-4f7b-8ce5-0165b9b5d8e3"
+						ref_filename = "content/models/characters/PPK/animations/PPK_a_run03.anim_clip"
+						ref_id = null
+					}
+				]
+				constraints = [
+				]
+				exit_event_ref = {
+					_id = "34824391-695f-4e9e-b395-42c8cb1a8829"
+					ref_filename = null
+					ref_id = "851c636e-3359-44ee-95ca-1e9d4cab94ad"
+				}
+				group_transitions = [
+				]
+				loop_animation = true
+				markers = [
+				]
+				muted_layers = [
+				]
+				offset_state = false
+				randomization_type = "every_loop"
+				root_driving = "ignore"
+				speed = "1"
+				transitions = [
+				]
+				weights = [
+					"0.97"
+				]
+				width = 150
+				x = 140
+				y = -60
+			}
+		]
+		time_states = [
+		]
+	}
+]
+ragdoll_root_folder_name = "Ragdolls"
+ragdolls = {
+	_id = "4258032e-ac29-49dd-a673-24252f0313d8"
+	_name = "Ragdolls"
+	data_list = [
+		{
+			_id = "42c1ea8f-2a73-49bc-a3bb-a5f64593d761"
+			_name = "Ragdoll_All_Enable"
+			actors = [
+				"LeftHairA2"
+				"PonyTail"
+				"PonyTail1"
+				"PonyTail2"
+				"PonyTail4"
+				"PonyTail3"
+				"RightHairA2"
+			]
+			keyframed = [
+				"Head"
+				"LeftHairA1"
+				"RightHairA1"
+			]
+		}
+		{
+			_id = "6cdb02b8-dab5-4137-a619-8a4828871c8e"
+			_name = "Ragdoll_All_Disable"
+			actors = [
+			]
+			keyframed = [
+				"Head"
+				"LeftHairA1"
+				"RightHairA2"
+				"PonyTail4"
+				"PonyTail2"
+				"PonyTail3"
+				"PonyTail1"
+				"RightHairA1"
+				"LeftHairA2"
+				"PonyTail"
+			]
+		}
+	]
+	sub_folders = [
+	]
+}
+setup = {
+	_id = "fac8afa3-1fff-4925-87b3-034925969b3b"
+	level = ""
+	unit_ref = {
+		_id = "cb43cb1d-91ac-4963-aad4-24e5bff4a913"
+		ref_filename = "content/models/characters/PPK/PPK_m.unit_anim"
+		ref_id = null
+	}
+}
+variable_root_folder_name = "Variables"
+variables = {
+	_id = "b2bf5da5-92cf-4bef-9cbf-225ca90938fc"
+	_name = "Variables"
+	data_list = [
+	]
+	sub_folders = [
+	]
+}
