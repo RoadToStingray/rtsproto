@@ -3,12 +3,12 @@ actors = [
 	{
 		enabled = true
 		mass = 0
-		name = "pCube9"
-		node = "pCube9"
+		name = "TrashCan"
+		node = "TrashCan"
 		shapes = [
 			{
 				material = "default"
-				shape = "pCube9"
+				shape = "TrashCan"
 				template = "blocker"
 				type = "box"
 			}

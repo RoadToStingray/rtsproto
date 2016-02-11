@@ -7,4 +7,12 @@ nodes = [
 		function = "ProjectFlowCallbacks.example"
 		category = "Project"
 	}
+	{
+		name = "Level Event"
+		args = {
+			text = "string"
+		}
+		function = "ProjectFlowCallbacks.level_event"
+		category = "Project"
+	}
 ]

@@ -1,4 +1,13 @@
 
+movers = [
+	{
+		collision_filter = "default"
+		height = 1
+		name = "mover"
+		radius = 0.3
+		slope_limit = 0.785398163397448
+	}
+]
 physx_scene = {
 	actors = {
 		groundPlane = {

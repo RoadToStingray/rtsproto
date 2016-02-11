@@ -3,12 +3,12 @@ actors = [
 	{
 		enabled = true
 		mass = 0
-		name = "pCube9"
-		node = "pCube9"
+		name = "TreeStump"
+		node = "TreeStump"
 		shapes = [
 			{
 				material = "default"
-				shape = "pCube9"
+				shape = "TreeStump"
 				template = "blocker"
 				type = "box"
 			}

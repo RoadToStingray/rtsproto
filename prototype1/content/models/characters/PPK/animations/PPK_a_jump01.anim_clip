@@ -3,7 +3,7 @@ _data_root_version = 2
 _id = "f891d018-edc1-4a4f-a4af-30f2cdad5497"
 _name = "content/models/characters/PPK/animations/PPK_a_jump01"
 anim_skeleton_ref = {
-	_id = "eaa5efdf-00c8-4a79-bdcc-ae9dc4011521"
+	_id = "b3369621-1960-44de-85fc-308e3f72dd64"
 	ref_filename = "content/models/characters/PPK/PPK_m.anim_skeleton"
 	ref_id = null
 }
@@ -23,7 +23,7 @@ beats = [
 custom_compression_settings = [
 ]
 dcc_asset_ref = {
-	_id = "75861a69-e7ed-4654-92a6-30dfe4bafd96"
+	_id = "6003579a-5b6e-4aff-82b5-b65919cae904"
 	ref_filename = "content/models/characters/PPK/animations/PPK_a_jump01.dcc_asset"
 	ref_id = null
 }

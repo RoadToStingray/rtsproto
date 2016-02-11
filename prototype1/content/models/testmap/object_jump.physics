@@ -9,7 +9,7 @@ actors = [
 			{
 				material = "default"
 				shape = "pCube7"
-				template = "default"
+				template = "blocker"
 				type = "box"
 			}
 		]

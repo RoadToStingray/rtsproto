@@ -1,0 +1,3259 @@
+
+editor_metadata = {
+	Entities = [
+		{
+			id = "cb452151-b31f-434a-aac8-35e0669cfa53"
+			layer = "Default"
+			modified_components = {
+				"06c78e06-c921-4208-8069-d377b6415d30" = {
+					data = {
+						fog_enabled = false
+					}
+				}
+				"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+					data = {
+						motion_blur_enabled = false
+					}
+				}
+				"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+					data = {
+						vignette_enabled = false
+					}
+				}
+				"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+					data = {
+						bloom_enabled = false
+					}
+				}
+			}
+			name = "Default Shading Environment"
+			prefab = {
+				"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+				"$resource_type" = "entity"
+			}
+		}
+	]
+	Flow = {
+		Connections = [
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+				ToItem = "Camera_Unit"
+				ToNode = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+				ToItem = "Unit"
+				ToNode = "10ad9003-6107-46d4-bb09-54c142334211"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Pressed"
+				FromNode = "1793cfa5-5f89-46e3-ad7b-c483465ed108"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.VariableConnection"
+				FromItem = "Unit"
+				FromNode = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
+				ToItem = "Target_Unit"
+				ToNode = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+				Type = "Unit"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "dace9721-f45e-4029-93d1-b8b282d0684d"
+				Priority = 0
+				ToItem = "In"
+				ToNode = "10ad9003-6107-46d4-bb09-54c142334211"
+			}
+			{
+				Class = "Stingray.Foundation.Flow.EventConnection"
+				FromItem = "Out"
+				FromNode = "b1d053ef-5067-406a-a648-f5503017afad"
+				Priority = 0
+				ToItem = "Movement"
+				ToNode = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+			}
+		]
+		Groups = [
+			{
+				Collapsed = false
+				Groups = [
+				]
+				Id = "adfc2119-7213-4b29-a231-f75cda847814"
+				Nodes = [
+					"ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+					"1793cfa5-5f89-46e3-ad7b-c483465ed108"
+				]
+				Title = "reset"
+			}
+		]
+		Nodes = [
+			{
+				Brief = "Encapsulates a graph of logic stored in a separate flow resource file in the project."
+				Class = "Stingray.Foundation.Flow.FlowSubroutine"
+				Disable = {
+				}
+				Enable = {
+				}
+				Flow = {
+					Value = "script/Camera_Move_Constraint"
+				}
+				Id = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+				InEvents = [
+					"Movement"
+				]
+				InVariableNames = [
+					"Camera_Unit"
+					"Target_Unit"
+				]
+				InVariables = [
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+					{
+						Class = "Stingray.Foundation.Flow.InVariableUnit"
+						UseMyUnit = false
+					}
+				]
+				NodeLocation = {
+					X = -20
+					Y = -100
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				Title = "Flow Subroutine"
+				Width = 280
+			}
+			{
+				Brief = "References a unit constant"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+				InEvents = [
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -300
+					Y = -140
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
+				}
+				Title = "Level Unit"
+				Type = "core/units/camera"
+				Unit = {
+				}
+				Width = 160
+			}
+			{
+				Brief = "Passes an event at every update interval of the engine."
+				Class = "Stingray.Foundation.Flow.LevelUpdate"
+				Id = "b1d053ef-5067-406a-a648-f5503017afad"
+				NodeLocation = {
+					X = -300
+					Y = 20
+				}
+				Out = {
+				}
+				Title = "Level Update"
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Camera"
+						Type = "camera"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableCamera"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+				]
+				Brief = "Sets the active camera for the engine."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "10ad9003-6107-46d4-bb09-54c142334211"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Set Active Camera"
+				NodeLocation = {
+					X = 220
+					Y = -260
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Passes an event when the level has been loaded into the world."
+				Class = "Stingray.Foundation.Flow.LevelLoaded"
+				Id = "dace9721-f45e-4029-93d1-b8b282d0684d"
+				NodeLocation = {
+					X = -320
+					Y = -300
+				}
+				Out = {
+				}
+				Title = "Level Loaded"
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+							Value = "content/levels/testmap"
+						}
+					}
+				]
+				Brief = ""
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/appkit/appkit"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Change Level"
+				NodeLocation = {
+					X = -40
+					Y = 180
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+				]
+				Width = 160
+			}
+			{
+				Brief = "Allows the user to specify a standard keyboard button and send events such as pressed, held, and released."
+				ButtonName = {
+					Value = "f5"
+				}
+				Class = "Stingray.Foundation.Flow.KeyboardButton"
+				Device = {
+					Value = "keyboard"
+				}
+				DeviceNumber = {
+					Value = 0
+				}
+				Held = {
+				}
+				Id = "1793cfa5-5f89-46e3-ad7b-c483465ed108"
+				NodeLocation = {
+					X = -280
+					Y = 160
+				}
+				Pressed = {
+				}
+				Released = {
+				}
+				Title = "Keyboard Button"
+				Value = {
+				}
+				Width = 160
+			}
+			{
+				Arguments = [
+					{
+						RawName = "Name"
+						Type = "element"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableElement"
+							Type = "wwise_event"
+							Value = "bgm_ingame"
+						}
+					}
+					{
+						RawName = "Unit"
+						Type = "unit"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableUnit"
+							UseMyUnit = false
+						}
+					}
+					{
+						RawName = "Unit_Node"
+						Type = "string"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableString"
+						}
+					}
+					{
+						RawName = "Position"
+						Type = "vector3"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableVector3"
+						}
+					}
+					{
+						RawName = "Existing_Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.InVariableFloat"
+						}
+					}
+				]
+				Brief = "Posts the given event to the Wwise engine, creating a source if none is provided."
+				Class = "Stingray.Foundation.Flow.CustomScriptNode"
+				FlowNodesResource = "core/wwise/wwise"
+				FlowNodesResourceKey = "flow_nodes_resource"
+				Id = "b446a9e4-9237-4a98-9551-bfbe74c59931"
+				InEvents = [
+					"In"
+				]
+				IsQuery = false
+				Name = "Wwise Trigger Event"
+				NodeLocation = {
+					X = -20
+					Y = -460
+				}
+				OutEvents = [
+					"Out"
+				]
+				ReturnValues = [
+					{
+						RawName = "Playing_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+					{
+						RawName = "Source_Id"
+						Type = "float"
+						Variable = {
+							Class = "Stingray.Foundation.Flow.OutVariableFloat"
+						}
+					}
+				]
+				Width = 160
+			}
+			{
+				Brief = "References a unit constant"
+				Class = "Stingray.Foundation.Flow.LevelUnit"
+				Id = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
+				InEvents = [
+					"Test_Collide"
+				]
+				InVariableNames = [
+				]
+				InVariables = [
+				]
+				NodeLocation = {
+					X = -380
+					Y = -80
+				}
+				OutEvents = [
+				]
+				OutVariableNames = [
+				]
+				OutVariables = [
+				]
+				SetUnit = {
+					Id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
+				}
+				Title = "Level Unit"
+				Type = "content/models/characters/PPK/PPK_m"
+				Unit = {
+				}
+				Width = 160
+			}
+		]
+	}
+	Groups = [
+	]
+	Layers = [
+		"Default"
+		"Background"
+	]
+	LevelObjectSets = {
+		NestedSetNamesBySetName = {
+		}
+		ObjectIdsBySetName = {
+		}
+		VisibleSetNames = [
+		]
+	}
+	LevelReferences = [
+	]
+	LightBakeSettings = {
+		ExcludedObjectSets = [
+		]
+		FilterGain = 20
+		FilterType = "Both"
+		IlluminationType = "Both"
+		Layers = [
+		]
+		LightmapType = "Standard"
+		MaxSamples = 96
+		MinSamples = 32
+		QualityPreset = "Low"
+		SkylightIntensityRGB = {
+			X = 1
+			Y = 1
+			Z = 1
+		}
+		TexelScale = 10
+		Variance = 0.5
+	}
+	LuaPluginObjects = [
+	]
+	Navmeshes = [
+	]
+	Notes = [
+	]
+	ParticleEffects = [
+	]
+	PositionMarkers = [
+	]
+	Prototypes = [
+	]
+	Scatter = {
+		PoolSettings = {
+		}
+		ScatterData = {
+		}
+	}
+	Settings = {
+		FrozenLayers = [
+			"Background"
+		]
+		HiddenLayers = [
+		]
+		HiddenObjects = [
+		]
+		LastHiddenObjects = [
+		]
+		SoundEnvironment = ""
+		TimpaniSoundEnvironment = "default"
+	}
+	Sounds = [
+	]
+	Splines = [
+	]
+	Stories = [
+	]
+	Triggers = [
+	]
+	Units = [
+		{
+			Cameras = {
+			}
+			Id = "5ef77449-f33a-480d-8e9a-c93bcaeaf588"
+			Layer = "Default"
+			Lights = {
+				light = {
+					Baked = false
+					BoxMax = {
+						X = 10
+						Y = 10
+						Z = 10
+					}
+					BoxMin = {
+						X = -10
+						Y = 0
+						Z = -10
+					}
+					CastShadows = true
+					Color = {
+						A = 255
+						B = 255
+						G = 255
+						R = 255
+					}
+					Enabled = true
+					FalloffEnd = 8
+					FalloffStart = 0
+					Intensity = 1.5
+					Material = ""
+					MaterialResource = ""
+					SpotAngleEnd = 60
+					SpotAngleStart = 0
+					Type = "directional"
+				}
+			}
+			Material = "core/units/light_source"
+			Materials = {
+			}
+			Name = "Sun Light"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 5
+			}
+			Rot = {
+				W = 0.5
+				X = -0.707106781186547
+				Y = -2.77555756156289E-17
+				Z = 0.5
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/units/light_source"
+		}
+		{
+			Cameras = {
+			}
+			Id = "76a5e0ef-ec1f-4fd2-b2d4-17cc4082b7f5"
+			Layer = "Background"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Skydome"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = 1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "core/editor_slave/units/skydome/skydome"
+		}
+		{
+			Cameras = {
+			}
+			Id = "b549b9cf-a686-45d0-9899-37ca5c7e1cc4"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 5
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d3d9bbc2-b102-4f78-abd8-b0304d734440"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_down"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 12.5
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 5
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_down"
+		}
+		{
+			Cameras = {
+			}
+			Id = "41f8a869-3d18-4705-929a-d2d9b95257e9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_up"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 25
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 5
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_up"
+		}
+		{
+			Cameras = {
+			}
+			Id = "5652bfba-264e-4270-a455-2af577fba46e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 37.5
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "a03a0ca6-5cca-4f7a-b3cc-cf44ba71ee08"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_hole"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 50
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_hole"
+		}
+		{
+			Cameras = {
+			}
+			Id = "484c87d9-d108-4ed4-ae21-4ced822385c6"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "object_doublejump"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 37.5
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/object_doublejump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7e6389a3-6b08-4216-8f9b-3ef32ad24dc9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "object_passunder"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 29.816933
+				Z = -1.784988
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/object_passunder"
+		}
+		{
+			Cameras = {
+			}
+			Id = "98c6ed33-0559-4d9d-a1e9-d5e86a20f28b"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "object_jump"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 7.150001
+				Z = -0.116759
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/object_jump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "camera"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 8.584756
+				Y = -1.732734
+				Z = 1.677408
+			}
+			Rot = {
+				W = -0.858722
+				X = 0.062566
+				Y = 0.035553
+				Z = -0.507364
+			}
+			Scl = {
+				X = 1.000059
+				Y = 1.000032
+				Z = 1.000008
+			}
+			ScriptData = {
+			}
+			Type = "core/units/camera"
+		}
+		{
+			Cameras = {
+			}
+			Id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "PPK_m"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = -0.72889
+				Z = 0.035595
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/characters/PPK/PPK_m"
+		}
+		{
+			Cameras = {
+			}
+			Id = "fc4fdf8f-7506-4e3f-b96f-ee0d6389f706"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 46.943657
+				Z = 4.4339
+			}
+			Rot = {
+				W = -0.998313
+				X = -0.058065
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 0.237726
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "93a85907-2aec-45af-a2fd-641e2bd64853"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat5"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 51.81633
+				Z = -6.371834
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "563f24b1-f66e-4649-adbe-4eafb6c8191e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat6"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 64.25119
+				Z = -6.371834
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "f148841b-e6af-42c7-b4b6-69e199047e1e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat7"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 81.148651
+				Z = -2.857588
+			}
+			Rot = {
+				W = -0.985282
+				X = -0.170936
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1.277425
+				Z = 0.530439
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d79d51fe-2d9d-457e-bc66-e49ad6ffeae9"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_down2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 95.751091
+				Z = -3.244061
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_down"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cf2d1f06-2843-4475-8dd5-bc176534c689"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_up2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 110.006165
+				Z = -3.244061
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_up"
+		}
+		{
+			Cameras = {
+			}
+			Id = "dc93b4b4-6978-47e5-bbb9-7b6baa280263"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat8"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 122.506165
+				Z = -3.244061
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "972e893a-6f00-42ef-9227-5bea0db3b766"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_down3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 138.116302
+				Z = -3.244061
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_down"
+		}
+		{
+			Cameras = {
+			}
+			Id = "1cfd6283-8ea1-4477-b7f9-859993cda705"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "map_flat9"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 173.471115
+				Z = -3.244061
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 4.219618
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/map_flat"
+		}
+		{
+			Cameras = {
+			}
+			Id = "cbd63682-dd4e-4156-8f1e-cc3e4b81cb76"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TrashCan"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 10.507858
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TrashCan/TrashCan"
+		}
+		{
+			Cameras = {
+			}
+			Id = "df60ab8b-f611-452f-9951-2cd090fede56"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 19.931835
+				Z = -2.522286
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "7a5b1eea-dc8c-45f6-a0a5-1d6e7823e677"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -2.902666
+				Y = -2.615701
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.960004
+				X = 0
+				Y = 0
+				Z = -0.279986
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6894df99-6605-4f5d-b603-48bba0b2f24a"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.541454
+				Y = 9.225386
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.76799
+				X = 0
+				Y = 0
+				Z = -0.640462
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "dee8c9c0-068c-43c7-acb3-1196397a27bb"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -3.541454
+				Y = 5.127353
+				Z = -0.300907
+			}
+			Rot = {
+				W = -0.997278
+				X = 0
+				Y = 0
+				Z = 0.073732
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "ebf4dded-42ee-49b7-8d94-a66d4c5d81a8"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = -4.174607
+				Y = 16.660402
+				Z = -2.794421
+			}
+			Rot = {
+				W = -0.970235
+				X = 0
+				Y = 0
+				Z = -0.242166
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "356d3490-2c9a-4dd2-b7cc-57b5815ea685"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "Tree4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 3.729833
+				Y = 21.965176
+				Z = -2.626296
+			}
+			Rot = {
+				W = -0.997278
+				X = 0
+				Y = 0
+				Z = 0.073732
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/Tree/Tree"
+		}
+		{
+			Cameras = {
+			}
+			Id = "df5407ef-0b35-4312-8955-9febf695322e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 60.905449
+				Z = -6.377746
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "2a0d6af5-6795-417c-b2af-eb33fb4db8aa"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 104.945946
+				Z = -5.752518
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "d7b4fcf2-cacd-4d8b-8c4f-1d0480b8fd9f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 117.178253
+				Z = -3.264677
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "6422cb64-dc26-43d2-9fe7-9a92be0ec19d"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "TreeStump4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 125.066216
+				Z = -3.264677
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/blockers/TreeStump/TreeStump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "db2091a0-5f5f-414f-bae3-443d3bca8c9e"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "object_doublejump1"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 155.585114
+				Z = -3.310849
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/object_doublejump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "0956aead-d4f7-4460-8bde-5f7904c4c795"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "object_doublejump2"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 80.596809
+				Z = -3.310849
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/object_doublejump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "4b2ea520-496b-40bb-b955-03d01ff27b8f"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "object_doublejump3"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 166.575485
+				Z = -3.310849
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/object_doublejump"
+		}
+		{
+			Cameras = {
+			}
+			Id = "57d55069-7725-4613-acbe-de88b99e776c"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "object_doublejump4"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 0
+				Y = 176.910919
+				Z = -3.257364
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 3
+				Y = 1
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testmap/object_doublejump"
+		}
+	]
+	Volumes = [
+	]
+}
+entities = [
+	{
+		id = "cb452151-b31f-434a-aac8-35e0669cfa53"
+		modified_components = {
+			"06c78e06-c921-4208-8069-d377b6415d30" = {
+				data = {
+					fog_enabled = false
+				}
+			}
+			"cd8f2898-5821-4e3f-8348-a7d2f3c869d2" = {
+				data = {
+					motion_blur_enabled = false
+				}
+			}
+			"dd1dccf2-6f2f-4b8c-9199-290c069ab62b" = {
+				data = {
+					vignette_enabled = false
+				}
+			}
+			"fd909d00-3e4d-4339-b1a9-784c7d6a60ad" = {
+				data = {
+					bloom_enabled = false
+				}
+			}
+		}
+		name = "Default Shading Environment"
+		prefab = {
+			"$resource_name" = "core/stingray_renderer/environments/midday/midday_shading_environment"
+			"$resource_type" = "entity"
+		}
+	}
+]
+flow = {
+	nodes = [
+		{
+			id = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+			in_event_index = [
+				"Movement"
+			]
+			in_variables = {
+				camera__unit = {
+					node = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+					type = "unit"
+					variable = "unit"
+				}
+				target__unit = {
+					node = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			out_event_index = [
+			]
+			type = "flow_subroutine"
+			variable_values = {
+				camera__unit = null
+				flow = "script/Camera_Move_Constraint"
+				target__unit = null
+			}
+		}
+		{
+			id = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+			in_event_index = [
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
+				}
+				unit = null
+			}
+		}
+		{
+			id = "b1d053ef-5067-406a-a648-f5503017afad"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "1e0c230f-b02e-4476-ab0a-34cc36fca84b:0"
+						node = "1e0c230f-b02e-4476-ab0a-34cc36fca84b"
+					}
+				]
+			}
+			type = "level_update"
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "10ad9003-6107-46d4-bb09-54c142334211"
+			in_variables = {
+				Camera = {
+					type = "camera"
+				}
+				Unit = {
+					node = "2c0ef529-c338-4daa-9823-0fa0ca14335c"
+					type = "unit"
+					variable = "unit"
+				}
+			}
+			name = "Set Active Camera"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Camera = null
+				Unit = null
+			}
+			variables = [
+				{
+					name = "Camera"
+					type = "camera"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+			]
+		}
+		{
+			id = "dace9721-f45e-4029-93d1-b8b282d0684d"
+			out_events = {
+				out = [
+					{
+						event = 0
+						id = "10ad9003-6107-46d4-bb09-54c142334211:0"
+						node = "10ad9003-6107-46d4-bb09-54c142334211"
+					}
+				]
+			}
+			type = "level_loaded"
+		}
+		{
+			flow_nodes_resource = "core/appkit/appkit"
+			id = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+			in_variables = {
+				Name = {
+					type = "string"
+				}
+			}
+			name = "Change Level"
+			query = false
+			return_values = [
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Name = "content/levels/testmap"
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+			]
+		}
+		{
+			id = "1793cfa5-5f89-46e3-ad7b-c483465ed108"
+			in_variables = {
+				button_name = {
+					type = "string"
+				}
+				device = {
+					type = "string"
+				}
+				device_number = {
+					type = "float"
+				}
+			}
+			out_events = {
+				pressed = [
+					{
+						event = 0
+						id = "ba425c14-fa4e-4270-a8a5-286dbd1102e4:0"
+						node = "ba425c14-fa4e-4270-a8a5-286dbd1102e4"
+					}
+				]
+			}
+			type = "keyboard_button"
+			variable_values = {
+				button_name = "f5"
+				device = "keyboard"
+				device_number = 0
+				value = null
+			}
+		}
+		{
+			flow_nodes_resource = "core/wwise/wwise"
+			id = "b446a9e4-9237-4a98-9551-bfbe74c59931"
+			in_variables = {
+				Existing_Source_Id = {
+					type = "float"
+				}
+				Name = {
+					type = "string"
+				}
+				Position = {
+					type = "vector3"
+				}
+				Unit = {
+					type = "unit"
+				}
+				Unit_Node = {
+					type = "string"
+				}
+			}
+			name = "Wwise Trigger Event"
+			query = false
+			return_values = [
+				{
+					name = "Playing_Id"
+					type = "float"
+				}
+				{
+					name = "Source_Id"
+					type = "float"
+				}
+			]
+			type = "custom_script_node"
+			variable_values = {
+				Existing_Source_Id = null
+				Name = "bgm_ingame"
+				Playing_Id = null
+				Position = null
+				Source_Id = null
+				Unit = null
+				Unit_Node = null
+			}
+			variables = [
+				{
+					name = "Name"
+					type = "string"
+				}
+				{
+					name = "Unit"
+					type = "unit"
+				}
+				{
+					name = "Unit_Node"
+					type = "string"
+				}
+				{
+					name = "Position"
+					type = "vector3"
+				}
+				{
+					name = "Existing_Source_Id"
+					type = "float"
+				}
+			]
+		}
+		{
+			id = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
+			in_event_index = [
+				"Test_Collide"
+			]
+			out_event_index = [
+			]
+			out_variables = {
+				unit = {
+					type = "unit"
+				}
+			}
+			type = "level_unit"
+			variable_values = {
+				set_unit = {
+					id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
+				}
+				unit = null
+			}
+		}
+	]
+}
+level_references = [
+]
+level_settings = {
+	num_background_units = 0
+	sound_environment = ""
+	timpani_sound_environment = "default"
+}
+navmeshes = [
+]
+object_sets = {
+}
+particle_effects = [
+]
+prototypes = [
+]
+scatter = [
+]
+sounds = [
+]
+splines = [
+]
+stories = [
+]
+triggers = [
+]
+units = [
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5ef77449-f33a-480d-8e9a-c93bcaeaf588"
+		lights = {
+			light = {
+				baked = false
+				box_max = [
+					10
+					10
+					10
+				]
+				box_min = [
+					-10
+					0
+					-10
+				]
+				cast_shadows = true
+				color = [
+					1
+					1
+					1
+				]
+				enabled = true
+				falloff_end = 8
+				falloff_start = 0
+				intensity = 1.5
+				material = ""
+				spot_angle_end = 1.0471975511966
+				spot_angle_start = 0
+				type = "directional"
+			}
+		}
+		material = "core/units/light_source"
+		materials = {
+		}
+		name = "Sun Light"
+		pos = [
+			0
+			0
+			5
+		]
+		rot = [
+			-0.707106781186547
+			-2.77555756156289E-17
+			0.5
+			0.5
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/units/light_source"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "76a5e0ef-ec1f-4fd2-b2d4-17cc4082b7f5"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Skydome"
+		pos = [
+			0
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "core/editor_slave/units/skydome/skydome"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "b549b9cf-a686-45d0-9899-37ca5c7e1cc4"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat"
+		pos = [
+			0
+			0
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			5
+			1
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d3d9bbc2-b102-4f78-abd8-b0304d734440"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_down"
+		pos = [
+			0
+			12.5
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			5
+			1
+			1
+		]
+		type = "content/models/testmap/map_down"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "41f8a869-3d18-4705-929a-d2d9b95257e9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_up"
+		pos = [
+			0
+			25
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			5
+			1
+			1
+		]
+		type = "content/models/testmap/map_up"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "5652bfba-264e-4270-a455-2af577fba46e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat1"
+		pos = [
+			0
+			37.5
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "a03a0ca6-5cca-4f7a-b3cc-cf44ba71ee08"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_hole"
+		pos = [
+			0
+			50
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/map_hole"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "484c87d9-d108-4ed4-ae21-4ced822385c6"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "object_doublejump"
+		pos = [
+			0
+			37.5
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/object_doublejump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7e6389a3-6b08-4216-8f9b-3ef32ad24dc9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "object_passunder"
+		pos = [
+			0
+			29.816933
+			-1.784988
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/object_passunder"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "98c6ed33-0559-4d9d-a1e9-d5e86a20f28b"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "object_jump"
+		pos = [
+			0
+			7.150001
+			-0.116759
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/object_jump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "08864ce8-ce00-4511-88ac-e2831e178fd0"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "camera"
+		pos = [
+			8.584756
+			-1.732734
+			1.677408
+		]
+		rot = [
+			0.062566
+			0.035553
+			-0.507364
+			-0.858722
+		]
+		scl = [
+			1.000059
+			1.000032
+			1.000008
+		]
+		type = "core/units/camera"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "47c698d2-0e6a-4fb2-9f5b-e8d77f3e36c3"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "PPK_m"
+		pos = [
+			0
+			-0.72889
+			0.035595
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/characters/PPK/PPK_m"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "fc4fdf8f-7506-4e3f-b96f-ee0d6389f706"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat4"
+		pos = [
+			0
+			46.943657
+			4.4339
+		]
+		rot = [
+			-0.058065
+			0
+			0
+			-0.998313
+		]
+		scl = [
+			3
+			1
+			0.237726
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "93a85907-2aec-45af-a2fd-641e2bd64853"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat5"
+		pos = [
+			0
+			51.81633
+			-6.371834
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "563f24b1-f66e-4649-adbe-4eafb6c8191e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat6"
+		pos = [
+			0
+			64.25119
+			-6.371834
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "f148841b-e6af-42c7-b4b6-69e199047e1e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat7"
+		pos = [
+			0
+			81.148651
+			-2.857588
+		]
+		rot = [
+			-0.170936
+			0
+			0
+			-0.985282
+		]
+		scl = [
+			3
+			1.277425
+			0.530439
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d79d51fe-2d9d-457e-bc66-e49ad6ffeae9"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_down2"
+		pos = [
+			0
+			95.751091
+			-3.244061
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/map_down"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cf2d1f06-2843-4475-8dd5-bc176534c689"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_up2"
+		pos = [
+			0
+			110.006165
+			-3.244061
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/map_up"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "dc93b4b4-6978-47e5-bbb9-7b6baa280263"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat8"
+		pos = [
+			0
+			122.506165
+			-3.244061
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "972e893a-6f00-42ef-9227-5bea0db3b766"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_down3"
+		pos = [
+			0
+			138.116302
+			-3.244061
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/map_down"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "1cfd6283-8ea1-4477-b7f9-859993cda705"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "map_flat9"
+		pos = [
+			0
+			173.471115
+			-3.244061
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			4.219618
+			1
+		]
+		type = "content/models/testmap/map_flat"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "cbd63682-dd4e-4156-8f1e-cc3e4b81cb76"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TrashCan"
+		pos = [
+			0
+			10.507858
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/TrashCan/TrashCan"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "df60ab8b-f611-452f-9951-2cd090fede56"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump"
+		pos = [
+			0
+			19.931835
+			-2.522286
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "7a5b1eea-dc8c-45f6-a0a5-1d6e7823e677"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree"
+		pos = [
+			-2.902666
+			-2.615701
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			-0.279986
+			-0.960004
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6894df99-6605-4f5d-b603-48bba0b2f24a"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree1"
+		pos = [
+			-3.541454
+			9.225386
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			-0.640462
+			-0.76799
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "dee8c9c0-068c-43c7-acb3-1196397a27bb"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree2"
+		pos = [
+			-3.541454
+			5.127353
+			-0.300907
+		]
+		rot = [
+			0
+			0
+			0.073732
+			-0.997278
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "ebf4dded-42ee-49b7-8d94-a66d4c5d81a8"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree3"
+		pos = [
+			-4.174607
+			16.660402
+			-2.794421
+		]
+		rot = [
+			0
+			0
+			-0.242166
+			-0.970235
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "356d3490-2c9a-4dd2-b7cc-57b5815ea685"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "Tree4"
+		pos = [
+			3.729833
+			21.965176
+			-2.626296
+		]
+		rot = [
+			0
+			0
+			0.073732
+			-0.997278
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/Tree/Tree"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "df5407ef-0b35-4312-8955-9febf695322e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump1"
+		pos = [
+			0
+			60.905449
+			-6.377746
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "2a0d6af5-6795-417c-b2af-eb33fb4db8aa"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump2"
+		pos = [
+			0
+			104.945946
+			-5.752518
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "d7b4fcf2-cacd-4d8b-8c4f-1d0480b8fd9f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump3"
+		pos = [
+			0
+			117.178253
+			-3.264677
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "6422cb64-dc26-43d2-9fe7-9a92be0ec19d"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "TreeStump4"
+		pos = [
+			0
+			125.066216
+			-3.264677
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			1
+			1
+		]
+		type = "content/models/blockers/TreeStump/TreeStump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "db2091a0-5f5f-414f-bae3-443d3bca8c9e"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "object_doublejump1"
+		pos = [
+			0
+			155.585114
+			-3.310849
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/object_doublejump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "0956aead-d4f7-4460-8bde-5f7904c4c795"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "object_doublejump2"
+		pos = [
+			0
+			80.596809
+			-3.310849
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/object_doublejump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "4b2ea520-496b-40bb-b955-03d01ff27b8f"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "object_doublejump3"
+		pos = [
+			0
+			166.575485
+			-3.310849
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/object_doublejump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "57d55069-7725-4613-acbe-de88b99e776c"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "object_doublejump4"
+		pos = [
+			0
+			176.910919
+			-3.257364
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			3
+			1
+			1
+		]
+		type = "content/models/testmap/object_doublejump"
+	}
+]
+volumes = [
+]
