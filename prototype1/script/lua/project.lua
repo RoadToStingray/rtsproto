@@ -6,6 +6,7 @@
 Project = Project or {}
 
 require 'script/lua/flow_callbacks'
+require 'script/lua/tools'
 
 Project.level_names = {
 	testmap = "content/levels/testmap"
