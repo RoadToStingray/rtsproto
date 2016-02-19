@@ -37,8 +37,6 @@ end
 function Tools.Spawn(name, position, rotation)
     local SimpleProject = require 'core/appkit/lua/simple_project'
     local world = SimpleProject.world
-    local m = stingray.Matrix4x4.identity()
-    stingray.Matrix4x4.set_translation(m, stingray.Vector3(1,0,1))
         
     stingray.World.spawn_unit(world, name, position, rotation)
 end
