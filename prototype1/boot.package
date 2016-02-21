@@ -34,6 +34,10 @@ wwise_dep = [
     "content/audio/*"
 ]
 
+s2d = [
+    "s2d_projects/test_mainmenu"
+    "s2d_projects/test_gameui"
+]
 
 ADD_PACKAGES = [
 	"core/gwnav/boot.package",
