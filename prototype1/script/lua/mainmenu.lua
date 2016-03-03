@@ -24,7 +24,8 @@ function MainMenu.start()
 	end
 
 	if scaleform then
-		scaleform.Stingray.load_project("test_mainmenu.s2dproj", "s2d_projects/test_mainmenu")
+	    scaleform.Stingray.load_project_and_scene("s2d_projects/rts_ui.s2d/rts_ui")
+		--scaleform.Stingray.load_project("test_mainmenu.s2dproj", "s2d_projects/test_mainmenu")
 		scaleform.Stage.set_view_scale_mode(1)
 		--Register menu button mouse listener
 		local custom_listener = MainMenu.custom_listener
@@ -71,7 +72,7 @@ local function perform_action()
 	-- Load empty level
 	if MainMenu.action == "start" then
 		MainMenu.shutdown()
-		SimpleProject.change_level(Project.level_names.testmap2)
+		SimpleProject.change_level(Project.level_names.testmap2)    --☆levelを読み込んでいる
 	-- Exit the program
 	elseif MainMenu.action == "exit" then
 		stingray.Application.quit()

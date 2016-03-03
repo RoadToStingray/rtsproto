@@ -35,8 +35,7 @@ wwise_dep = [
 ]
 
 s2d = [
-    "s2d_projects/test_mainmenu"
-    "s2d_projects/test_gameui"
+    "s2d_projects/rts_ui"
 ]
 
 ADD_PACKAGES = [

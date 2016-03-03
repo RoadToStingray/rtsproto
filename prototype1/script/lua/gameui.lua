@@ -24,13 +24,24 @@ function MainMenu.start()
 	end
 
 	if scaleform then
-		scaleform.Stingray.load_project("test_gameui.s2dproj", "s2d_projects/test_gameui")
+	    --現在の実装だと読み込まれているlevelが変わると、scaleformを読み込み治す必要がある
+	    scaleform.Stingray.load_project_and_scene("s2d_projects/rts_ui.s2d/rts_ui") 
+		--[[scaleform.Stingray.load_project("test_gameui.s2dproj", "s2d_projects/test_gameui")
+		
 		scaleform.Stage.set_view_scale_mode(1)
 		--Register menu button mouse listener
 		local custom_listener = MainMenu.custom_listener
 		custom_listener = scaleform.EventListener.create(custom_listener, MainMenu.on_custom_event)
 		MainMenu.custom_listener = custom_listener
-		scaleform.EventListener.connect(custom_listener, scaleform.EventTypes.Custom)
+		scaleform.EventListener.connect(custom_listener, scaleform.EventTypes.Custom)]]--
+		
+		print('gameuiを読み込むよ')
+       	local loading = scaleform.Actor.load("gameui.s2dscene")
+	    -- Remove the main menu scene
+        scaleform.Stage.remove_scene_by_index(1)
+        -- Add the loading scene
+        scaleform.Stage.add_scene(loading)
+        print('gameuiを読み込めたよ')
 	end
 
 	local level = SimpleProject.level
