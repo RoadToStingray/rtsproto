@@ -21,16 +21,6 @@ anim_bones = [
 		lod_level = 5
 	}
 	{
-		_id = "30f57d59-a6f7-4e1c-bdcf-3419ae1e3fee"
-		_name = "PPK"
-		lod_level = 5
-	}
-	{
-		_id = "fd4bb2f1-c8c8-444c-a4a7-8089d1f4bb9c"
-		_name = "rig"
-		lod_level = 5
-	}
-	{
 		_id = "abc5b145-47cf-4bb6-8dfd-464cfafda7a8"
 		_name = "Spine"
 		lod_level = 5
@@ -56,86 +46,6 @@ anim_bones = [
 		lod_level = 5
 	}
 	{
-		_id = "c359c53d-7e7c-4143-8629-202ee525f40b"
-		_name = "lash"
-		lod_level = 5
-	}
-	{
-		_id = "25014d1a-95f8-4aa1-ae8e-d33dea0f3eb2"
-		_name = "jacket"
-		lod_level = 5
-	}
-	{
-		_id = "42764ccb-0c6e-44d4-8a5d-e99b19244d87"
-		_name = "eyeR"
-		lod_level = 5
-	}
-	{
-		_id = "5fe8804c-b7ab-4dc4-96ea-84271e8a7e31"
-		_name = "cap"
-		lod_level = 5
-	}
-	{
-		_id = "4d9fc829-7678-4d6c-9cbe-16283eea8bd0"
-		_name = "eyeL"
-		lod_level = 5
-	}
-	{
-		_id = "39305cbb-5b40-4aff-9d39-8a944339c128"
-		_name = "hair1"
-		lod_level = 5
-	}
-	{
-		_id = "cd86370d-e064-4e15-b39a-b2a50eaa877a"
-		_name = "body"
-		lod_level = 5
-	}
-	{
-		_id = "ec5bf640-ff1c-4aea-86c5-3917d41bf85b"
-		_name = "teeth"
-		lod_level = 5
-	}
-	{
-		_id = "8e614e26-4000-4f5e-8f7b-6f94833fb5fe"
-		_name = "handR"
-		lod_level = 5
-	}
-	{
-		_id = "b7c508dd-f973-47f1-82b5-dcc986952b47"
-		_name = "handL"
-		lod_level = 5
-	}
-	{
-		_id = "8a6c2d78-cb2b-4ab8-b812-2bd7390f1ffb"
-		_name = "headphone"
-		lod_level = 5
-	}
-	{
-		_id = "a4564745-8160-4d9f-b80f-566259b183d4"
-		_name = "shoseBandL"
-		lod_level = 5
-	}
-	{
-		_id = "c2d6fdf2-bcad-4271-a39f-f459994cff1c"
-		_name = "shoseBandR"
-		lod_level = 5
-	}
-	{
-		_id = "7109c1df-6e6b-47c5-8dd6-d571f4695ae4"
-		_name = "leg"
-		lod_level = 5
-	}
-	{
-		_id = "9fd61c94-5e5e-4580-8e44-5358c5e6fde3"
-		_name = "global_C0_ctl"
-		lod_level = 5
-	}
-	{
-		_id = "c1ab6fff-9b00-4ef4-a067-8558fa2b30c2"
-		_name = "shd_org"
-		lod_level = 5
-	}
-	{
 		_id = "7c9ef70d-6175-4d19-96de-245b02d546ab"
 		_name = "Spine1"
 		lod_level = 5
@@ -151,16 +61,6 @@ anim_bones = [
 		lod_level = 5
 	}
 	{
-		_id = "9a8571ab-16fc-4b32-a49c-e53d254176a4"
-		_name = "local_C0_root"
-		lod_level = 5
-	}
-	{
-		_id = "50cf735e-c180-4d44-a1db-0b0db1689308"
-		_name = "spine_C0_shd_org"
-		lod_level = 5
-	}
-	{
 		_id = "7ea3bbdd-68fd-4beb-a9c6-47c508a273c0"
 		_name = "Spine2"
 		lod_level = 5
@@ -173,16 +73,6 @@ anim_bones = [
 	{
 		_id = "d5defc99-2d59-40c9-88d6-ae94b58dbbc0"
 		_name = "RightFoot"
-		lod_level = 5
-	}
-	{
-		_id = "835be74f-f02a-4891-bb38-9a57ecf47c42"
-		_name = "local_C0_ik_cns"
-		lod_level = 5
-	}
-	{
-		_id = "589d0d6c-2708-424c-829e-7af38ed1a4da"
-		_name = "spine_C0_0_shd"
 		lod_level = 5
 	}
 	{
@@ -241,11 +131,6 @@ anim_bones = [
 		lod_level = 5
 	}
 	{
-		_id = "47745d96-03d2-4027-bbc4-5d863f9912ec"
-		_name = "local_C0_ctl"
-		lod_level = 5
-	}
-	{
 		_id = "23f497f5-2f0d-457d-99f8-bca689b5635b"
 		_name = "LeftArm"
 		lod_level = 5
@@ -273,11 +158,6 @@ anim_bones = [
 	{
 		_id = "cbdce89b-3488-484d-8b8c-44c686bb95c3"
 		_name = "RightArm"
-		lod_level = 5
-	}
-	{
-		_id = "8d6c80d7-c54d-4659-bad9-996361f76f06"
-		_name = "body_C0_root"
 		lod_level = 5
 	}
 	{
@@ -316,11 +196,6 @@ anim_bones = [
 		lod_level = 5
 	}
 	{
-		_id = "a84adacb-2516-4a66-be98-b7b2daea1494"
-		_name = "body_C0_ik_cns"
-		lod_level = 5
-	}
-	{
 		_id = "d5f99cdd-4cb6-4da5-b87b-926ed3e8df70"
 		_name = "LeftHand"
 		lod_level = 5
@@ -343,11 +218,6 @@ anim_bones = [
 	{
 		_id = "0b4054f6-b030-4ce8-8ab8-0ddb01c8414d"
 		_name = "RightHand"
-		lod_level = 5
-	}
-	{
-		_id = "8dc2a6f4-b6b8-493d-a1b0-da97d604e99e"
-		_name = "body_C0_ctl"
 		lod_level = 5
 	}
 	{
@@ -416,11 +286,6 @@ anim_bones = [
 		lod_level = 5
 	}
 	{
-		_id = "12a389b7-c67f-4621-a08e-aaeb1f6857db"
-		_name = "spine_C0_root"
-		lod_level = 5
-	}
-	{
 		_id = "17b600c2-1ed0-4f89-b2a4-2809dcdf447d"
 		_name = "LeftHandThumb2"
 		lod_level = 5
@@ -476,23 +341,238 @@ anim_bones = [
 		lod_level = 5
 	}
 	{
-		_id = "4b3a77a3-8758-4923-9313-eee70615410d"
-		_name = "spine_C0_0_scl_npo"
-		lod_level = 5
-	}
-	{
 		_id = "149c148b-5cc1-40b5-b9c5-88831986b3f6"
 		_name = "PonyTail4"
 		lod_level = 5
 	}
 	{
-		_id = "618e21dc-91eb-4c4f-9ee5-79a1f8b884b1"
-		_name = "spine_C0_0_loc"
+		_id = "7d9a433b-f314-4dfa-9eaf-d343366beba0"
+		_name = "PonyTail5"
 		lod_level = 5
 	}
 	{
-		_id = "7d9a433b-f314-4dfa-9eaf-d343366beba0"
-		_name = "PonyTail5"
+		_id = "a9a2dc6f-8bf3-41d7-b580-ca4a79a29b10"
+		_name = "PPK_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "83e9020a-d174-475e-a789-caa7e0079a14"
+		_name = "head_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "f946fa79-445d-4259-80c3-01d1292949b7"
+		_name = "body_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "5345299a-361e-4918-bf43-5f41fb5ccdc6"
+		_name = "C_hairBand_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "8929fad4-9b79-482a-9c36-6b09f907bc6a"
+		_name = "C_knitCap_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "4e277fdf-e301-4517-b9da-2f9ee8727a8d"
+		_name = "C_teeth_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "380897a0-cfb9-49a5-a6e2-978d8f9c1662"
+		_name = "L_eyeball_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "1479ca93-6806-4f2a-b54b-c35a58c557a0"
+		_name = "L_eyebrow_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "d98ede4e-a4b8-457f-9386-11ec0651dea3"
+		_name = "L_eyelash_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "39d0e623-88d1-43eb-9261-358a954e67a0"
+		_name = "R_eyeball_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "a2e8d483-a529-4e2c-84aa-bd5f791216b3"
+		_name = "R_eyebrow_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "529bb8ce-4458-4fda-a637-913364d201ae"
+		_name = "hair_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "1dc34be1-2fc3-4829-88f2-74a545cd47a4"
+		_name = "R_eyelash_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "09fcd7b6-e028-4e6c-a4f4-03be8ffb0d22"
+		_name = "C_body_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "4a7446ad-875a-43e6-81d6-f13fc55c1cab"
+		_name = "C_jacket_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "2551c790-c9c7-43c6-bdc2-a781d4c9e1d9"
+		_name = "C_pants_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "202c3f09-d9c9-4550-8cfb-53c1d7aef49c"
+		_name = "C_tongue_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "e4074063-48f8-47f0-bff3-a9ef4613adf9"
+		_name = "L_hand_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "1c11a459-59a7-46fd-ae3e-3d25a3d29e73"
+		_name = "L_leg_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "55063d62-bb08-49c5-a556-163c93181e8a"
+		_name = "L_shoe_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "dabca72c-1960-4b96-a284-9784fa9c5032"
+		_name = "R_hand_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "96fed338-647c-43ff-99c7-7709ee6cff0e"
+		_name = "R_leg_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "d8cb5d48-05a3-4130-9e9a-8bcb0ceaede0"
+		_name = "R_shoe_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "234a8f3c-f8ef-498e-91e9-3a661b548778"
+		_name = "headphone_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "807a11c1-078a-460f-b6a2-3584b3ff83e9"
+		_name = "C_hairNeckline_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "684035ab-93de-4c62-a5dd-708ae0d57a90"
+		_name = "C_hairPonytail_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "d9f376bd-34b5-4430-896c-a7c57b2aa10c"
+		_name = "L_hair_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "4e20f104-b872-4ce1-af1e-4551d16c6db8"
+		_name = "R_hair_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "dbc57edf-8e32-453b-b7f0-4cfa277e4e48"
+		_name = "L_shoe001_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "db446c07-b6bc-4c4d-b4ae-fa1b55468082"
+		_name = "L_shoe002_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "d74938e4-7020-4995-bec6-fef6c2b09729"
+		_name = "R_shoe001_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "40944df4-0b22-4532-bf87-fdc03950cd92"
+		_name = "R_shoe002_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "7d90fb69-332b-4df9-893d-26f0880a766f"
+		_name = "C_headphoneArm_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "a91e1576-1ae7-4988-a790-8eb7418054fe"
+		_name = "L_earPad_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "4b79d44d-3284-4349-84a5-ea21888bf063"
+		_name = "R_earPad_GRP"
+		lod_level = 5
+	}
+	{
+		_id = "daf72fa6-9ccd-444e-8021-1f90e933b2cf"
+		_name = "L_earPad001_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "29720725-3c5a-43a7-ac64-d8a3430ed4e0"
+		_name = "L_earPad002_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "fc16bd54-6a07-4a13-9015-0de1fb2c8cd8"
+		_name = "L_earPad003_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "942839b8-a24e-4626-81dc-b6057de04a06"
+		_name = "L_earPad004_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "ca270df8-d382-471a-8e54-d7f774ad9398"
+		_name = "L_earPad005_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "d26936cc-1e5d-4b34-9085-1dcdd07c51b4"
+		_name = "R_earPad001_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "a48fa23d-6da8-4a47-90a1-35e317a5e5c0"
+		_name = "R_earPad002_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "96906bda-a6fc-4b72-9dc9-41ab068b4b70"
+		_name = "R_earPad003_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "99546b78-58b4-47bc-b155-facd7876005f"
+		_name = "R_earPad004_GEO"
+		lod_level = 5
+	}
+	{
+		_id = "f3dd4d36-14f0-40f1-b451-9ef6a2eef513"
+		_name = "R_earPad005_GEO"
 		lod_level = 5
 	}
 ]

@@ -42,142 +42,333 @@ editor_metadata = {
 	}
 }
 materials = {
-	beanie_3 = "content/models/characters/PPK/materials/beanie_3"
-	eye_black = "content/models/characters/PPK/materials/eye_black"
-	gl_jacket = "content/models/characters/PPK/materials/gl_jacket"
-	gl_lambert24 = "content/models/characters/PPK/materials/gl_lambert24"
-	gl_lambert27 = "content/models/characters/PPK/materials/gl_lambert27"
-	gl_lambert29 = "content/models/characters/PPK/materials/gl_lambert29"
-	hair_6 = "content/models/characters/PPK/materials/hair_6"
-	headphone_12 = "content/models/characters/PPK/materials/headphone_12"
-	headphone_black_12 = "content/models/characters/PPK/materials/headphone_black_12"
-	lambert1_1_9 = "content/models/characters/PPK/materials/lambert1_1_9"
-	lambert1_2_9 = "content/models/characters/PPK/materials/lambert1_2_9"
-	lambert31 = "content/models/characters/PPK/materials/lambert31"
-	shoes_6 = "content/models/characters/PPK/materials/shoes_6"
+	CLOTHES_SHD = "content/models/characters/PPK/materials/CLOTHES_SHD"
+	Default_Material = "content/models/characters/PPK/materials/Default_Material"
+	EYE_SHD = "content/models/characters/PPK/materials/EYE_SHD"
+	HAIR_SHD = "content/models/characters/PPK/materials/HAIR_SHD"
+	HEADPHONE_SHD = "content/models/characters/PPK/materials/HEADPHONE_SHD"
+	SKIN_SHD = "content/models/characters/PPK/materials/SKIN_SHD"
 }
 renderables = {
-	body = {
+	C_body_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	cap = {
+	C_hairBand_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	eyeL = {
+	C_hairNeckline_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	eyeR = {
+	C_hairPonytail_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	hair1 = {
+	C_headphoneArm_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	handL = {
+	C_jacket_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	handR = {
+	C_knitCap_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	headphone = {
+	C_pants_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	jacket = {
+	C_teeth_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	lash = {
+	C_tongue_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	leg = {
+	L_earPad001_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	shoseBandL = {
+	L_earPad002_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	shoseBandR = {
+	L_earPad003_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false
 		viewport_visible = true
 	}
-	teeth = {
+	L_earPad004_GEO = {
 		always_keep = false
 		culling = "bounding_volume"
-		generate_uv_unwrap = false
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_earPad005_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_eyeball_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_eyebrow_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_eyelash_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_hair_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_hand_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_leg_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_shoe001_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	L_shoe002_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_earPad001_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_earPad002_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_earPad003_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_earPad004_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_earPad005_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_eyeball_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_eyebrow_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_eyelash_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_hair_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_hand_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_leg_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_shoe001_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
+		occluder = false
+		shadow_caster = true
+		surface_queries = false
+		viewport_visible = true
+	}
+	R_shoe002_GEO = {
+		always_keep = false
+		culling = "bounding_volume"
+		light_baking = "none"
 		occluder = false
 		shadow_caster = true
 		surface_queries = false

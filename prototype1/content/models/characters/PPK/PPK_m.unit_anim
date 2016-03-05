@@ -8,12 +8,12 @@ anim_controller_ref = {
 	ref_id = null
 }
 anim_skeleton_ref = {
-	_id = "e110539c-b97f-4cb5-a0b8-0df16f05f6d3"
+	_id = "dcde8e31-931b-40eb-85fc-32a4d3243db0"
 	ref_filename = "content/models/characters/PPK/PPK_m.anim_skeleton"
 	ref_id = null
 }
 dcc_asset_ref = {
-	_id = "32af0055-7c56-454c-9f03-9fdea10cf5d6"
+	_id = "f53b1076-5e5c-4642-b030-57ec03bfa4b1"
 	ref_filename = "content/models/characters/PPK/PPK_m.dcc_asset"
 	ref_id = null
 }
