@@ -1,0 +1,18 @@
+
+actors = [
+	{
+		enabled = true
+		mass = 0
+		name = "Terrain_Grassland:Mesh"
+		node = "Terrain_Grassland:Mesh"
+		shapes = [
+			{
+				material = "default"
+				shape = "Terrain_Grassland:Mesh"
+				template = "default"
+				type = "mesh"
+			}
+		]
+		template = "static"
+	}
+]

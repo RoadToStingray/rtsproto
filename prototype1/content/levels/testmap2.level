@@ -374,7 +374,6 @@ editor_metadata = {
 				Class = "Stingray.Foundation.Flow.LevelUnit"
 				Id = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
 				InEvents = [
-					"Test_Collide"
 				]
 				InVariableNames = [
 				]
@@ -895,7 +894,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 8.584756
+				X = 21.507561
 				Y = -1.732734
 				Z = 1.677408
 			}
@@ -932,7 +931,7 @@ editor_metadata = {
 				Z = 0
 			}
 			Pos = {
-				X = 0
+				X = 12.922805
 				Y = -0.72889
 				Z = 0.035595
 			}
@@ -1839,6 +1838,43 @@ editor_metadata = {
 			}
 			Type = "content/models/testmap/object_doublejump"
 		}
+		{
+			Cameras = {
+			}
+			Id = "3732fb38-1506-4458-af20-ef91ac23d514"
+			Layer = "Default"
+			Lights = {
+			}
+			Materials = {
+			}
+			Name = "test_terrain"
+			OverridePoses = {
+			}
+			Pivot = {
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Pos = {
+				X = 12.256557
+				Y = 19.984055
+				Z = 0
+			}
+			Rot = {
+				W = -1
+				X = 0
+				Y = 0
+				Z = 0
+			}
+			Scl = {
+				X = 1
+				Y = 20
+				Z = 1
+			}
+			ScriptData = {
+			}
+			Type = "content/models/testterrain/test_terrain"
+		}
 	]
 	Volumes = [
 	]
@@ -2102,7 +2138,6 @@ flow = {
 		{
 			id = "a4e06686-22aa-4539-897b-3f3e0a41fec8"
 			in_event_index = [
-				"Test_Collide"
 			]
 			out_event_index = [
 			]
@@ -2487,7 +2522,7 @@ units = [
 		}
 		name = "camera"
 		pos = [
-			8.584756
+			21.507561
 			-1.732734
 			1.677408
 		]
@@ -2517,7 +2552,7 @@ units = [
 		}
 		name = "PPK_m"
 		pos = [
-			0
+			12.922805
 			-0.72889
 			0.035595
 		]
@@ -3253,6 +3288,36 @@ units = [
 			1
 		]
 		type = "content/models/testmap/object_doublejump"
+	}
+	{
+		cameras = {
+		}
+		data = {
+		}
+		id = "3732fb38-1506-4458-af20-ef91ac23d514"
+		lights = {
+		}
+		material = ""
+		materials = {
+		}
+		name = "test_terrain"
+		pos = [
+			12.256557
+			19.984055
+			0
+		]
+		rot = [
+			0
+			0
+			0
+			-1
+		]
+		scl = [
+			1
+			20
+			1
+		]
+		type = "content/models/testterrain/test_terrain"
 	}
 ]
 volumes = [

@@ -1,0 +1,20 @@
+
+_data_root_version = 1
+_id = "218d467d-e6bf-4bd7-8570-573ae1653271"
+_name = "content/models/testterrain/test_terrain"
+anim_controller_ref = {
+	_id = "b6d65b60-1fbc-4d56-9269-d5165da08a9c"
+	ref_filename = null
+	ref_id = null
+}
+anim_skeleton_ref = {
+	_id = "e2817ec4-cd0d-4307-a3b7-bd190fc15c96"
+	ref_filename = null
+	ref_id = null
+}
+dcc_asset_ref = {
+	_id = "29fa8ce8-dc7f-490c-8830-c4b6189163e7"
+	ref_filename = "content/models/testterrain/test_terrain.dcc_asset"
+	ref_id = null
+}
+old_unit_name = "content/models/testterrain/test_terrain"
