@@ -58,18 +58,18 @@
 					"DynamicProperties": {},
 					"Owner": {
 						"@meta": {
-							"@ref": 2893160005
+							"@ref": 3846302942
 						}
 					},
 					"Name": "Animation",
 					"Enabled": true,
 					"Layers": [
 						{
-							"Id": "855104389625606409",
+							"Id": "10637941461315744897",
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3999248756
+									"@ref": 3181553661
 								}
 							},
 							"ChildLayers": [],
@@ -78,18 +78,18 @@
 							"ParentLayerId": "0",
 							"Expanded": true,
 							"pActor": {
-								"Id": "17725958652850103885",
+								"Id": "5434173513577522089",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 2351893724
+										"@ref": 1205794066
 									}
 								},
-								"Name": "heart3",
+								"Name": "life",
 								"Transform": {
 									"Position": {
-										"x": 96.788269,
-										"y": 408.109009,
+										"x": 574.609924,
+										"y": 556.795593,
 										"z": 0.000000
 									},
 									"Scale": {
@@ -135,26 +135,26 @@
 								},
 								"Components": [
 									{
-										"Id": "3762073183895480937",
+										"Id": "7988368366461334893",
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 2059092639
+												"@ref": 2917368119
 											}
 										},
 										"Name": "Bitmap",
 										"Enabled": true,
-										"Bitmap": "Sprites/heart0162.png",
+										"Bitmap": "Sprites/rc/life.png",
 										"ResourcePersistent": false,
 										"@meta": {
-											"@id": 919248674,
+											"@id": 2261608518,
 											"@typeid": 110556596
 										}
 									}
 								],
 								"Pivot": {
-									"x": 551.500000,
-									"y": 477.500000
+									"x": 2046.500000,
+									"y": 1447.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -166,7 +166,7 @@
 								},
 								"Filters": [],
 								"@meta": {
-									"@id": 2059092639,
+									"@id": 2917368119,
 									"@typeid": 150545074
 								}
 							},
@@ -174,22 +174,22 @@
 							"MaskDisabled": false,
 							"KeyFrames": [
 								{
-									"Id": "4831683773995175205",
+									"Id": "11291035941975029757",
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 2351893724
+											"@ref": 1205794066
 										}
 									},
 									"Transform": {
 										"Position": {
-											"x": 464.999817,
-											"y": 38.307813,
+											"x": 0.000056,
+											"y": 0.000029,
 											"z": 0.000000
 										},
 										"Scale": {
-											"x": 0.181324,
-											"y": 0.181324,
+											"x": 0.469094,
+											"y": 0.373186,
 											"z": 1.000000
 										},
 										"Rotation": {
@@ -233,27 +233,27 @@
 									"TweenTransition": 0,
 									"TweenEasing": 0,
 									"Pivot": {
-										"x": 551.500000,
-										"y": 477.500000
+										"x": 2046.500000,
+										"y": 1447.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 3289704622,
+										"@id": 2014655866,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 2351893724,
+								"@id": 1205794066,
 								"@typeid": 199425826
 							}
 						},
 						{
-							"Id": "7979252546108456777",
+							"Id": "7252611446331002781",
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3999248756
+									"@ref": 3181553661
 								}
 							},
 							"ChildLayers": [],
@@ -262,18 +262,18 @@
 							"ParentLayerId": "0",
 							"Expanded": true,
 							"pActor": {
-								"Id": "16106376741244470021",
+								"Id": "8270708863380547101",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 2191806221
+										"@ref": 1755706142
 									}
 								},
-								"Name": "heart2",
+								"Name": "bar",
 								"Transform": {
 									"Position": {
-										"x": 96.788269,
-										"y": 408.109009,
+										"x": 311.364624,
+										"y": 805.616455,
 										"z": 0.000000
 									},
 									"Scale": {
@@ -319,26 +319,26 @@
 								},
 								"Components": [
 									{
-										"Id": "9671926540755831965",
+										"Id": "1620716417242550417",
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 4215544383
+												"@ref": 809192103
 											}
 										},
 										"Name": "Bitmap",
 										"Enabled": true,
-										"Bitmap": "Sprites/heart0162.png",
+										"Bitmap": "Sprites/rc/bar.png",
 										"ResourcePersistent": false,
 										"@meta": {
-											"@id": 2551203437,
+											"@id": 4008486854,
 											"@typeid": 110556596
 										}
 									}
 								],
 								"Pivot": {
-									"x": 551.500000,
-									"y": 477.500000
+									"x": 2046.500000,
+									"y": 1447.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -350,7 +350,7 @@
 								},
 								"Filters": [],
 								"@meta": {
-									"@id": 4215544383,
+									"@id": 809192103,
 									"@typeid": 150545074
 								}
 							},
@@ -358,22 +358,22 @@
 							"MaskDisabled": false,
 							"KeyFrames": [
 								{
-									"Id": "12652037045640282597",
+									"Id": "7871832166421596581",
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 2191806221
+											"@ref": 1755706142
 										}
 									},
 									"Transform": {
 										"Position": {
-											"x": 249.999817,
-											"y": 38.307813,
+											"x": 0.000027,
+											"y": -0.000123,
 											"z": 0.000000
 										},
 										"Scale": {
-											"x": 0.181324,
-											"y": 0.181324,
+											"x": 0.469094,
+											"y": 0.373186,
 											"z": 1.000000
 										},
 										"Rotation": {
@@ -417,27 +417,27 @@
 									"TweenTransition": 0,
 									"TweenEasing": 0,
 									"Pivot": {
-										"x": 551.500000,
-										"y": 477.500000
+										"x": 2046.500000,
+										"y": 1447.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 1151189070,
+										"@id": 2653707049,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 2191806221,
+								"@id": 1755706142,
 								"@typeid": 199425826
 							}
 						},
 						{
-							"Id": "16589169379867305729",
+							"Id": "8870712058025819977",
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3999248756
+									"@ref": 3181553661
 								}
 							},
 							"ChildLayers": [],
@@ -446,18 +446,18 @@
 							"ParentLayerId": "0",
 							"Expanded": true,
 							"pActor": {
-								"Id": "2958748700673586317",
+								"Id": "17560455129268712901",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 1032179483
+										"@ref": 3154107020
 									}
 								},
-								"Name": "heart1",
+								"Name": "neko",
 								"Transform": {
 									"Position": {
-										"x": 96.788269,
-										"y": 408.109009,
+										"x": 257.273132,
+										"y": 798.404297,
 										"z": 0.000000
 									},
 									"Scale": {
@@ -503,26 +503,26 @@
 								},
 								"Components": [
 									{
-										"Id": "8779994233622846705",
+										"Id": "17498710607250383969",
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 3761799555
+												"@ref": 3111231843
 											}
 										},
 										"Name": "Bitmap",
 										"Enabled": true,
-										"Bitmap": "Sprites/heart0162.png",
+										"Bitmap": "Sprites/rc/neko.png",
 										"ResourcePersistent": false,
 										"@meta": {
-											"@id": 895664623,
+											"@id": 2969494600,
 											"@typeid": 110556596
 										}
 									}
 								],
 								"Pivot": {
-									"x": 551.500000,
-									"y": 477.500000
+									"x": 2046.500000,
+									"y": 1447.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -534,7 +534,7 @@
 								},
 								"Filters": [],
 								"@meta": {
-									"@id": 3761799555,
+									"@id": 3111231843,
 									"@typeid": 150545074
 								}
 							},
@@ -542,22 +542,22 @@
 							"MaskDisabled": false,
 							"KeyFrames": [
 								{
-									"Id": "3106506504501090165",
+									"Id": "9492190871625059897",
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 1032179483
+											"@ref": 3154107020
 										}
 									},
 									"Transform": {
 										"Position": {
-											"x": 35.000000,
-											"y": 38.307966,
+											"x": -0.000002,
+											"y": -0.000001,
 											"z": 0.000000
 										},
 										"Scale": {
-											"x": 0.181324,
-											"y": 0.181324,
+											"x": 0.469094,
+											"y": 0.373186,
 											"z": 1.000000
 										},
 										"Rotation": {
@@ -601,27 +601,27 @@
 									"TweenTransition": 0,
 									"TweenEasing": 0,
 									"Pivot": {
-										"x": 551.500000,
-										"y": 477.500000
+										"x": 2046.500000,
+										"y": 1447.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 3118968406,
+										"@id": 126763985,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 1032179483,
+								"@id": 3154107020,
 								"@typeid": 199425826
 							}
 						},
 						{
-							"Id": "3105101480100905481",
+							"Id": "12028436537330144525",
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3999248756
+									"@ref": 3181553661
 								}
 							},
 							"ChildLayers": [],
@@ -630,18 +630,18 @@
 							"ParentLayerId": "0",
 							"Expanded": true,
 							"pActor": {
-								"Id": "11275784711342451581",
+								"Id": "2335772345518037989",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 4007432538
+										"@ref": 2033713900
 									}
 								},
-								"Name": "line",
+								"Name": "papi",
 								"Transform": {
 									"Position": {
-										"x": 719.524902,
-										"y": 730.214172,
+										"x": -640.645935,
+										"y": 719.070129,
 										"z": 0.000000
 									},
 									"Scale": {
@@ -687,26 +687,26 @@
 								},
 								"Components": [
 									{
-										"Id": "14169663437099069085",
+										"Id": "1542724977481268685",
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 2777909887
+												"@ref": 2177900450
 											}
 										},
 										"Name": "Bitmap",
 										"Enabled": true,
-										"Bitmap": "Sprites/line.png",
+										"Bitmap": "Sprites/rc/papi.png",
 										"ResourcePersistent": false,
 										"@meta": {
-											"@id": 283836464,
+											"@id": 900167032,
 											"@typeid": 110556596
 										}
 									}
 								],
 								"Pivot": {
-									"x": 320.000000,
-									"y": 200.000000
+									"x": 2046.500000,
+									"y": 1447.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -718,7 +718,7 @@
 								},
 								"Filters": [],
 								"@meta": {
-									"@id": 2777909887,
+									"@id": 2177900450,
 									"@typeid": 150545074
 								}
 							},
@@ -726,22 +726,22 @@
 							"MaskDisabled": false,
 							"KeyFrames": [
 								{
-									"Id": "17961749160464389521",
+									"Id": "3812556106867470121",
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 4007432538
+											"@ref": 2033713900
 										}
 									},
 									"Transform": {
 										"Position": {
-											"x": 1099.109985,
-											"y": 876.929993,
+											"x": 0.000056,
+											"y": -0.000001,
 											"z": 0.000000
 										},
 										"Scale": {
-											"x": 1.000000,
-											"y": 0.500000,
+											"x": 0.469094,
+											"y": 0.373186,
 											"z": 1.000000
 										},
 										"Rotation": {
@@ -785,27 +785,27 @@
 									"TweenTransition": 0,
 									"TweenEasing": 0,
 									"Pivot": {
-										"x": 320.000000,
-										"y": 200.000000
+										"x": 2046.500000,
+										"y": 1447.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 4008521870,
+										"@id": 1302403641,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 4007432538,
+								"@id": 2033713900,
 								"@typeid": 199425826
 							}
 						},
 						{
-							"Id": "12107308206812130213",
+							"Id": "2860995010859316253",
 							"DynamicProperties": {},
 							"Owner": {
 								"@meta": {
-									"@ref": 3999248756
+									"@ref": 3181553661
 								}
 							},
 							"ChildLayers": [],
@@ -814,18 +814,18 @@
 							"ParentLayerId": "0",
 							"Expanded": true,
 							"pActor": {
-								"Id": "12211262868974903873",
+								"Id": "15336993206581522453",
 								"DynamicProperties": {},
 								"Owner": {
 									"@meta": {
-										"@ref": 2687718297
+										"@ref": 3964929468
 									}
 								},
-								"Name": "start",
+								"Name": "Actor_17",
 								"Transform": {
 									"Position": {
-										"x": 798.261841,
-										"y": 640.740601,
+										"x": -510.826294,
+										"y": 1112.135010,
 										"z": 0.000000
 									},
 									"Scale": {
@@ -871,26 +871,26 @@
 								},
 								"Components": [
 									{
-										"Id": "11444183765366973285",
+										"Id": "16307876536856843989",
 										"DynamicProperties": {},
 										"Owner": {
 											"@meta": {
-												"@ref": 1623284003
+												"@ref": 1194010782
 											}
 										},
 										"Name": "Bitmap",
 										"Enabled": true,
-										"Bitmap": "Sprites/start.png",
+										"Bitmap": "Sprites/rc/stop.png",
 										"ResourcePersistent": false,
 										"@meta": {
-											"@id": 2275199851,
+											"@id": 3617559695,
 											"@typeid": 110556596
 										}
 									}
 								],
 								"Pivot": {
-									"x": 320.000000,
-									"y": 200.000000
+									"x": 2046.500000,
+									"y": 1447.000000
 								},
 								"BlendMode": 0,
 								"Scale9Enabled": false,
@@ -902,7 +902,7 @@
 								},
 								"Filters": [],
 								"@meta": {
-									"@id": 1623284003,
+									"@id": 1194010782,
 									"@typeid": 150545074
 								}
 							},
@@ -910,22 +910,22 @@
 							"MaskDisabled": false,
 							"KeyFrames": [
 								{
-									"Id": "11433284418017309773",
+									"Id": "11799719598706111673",
 									"DynamicProperties": {},
 									"Owner": {
 										"@meta": {
-											"@ref": 2687718297
+											"@ref": 3964929468
 										}
 									},
 									"Transform": {
 										"Position": {
-											"x": 895.080017,
-											"y": 912.205017,
+											"x": -0.000030,
+											"y": -0.000001,
 											"z": 0.000000
 										},
 										"Scale": {
-											"x": 0.390625,
-											"y": 0.390625,
+											"x": 0.469094,
+											"y": 0.373186,
 											"z": 1.000000
 										},
 										"Rotation": {
@@ -969,202 +969,18 @@
 									"TweenTransition": 0,
 									"TweenEasing": 0,
 									"Pivot": {
-										"x": 320.000000,
-										"y": 200.000000
+										"x": 2046.500000,
+										"y": 1447.000000
 									},
 									"HasTween": false,
 									"@meta": {
-										"@id": 2853895986,
+										"@id": 2424622765,
 										"@typeid": 210448581
 									}
 								}
 							],
 							"@meta": {
-								"@id": 2687718297,
-								"@typeid": 199425826
-							}
-						},
-						{
-							"Id": "18252453651495847813",
-							"DynamicProperties": {},
-							"Owner": {
-								"@meta": {
-									"@ref": 3999248756
-								}
-							},
-							"ChildLayers": [],
-							"Visible": true,
-							"Locked": false,
-							"ParentLayerId": "0",
-							"Expanded": true,
-							"pActor": {
-								"Id": "8267509536452996593",
-								"DynamicProperties": {},
-								"Owner": {
-									"@meta": {
-										"@ref": 1368004056
-									}
-								},
-								"Name": "goal",
-								"Transform": {
-									"Position": {
-										"x": 1861.208984,
-										"y": 683.687866,
-										"z": 0.000000
-									},
-									"Scale": {
-										"x": 1.000000,
-										"y": 1.000000,
-										"z": 1.000000
-									},
-									"Rotation": {
-										"x": 0.000000,
-										"y": 0.000000,
-										"z": 0.000000
-									},
-									"Pivot": {
-										"x": 0.000000,
-										"y": 0.000000,
-										"z": 0.000000
-									},
-									"Shear": {
-										"x": 0.000000,
-										"y": 0.000000
-									},
-									"XZShear": 0.000000,
-									"YZShear": 0.000000,
-									"Tolerance": 0.000001,
-									"AngleTolerance": 0.001091
-								},
-								"Cxform": {
-									"Mode": 0,
-									"R": 255.000000,
-									"G": 0.000000,
-									"B": 0.000000,
-									"Ao": 0.000000,
-									"Ro": 0.000000,
-									"Go": 0.000000,
-									"Bo": 0.000000,
-									"Am": 1.000000,
-									"Rm": 1.000000,
-									"Gm": 1.000000,
-									"Bm": 1.000000,
-									"Alpha": 0.500000,
-									"Brightness": -0.500000,
-									"Tint": 0.500000
-								},
-								"Components": [
-									{
-										"Id": "272284579902060649",
-										"DynamicProperties": {},
-										"Owner": {
-											"@meta": {
-												"@ref": 3950471963
-											}
-										},
-										"Name": "Bitmap",
-										"Enabled": true,
-										"Bitmap": "Sprites/goal.png",
-										"ResourcePersistent": false,
-										"@meta": {
-											"@id": 2887028010,
-											"@typeid": 110556596
-										}
-									}
-								],
-								"Pivot": {
-									"x": 320.000000,
-									"y": 200.000000
-								},
-								"BlendMode": 0,
-								"Scale9Enabled": false,
-								"Scale9Grid": {
-									"x1": 0.000000,
-									"y1": 0.000000,
-									"x2": 0.000000,
-									"y2": 0.000000
-								},
-								"Filters": [],
-								"@meta": {
-									"@id": 3950471963,
-									"@typeid": 150545074
-								}
-							},
-							"Masking": false,
-							"MaskDisabled": false,
-							"KeyFrames": [
-								{
-									"Id": "4072337569494021153",
-									"DynamicProperties": {},
-									"Owner": {
-										"@meta": {
-											"@ref": 1368004056
-										}
-									},
-									"Transform": {
-										"Position": {
-											"x": 1695.489990,
-											"y": 912.205017,
-											"z": 0.000000
-										},
-										"Scale": {
-											"x": 0.390625,
-											"y": 0.390625,
-											"z": 1.000000
-										},
-										"Rotation": {
-											"x": 0.000000,
-											"y": 0.000000,
-											"z": 0.000000
-										},
-										"Pivot": {
-											"x": 0.000000,
-											"y": 0.000000,
-											"z": 0.000000
-										},
-										"Shear": {
-											"x": 0.000000,
-											"y": 0.000000
-										},
-										"XZShear": 0.000000,
-										"YZShear": 0.000000,
-										"Tolerance": 0.000001,
-										"AngleTolerance": 0.001091
-									},
-									"Cxform": {
-										"Mode": 0,
-										"R": 255.000000,
-										"G": 0.000000,
-										"B": 0.000000,
-										"Ao": 0.000000,
-										"Ro": 0.000000,
-										"Go": 0.000000,
-										"Bo": 0.000000,
-										"Am": 1.000000,
-										"Rm": 1.000000,
-										"Gm": 1.000000,
-										"Bm": 1.000000,
-										"Alpha": 0.500000,
-										"Brightness": -0.500000,
-										"Tint": 0.500000
-									},
-									"FrameStart": 0,
-									"FrameLength": 1,
-									"TweenTransition": 0,
-									"TweenEasing": 0,
-									"Pivot": {
-										"x": 320.000000,
-										"y": 200.000000
-									},
-									"HasTween": false,
-									"@meta": {
-										"@id": 527355031,
-										"@typeid": 210448581
-									}
-								}
-							],
-							"@meta": {
-								"@id": 1368004056,
+								"@id": 3964929468,
 								"@typeid": 199425826
 							}
 						}
@@ -1172,7 +988,7 @@
 					"ActionData": [],
 					"CurrentFrame": 0,
 					"@meta": {
-						"@id": 3999248756,
+						"@id": 3181553661,
 						"@typeid": 18887732
 					}
 				},
@@ -1181,14 +997,14 @@
 					"DynamicProperties": {},
 					"Owner": {
 						"@meta": {
-							"@ref": 2893160005
+							"@ref": 3846302942
 						}
 					},
 					"Name": "Script",
 					"Enabled": true,
 					"Script": "",
 					"@meta": {
-						"@id": 1639210012,
+						"@id": 435901205,
 						"@typeid": 13313492
 					}
 				}
@@ -1207,7 +1023,7 @@
 			},
 			"Filters": [],
 			"@meta": {
-				"@id": 2893160005,
+				"@id": 3846302942,
 				"@typeid": 149361045
 			}
 		}
