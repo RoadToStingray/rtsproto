@@ -14,22 +14,6 @@ nodes = [
 		}
 	}
 	{
-		id = "2febb6a4-32eb-4ecc-aaf4-992280fd89d4"
-		out_events = {
-			out = [
-				{
-					event = 0
-					id = "8acc9a8d-7a6a-429a-b431-b7086f5e822f:0"
-					node = "8acc9a8d-7a6a-429a-b431-b7086f5e822f"
-				}
-			]
-		}
-		type = "external_event"
-		variable_values = {
-			event_name = "Movement"
-		}
-	}
-	{
 		id = "72708a49-0640-45f7-b4e6-9a0c0a391266"
 		in_variables = {
 			camera = {
@@ -162,9 +146,9 @@ nodes = [
 		id = "7ffe26d4-bc01-4ce8-bbe7-6a5fb36fea6d"
 		in_variables = {
 			a = {
-				node = "7b09628b-c57b-4cf8-80b4-01d8966d6407"
+				node = "5e5488ec-3a5c-4d7c-8ac4-14181d036c34"
 				type = "vector3"
-				variable = "position"
+				variable = "value"
 			}
 			b = {
 				node = "3d67ac76-00a9-4947-bbe8-d0ec3040662f"
@@ -241,6 +225,89 @@ nodes = [
 			camera = null
 			position = null
 			unit = null
+		}
+	}
+	{
+		id = "5e5488ec-3a5c-4d7c-8ac4-14181d036c34"
+		in_variables = {
+			a = {
+				node = "7b09628b-c57b-4cf8-80b4-01d8966d6407"
+				type = "vector3"
+				variable = "position"
+			}
+			b = {
+				node = "73ebc6ca-1fff-418e-ad9b-d25d709011b0"
+				type = "vector3"
+				variable = "vector"
+			}
+		}
+		out_variables = {
+			value = {
+				type = "vector3"
+			}
+		}
+		type = "vector_times_vector"
+		variable_values = {
+			a = null
+			b = null
+			value = null
+		}
+	}
+	{
+		id = "73ebc6ca-1fff-418e-ad9b-d25d709011b0"
+		in_variables = {
+			x = {
+				type = "float"
+			}
+			y = {
+				type = "float"
+			}
+			z = {
+				node = "6e70ffe2-d56d-48b9-9e4b-7e981eb2d68b"
+				type = "float"
+				variable = "numeric"
+			}
+		}
+		out_variables = {
+			vector = {
+				type = "vector3"
+			}
+		}
+		type = "vector_from_components"
+		variable_values = {
+			vector = null
+			x = 1
+			y = 1
+			z = null
+		}
+	}
+	{
+		id = "2febb6a4-32eb-4ecc-aaf4-992280fd89d4"
+		out_events = {
+			out = [
+				{
+					event = 0
+					id = "8acc9a8d-7a6a-429a-b431-b7086f5e822f:0"
+					node = "8acc9a8d-7a6a-429a-b431-b7086f5e822f"
+				}
+			]
+		}
+		type = "external_event"
+		variable_values = {
+			event_name = "Movement"
+		}
+	}
+	{
+		id = "6e70ffe2-d56d-48b9-9e4b-7e981eb2d68b"
+		out_variables = {
+			numeric = {
+				type = "float"
+			}
+		}
+		type = "external_input_numeric"
+		variable_values = {
+			name = "Height_scale"
+			numeric = null
 		}
 	}
 	{
